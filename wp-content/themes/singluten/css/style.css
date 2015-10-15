@@ -54,7 +54,8 @@ body {
   margin: 0 auto; }
 
 #header {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative; }
   #header .logo-wrapper {
     position: relative; }
     #header .logo-wrapper:before {
@@ -68,5 +69,14 @@ body {
     #header .logo-wrapper .logo {
       float: left;
       margin: 1em 0 0 1.25em; }
+  #header .social {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 9.3125em;
+    height: 3.5em;
+    background: url("../images/social-bg.png"); }
+    #header .social li {
+      float: left; }
 
 /*# sourceMappingURL=style.css.map */
