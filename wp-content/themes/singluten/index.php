@@ -1,16 +1,11 @@
 <?php get_header(); ?>
-<body class="home">
-<?php get_template_part('header-part') ?>
-<div class="main wrapper">
-    <section class="content">
-        <?php if ( have_posts() ) : ?>
-            <?php while ( have_posts() ) : the_post();  ?>
-                <?php the_content(); ?>
-            <?php endwhile; ?>
-        <?php endif;?>
-    </section>
+<body <?php body_class(); ?>>
+<div id="site">
+    <?php get_template_part('content-header'); ?>
+    <?php get_template_part('content-main');?>
+    <?php get_footer();?>
 </div>
-<?php wp_footer(); ?>
 <script src="<?php echo get_template_directory_uri(); ?>/js/init.js"></script>
+<?php wp_footer(); ?>
 </body>
 </html>
