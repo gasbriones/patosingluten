@@ -3,10 +3,15 @@
         Home
     </section>
     <section class="block about clearfix">
-        sobre pato
+        <?php // retrieve one post with an ID of 1
+        query_posts('page_id=6'); ?>
+        <?php while (have_posts()) : the_post(); ?>
+            <h4><?php the_title(); ?></h4>
+            <?php the_content(); ?>
+        <?php endwhile;?>
     </section>
     <section class="block recipe clearfix">
-     recetas
+        recetas
     </section>
     <section class="block news clearfix">
         novedades
