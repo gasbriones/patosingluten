@@ -29,6 +29,13 @@
 }
 
 @font-face {
+  font-family: 'Avenir45BookBook';
+  src: url('../fonts/Avenir45BookBook.eot?#iefix') format('embedded-opentype'),  url('../fonts/Avenir45BookBook.woff') format('woff'), url('../fonts/Avenir45BookBook.ttf')  format('truetype'), url('../fonts/Avenir45BookBook.svg#Avenir45BookBook') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'VTKSINKED';
   src: url('../fonts/VTKSINKED.eot?#iefix') format('embedded-opentype'), url('../fonts/VTKSINKED.woff') format('woff'), url('../fonts/VTKSINKED.ttf') format('truetype'), url('../fonts/VTKSINKED.svg#VTKSINKED') format('svg');
   font-weight: normal;
@@ -40,6 +47,15 @@
   src: url('../fonts/TwentySingles.eot?#iefix') format('embedded-opentype'), url('../fonts/TwentySingles.woff') format('woff'), url('../fonts/TwentySingles.ttf') format('truetype'), url('../fonts/TwentySingles.svg#TwentySingles') format('svg');
   font-weight: normal;
   font-style: normal;
+}
+
+
+
+.bx-wrapper .bx-viewport {
+  border: none !important;
+  box-shadow: none !important;
+  left: 0 !important;
+
 }
 
 html, body {
@@ -64,7 +80,6 @@ body {
 .block {
   background: url("../images/background-texture.jpg") repeat;
   background-size: 100%;
-  height: 15em;
 }
 
 .center {
@@ -78,6 +93,7 @@ body {
 
   .logo-wrapper {
     position: relative;
+    margin-bottom: 2.5em;
 
     &:before {
       content: "";
@@ -118,10 +134,11 @@ body {
       border: none;
       border-bottom: solid 2px #ffffff;
       color: #ffffff;
-      font-family: AvenirLTStd-Light;
+      font-family: Avenir45BookBook;
       font-size: (15em/16);
       width: (152em/16);
       padding: 0 0 (5em/16) 0;
+      line-height: (24em/16);
 
       @include placeholder {
         color: #ffffff;
@@ -142,15 +159,20 @@ body {
     max-width: (889em/76);
     height: (57em/76);
     background: url("../images/menu-principal-bg.png") no-repeat;
-    margin: (16em/76) auto 0;
+    position: absolute;
+    left: 50%;
+    bottom: (-36em/76);
+    transform: translate(-50%, 0);
     padding: 0 10%;
     box-sizing: border-box;
+    z-index: 99;
 
     li {
       float: left;
       width: 25%;
       letter-spacing: (2em/76);
       text-align: right;
+      line-height: (60em/76);
       a {
         color: #6A3327;
         text-decoration: none;

@@ -24,6 +24,7 @@
     <meta name="og:site_name" content="<?php bloginfo('name'); ?>" />
     <meta name="og:region" content="Buenos Aires" />
     <meta name="og:country-name" content="Argentina" />
+
     <!-- twitter -->
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:url" content="<?php echo get_site_url() ?>"/>
@@ -33,6 +34,7 @@
     <meta name="twitter:creator" content="@gasbriones" />
     <!-- Links -->
 
+    <link href="<?php echo get_template_directory_uri(); ?>/css/socicon.css" rel="stylesheet" type="text/css">
     <link href="<?php echo get_template_directory_uri(); ?>/css/normalize.css" rel="stylesheet" type="text/css">
     <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet" type="text/css">
     <link href="<?php echo get_template_directory_uri(); ?>/css/mediaqueries.css" rel="stylesheet" type="text/css">

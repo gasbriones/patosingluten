@@ -24,7 +24,9 @@ jQuery(document).ready(function(){
             swipeThreshold: jQuery(this).data('bxslider-swipe-threshold'),
             oneToOneTouch: jQuery(this).data('bxslider-one-to-one-touch'),
             preventDefaultSwipeX: jQuery(this).data('bxslider-prevent-default-swipe-x'),
-            preventDefaultSwipeY: jQuery(this).data('bxslider-prevent-default-swipe-y')
+            preventDefaultSwipeY: jQuery(this).data('bxslider-prevent-default-swipe-y'),
+            auto:true,
+            controls:false
         });
     });
 });
