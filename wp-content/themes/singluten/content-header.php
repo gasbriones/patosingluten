@@ -10,14 +10,9 @@
         <a href="<?php echo get_site_url();?>" class="logo"><img src="<?php echo get_template_directory_uri(); ?>/images/logo.png"></a>
     </div>
     <ul class="social">
-        <li>FB</li>
-        <li>TW</li>
-        <li>INS</li>
+        <li><a href="<?php echo get_field('facebook', 'user_2'); ?>" class="socicon socicon-facebook"></a></li>
+        <li><a href="<?php echo get_field('twitter', 'user_2'); ?>" class="socicon socicon-twitter"></a></li>
+        <li><a href="<?php echo get_field('instagram', 'user_2'); ?>" class="socicon socicon-instagram"></a></li>
     </ul>
-    <ul class="main-menu">
-        <li><a href="#">Sobre Pato</a></li>
-        <li><a href="#">Recetas</a></li>
-        <li><a href="#">Novedades</a></li>
-        <li><a href="#">Contacto</a></li>
-    </ul>
+    <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
 </header>

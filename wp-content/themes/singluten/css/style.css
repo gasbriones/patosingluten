@@ -38,6 +38,20 @@
   box-shadow: none !important;
   left: 0 !important; }
 
+.bx-wrapper {
+  position: relative; }
+  .bx-wrapper .bx-pager {
+    bottom: 5% !important;
+    width: inherit !important;
+    right: 2% !important; }
+    .bx-wrapper .bx-pager a {
+      width: 0.9375rem !important;
+      height: 1.125em !important;
+      border-radius: 1.25rem !important;
+      background-color: rgba(255, 255, 255, 0.5) !important; }
+      .bx-wrapper .bx-pager a.active {
+        background-color: #FFFFFF !important; }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -85,9 +99,17 @@ body {
     top: 2em;
     width: 9.3125em;
     height: 3.5em;
-    background: url("../images/social-bg.png"); }
+    background: url("../images/social-bg.png") no-repeat; }
     #header .social li {
-      float: left; }
+      float: left;
+      margin: 1em 0 0 0.75em; }
+      #header .social li:first-child {
+        margin-left: 1.25em; }
+      #header .social li a {
+        text-decoration: none;
+        font-size: 1.3125em; }
+        #header .social li a:before {
+          color: #222121; }
   #header .search {
     position: absolute;
     top: 3em;
@@ -116,7 +138,7 @@ body {
       width: 1.4375em;
       height: 1.6875em;
       text-indent: -9999em; }
-  #header .main-menu {
+  #header #menu-main-menu {
     font-family: TwentySingles;
     font-size: 4.75em;
     width: 100%;
@@ -130,31 +152,31 @@ body {
     padding: 0 10%;
     box-sizing: border-box;
     z-index: 99; }
-    #header .main-menu li {
+    #header #menu-main-menu li {
       float: left;
       width: 25%;
       letter-spacing: 0.02632em;
       text-align: right;
-      line-height: 0.78947em; }
-      #header .main-menu li a {
+      line-height: 0.65789em;
+      position: relative; }
+      #header #menu-main-menu li:before {
+        position: absolute;
+        content: "";
+        top: 0.39474em;
+        background: url("../images/disc.png") no-repeat;
+        width: 0.5em;
+        height: 0.5em;
+        right: -0.73684em; }
+      #header #menu-main-menu li a {
         color: #6A3327;
-        text-decoration: none;
-        position: relative; }
-        #header .main-menu li a:before {
-          position: absolute;
-          content: "";
-          top: 0.39474em;
-          background: url("../images/disc.png") no-repeat;
-          width: 0.5em;
-          height: 0.5em;
-          right: -0.73684em; }
-      #header .main-menu li:first-child a:after {
+        text-decoration: none; }
+      #header #menu-main-menu li:first-child:after {
         position: absolute;
         content: "";
         top: 0.39474em;
         background: url("../images/disc.png") no-repeat;
         width: 0.10526em;
         height: 0.10526em;
-        left: -0.36842em; }
+        left: 0.06579em; }
 
 /*# sourceMappingURL=style.css.map */
