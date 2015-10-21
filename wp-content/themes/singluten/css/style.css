@@ -192,6 +192,12 @@ body {
   .category-nav li a {
     font-size: 3.1875em;
     color: #FFFFFF;
-    text-decoration: none; }
+    text-decoration: none;
+    width: 10.375rem;
+    height: 3.375rem;
+    text-align: center;
+    background: url("../images/mancha.svg");
+    background-size: 100% 100%;
+    display: block; }
 
 /*# sourceMappingURL=style.css.map */

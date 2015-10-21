@@ -249,6 +249,8 @@ body {
 }
 
 
+
+
 .category-nav{
   li{
     width: (100%/6);
@@ -256,6 +258,12 @@ body {
       font-size: (51em/16);
       color: #FFFFFF;
       text-decoration: none;
+      width: (166rem/16);
+      height: (54rem/16);
+      text-align: center;
+      background: url("../images/mancha.svg");
+      background-size: 100% 100%;
+      display: block;
     }
   }
 }

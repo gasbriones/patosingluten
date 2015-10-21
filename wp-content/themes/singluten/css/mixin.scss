@@ -137,3 +137,7 @@
   &::-moz-placeholder          {@content}
   &:-ms-input-placeholder      {@content}
 }
+
+@mixin mancha_bg ($color) {
+  background-image: url('data:image/svg+xml;utf8,<svg ...><g stroke="$color" ... /></g></svg>');
+}
