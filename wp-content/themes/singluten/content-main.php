@@ -4,7 +4,7 @@
             <?php if( function_exists('bxslider') ) bxslider('home-slider'); ?>
         </div>
         <div class="margin center">
-            <?php wp_nav_menu( array( 'theme_location' => 'category-menu','menu_class' => 'menu category-nav' )); ?>
+            <?php wp_nav_menu( array( 'theme_location' => 'category-menu','menu_class' => 'menu category-nav')); ?>
         <div>
     </section>
     <section class="block about clearfix">
