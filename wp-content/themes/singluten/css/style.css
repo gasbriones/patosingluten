@@ -188,16 +188,40 @@ body {
         left: 0.06579em; }
 
 .category-nav li {
-  width: 16.66667%; }
+  width: 15%;
+  margin: 0 1%;
+  height: 10.625rem;
+  position: relative;
+  background-size: 100% !important; }
   .category-nav li a {
     font-size: 3.1875em;
     color: #FFFFFF;
     text-decoration: none;
-    width: 10.375rem;
+    width: 100%;
     height: 3.375rem;
+    line-height: 3.375rem;
     text-align: center;
     background: url("../images/mancha.svg");
     background-size: 100% 100%;
-    display: block; }
+    letter-spacing: 0.03947em;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+  .category-nav li:first-child {
+    margin-left: 0; }
+  .category-nav li:last-child {
+    margin-right: 0; }
+  .category-nav li.dulces-te {
+    background: url("../images/para-el-te-bg.png") no-repeat; }
+  .category-nav li.panes-snacks {
+    background: url("../images/panes-bg.png") no-repeat; }
+  .category-nav li.platos-principales {
+    background: url("../images/platos-principales-bg.png") no-repeat; }
+  .category-nav li.postres {
+    background: url("../images/postres-bg.png") no-repeat; }
+  .category-nav li.para-festejar {
+    background: url("../images/para-festejar-bg.png") no-repeat; }
+  .category-nav li.tortas {
+    background: url("../images/tortas-bg.png") no-repeat; }
 
 /*# sourceMappingURL=style.css.map */
