@@ -58,6 +58,7 @@
 
 .bx-wrapper {
   position: relative;
+  margin: 0 auto !important;
   .bx-pager {
     bottom: 5% !important;
     width: inherit !important;
@@ -248,13 +249,19 @@ body {
   }
 }
 
+.main-menu{
+  margin-top:(36em/16);
+}
+
+
 .category-nav{
+  width: (100%);
   li{
     width: (90%/6);
-    margin: 0 1%;
     height: (170rem/16);
     position: relative;
     background-size: 100% !important;
+    margin: 0 1%;
     a{
       font-size: (51em/16);
       color: #FFFFFF;
@@ -268,7 +275,10 @@ body {
       letter-spacing: (3em/76);
       position: absolute;
       bottom: 0;
-      left: 0;
+      left:0;
+      right:0;
+      margin: 0 auto;
+
     }
 
     &:first-child{
@@ -281,21 +291,39 @@ body {
 
     &.dulces-te{
       background: url("../images/para-el-te-bg.png") no-repeat;
+      a{
+        max-width: (176rem/16);
+      }
     }
     &.panes-snacks{
       background: url("../images/panes-bg.png") no-repeat;
+      a{
+        max-width: (166rem/16);
+      }
     }
     &.platos-principales{
       background: url("../images/platos-principales-bg.png") no-repeat;
+      a{
+        max-width: (176rem/16);
+      }
     }
     &.postres{
       background: url("../images/postres-bg.png") no-repeat;
+      a{
+        max-width: (166rem/16);
+      }
     }
     &.para-festejar{
       background: url("../images/para-festejar-bg.png") no-repeat;
+      a{
+        max-width: (166rem/16);
+      }
     }
     &.tortas{
       background: url("../images/tortas-bg.png") no-repeat;
+      a{
+        max-width: (166rem/16);
+      }
     }
   }
 
