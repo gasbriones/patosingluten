@@ -61,7 +61,7 @@ html, body {
   font-size: 16px; }
 
 body {
-  background: url("../images/background-texture.jpg") repeat;
+  background: url("../images/background-texture.jpg") no-repeat center center fixed;
   background-size: 100%; }
 
 .wrapper {
@@ -194,11 +194,11 @@ body {
 .category-nav {
   width: 100%; }
   .category-nav li {
-    width: 15%;
+    width: 15.83333%;
     height: 10.625rem;
     position: relative;
     background-size: 100% !important;
-    margin: 0 1%; }
+    margin: 0 .5%; }
     .category-nav li a {
       font-size: 3.1875em;
       color: #FFFFFF;
@@ -207,8 +207,7 @@ body {
       height: 3.375rem;
       line-height: 3.375rem;
       text-align: center;
-      background: url("../images/mancha.svg");
-      background-size: 100% 100%;
+      background-size: 100% 100% !important;
       letter-spacing: 0.03947em;
       position: absolute;
       bottom: 0;
@@ -222,26 +221,40 @@ body {
     .category-nav li.dulces-te {
       background: url("../images/para-el-te-bg.png") no-repeat; }
       .category-nav li.dulces-te a {
-        max-width: 11rem; }
+        max-width: 11rem;
+        background: url("../images/category-menu-yellow-bg.png"); }
     .category-nav li.panes-snacks {
       background: url("../images/panes-bg.png") no-repeat; }
       .category-nav li.panes-snacks a {
-        max-width: 10.375rem; }
+        max-width: 10.375rem;
+        background: url("../images/category-menu-green-bg.png"); }
     .category-nav li.platos-principales {
       background: url("../images/platos-principales-bg.png") no-repeat; }
       .category-nav li.platos-principales a {
-        max-width: 11rem; }
+        max-width: 11rem;
+        background: url("../images/category-menu-orange-bg.png"); }
     .category-nav li.postres {
       background: url("../images/postres-bg.png") no-repeat; }
       .category-nav li.postres a {
-        max-width: 10.375rem; }
+        max-width: 10.375rem;
+        background: url("../images/category-menu-blue-bg.png"); }
     .category-nav li.para-festejar {
       background: url("../images/para-festejar-bg.png") no-repeat; }
       .category-nav li.para-festejar a {
-        max-width: 10.375rem; }
+        max-width: 10.375rem;
+        background: url("../images/category-menu-brown-bg.png"); }
     .category-nav li.tortas {
       background: url("../images/tortas-bg.png") no-repeat; }
       .category-nav li.tortas a {
-        max-width: 10.375rem; }
+        max-width: 10.375rem;
+        background: url("../images/category-menu-pink-bg.png"); }
+
+.page-title {
+  font-family: VTKSINKED;
+  color: #FFFFFF;
+  font-size: 3.8125em;
+  text-align: center;
+  padding: 1rem 0;
+  box-sizing: border-box; }
 
 /*# sourceMappingURL=style.css.map */

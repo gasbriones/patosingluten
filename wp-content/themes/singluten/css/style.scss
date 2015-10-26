@@ -85,8 +85,9 @@ html, body {
 }
 
 body {
-  background: url("../images/background-texture.jpg") repeat;
+  background: url("../images/background-texture.jpg") no-repeat center center fixed;
   background-size: 100%;
+
 }
 
 .wrapper {
@@ -257,11 +258,11 @@ body {
 .category-nav{
   width: (100%);
   li{
-    width: (90%/6);
+    width: (95%/6);
     height: (170rem/16);
     position: relative;
     background-size: 100% !important;
-    margin: 0 1%;
+    margin: 0 .5%;
     a{
       font-size: (51em/16);
       color: #FFFFFF;
@@ -270,15 +271,13 @@ body {
       height: (54rem/16);
       line-height: (54rem/16);
       text-align: center;
-      background: url("../images/mancha.svg");
-      background-size: 100% 100%;
+      background-size: 100% 100% !important;
       letter-spacing: (3em/76);
       position: absolute;
       bottom: 0;
       left:0;
       right:0;
       margin: 0 auto;
-
     }
 
     &:first-child{
@@ -291,43 +290,57 @@ body {
 
     &.dulces-te{
       background: url("../images/para-el-te-bg.png") no-repeat;
+
       a{
         max-width: (176rem/16);
+        background: url("../images/category-menu-yellow-bg.png");
       }
     }
     &.panes-snacks{
       background: url("../images/panes-bg.png") no-repeat;
       a{
         max-width: (166rem/16);
+        background: url("../images/category-menu-green-bg.png");
       }
     }
     &.platos-principales{
       background: url("../images/platos-principales-bg.png") no-repeat;
       a{
         max-width: (176rem/16);
+        background: url("../images/category-menu-orange-bg.png");
       }
     }
     &.postres{
       background: url("../images/postres-bg.png") no-repeat;
       a{
         max-width: (166rem/16);
+        background: url("../images/category-menu-blue-bg.png");
       }
     }
     &.para-festejar{
       background: url("../images/para-festejar-bg.png") no-repeat;
       a{
         max-width: (166rem/16);
+        background: url("../images/category-menu-brown-bg.png");
       }
     }
     &.tortas{
       background: url("../images/tortas-bg.png") no-repeat;
       a{
         max-width: (166rem/16);
+        background: url("../images/category-menu-pink-bg.png");
       }
     }
   }
+}
 
-
+.page-title{
+  font-family: VTKSINKED;
+  color: #FFFFFF;
+  font-size: (61em/16);
+  text-align: center;
+  padding: 1rem 0;
+  box-sizing: border-box;
 }
 
 

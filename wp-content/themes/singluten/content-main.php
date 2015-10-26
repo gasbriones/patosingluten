@@ -8,11 +8,7 @@
         <div>
     </section>
     <section class="block about clearfix">
-        <?php query_posts('page_id=6'); ?>
-        <?php while (have_posts()) : the_post(); ?>
-            <h4><?php the_title(); ?></h4>
-            <?php the_content(); ?>
-        <?php endwhile;?>
+        <?php include 'sobre-pato.php' ?>
     </section>
     <section class="block recipe clearfix">
         recetas
