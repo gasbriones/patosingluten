@@ -3,5 +3,18 @@
     <h4 class="page-title">
         <?php the_title(); ?>
     </h4>
-    <?php the_content(); ?>
+    <figure class="pic-one">
+        <img src="<?php echo the_field('sobre_pato_imagen_1') ?>">
+    </figure>
+    <figure class="pic-two">
+        <img src="<?php echo the_field('sobre_pato_imagen_2') ?>">
+    </figure>
+
+    <div class="white-board">
+        <article >
+            <?php the_content(); ?>
+        </article>
+    </div>
+
+
 <?php endwhile;?>

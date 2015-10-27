@@ -85,7 +85,7 @@ html, body {
 }
 
 body {
-  background: url("../images/background-texture.jpg") no-repeat center center fixed;
+  background: url("../images/site-bg.png") repeat top center fixed;
   background-size: 100%;
 
 }
@@ -97,8 +97,9 @@ body {
 }
 
 .block {
-  background: url("../images/background-texture.jpg") repeat;
-  background-size: 100%;
+  //background: url("../images/background-texture.jpg") repeat;
+  //background-size: 100%;
+  position: relative;
 }
 
 .center {
@@ -338,10 +339,58 @@ body {
   font-family: VTKSINKED;
   color: #FFFFFF;
   font-size: (61em/16);
+  line-height: (103rem/16);
   text-align: center;
-  padding: 1rem 0;
   box-sizing: border-box;
+  background: url("../images/title-decorator.png") no-repeat center;
 }
+
+.white-board{
+  background: url("../images/pizarron-blanco.png") no-repeat;
+}
+
+.about{
+  margin: (155em/16) 0 0;
+
+  .pic-one{
+    position: absolute;
+    left: 6.5%;
+    top: (20em/16);
+    z-index: 999;
+  }
+  .pic-two{
+    position: absolute;
+    top: (235em/16);
+    left: 5%;
+    z-index: 999;
+  }
+
+  .white-board{
+    width: (829em/16);
+    height: (614em/16);
+    float: right;
+    margin: (70em/16) (80em/16) 0 0;
+    position: relative;
+
+    article{
+      margin: (80em/16);
+      color: #6D6E70;
+      font-family: AGaramondPro-Regular;
+      font-size: (17em/16);
+    }
+
+    &:before{
+      content: "";
+      background: url("../images/sin-gluten-sticker.png") no-repeat;
+      width: (419em/16);
+      height: (128em/16);
+      position: absolute;
+      top: (-40em/16);
+      left: 9%;
+    }
+  }
+}
+
 
 
 

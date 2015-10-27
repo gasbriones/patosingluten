@@ -61,7 +61,7 @@ html, body {
   font-size: 16px; }
 
 body {
-  background: url("../images/background-texture.jpg") no-repeat center center fixed;
+  background: url("../images/site-bg.png") repeat top center fixed;
   background-size: 100%; }
 
 .wrapper {
@@ -70,8 +70,7 @@ body {
   max-width: 1280px; }
 
 .block {
-  background: url("../images/background-texture.jpg") repeat;
-  background-size: 100%; }
+  position: relative; }
 
 .center {
   display: table;
@@ -253,8 +252,44 @@ body {
   font-family: VTKSINKED;
   color: #FFFFFF;
   font-size: 3.8125em;
+  line-height: 6.4375rem;
   text-align: center;
-  padding: 1rem 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  background: url("../images/title-decorator.png") no-repeat center; }
+
+.white-board {
+  background: url("../images/pizarron-blanco.png") no-repeat; }
+
+.about {
+  margin: 9.6875em 0 0; }
+  .about .pic-one {
+    position: absolute;
+    left: 6.5%;
+    top: 1.25em;
+    z-index: 999; }
+  .about .pic-two {
+    position: absolute;
+    top: 14.6875em;
+    left: 5%;
+    z-index: 999; }
+  .about .white-board {
+    width: 51.8125em;
+    height: 38.375em;
+    float: right;
+    margin: 4.375em 5em 0 0;
+    position: relative; }
+    .about .white-board article {
+      margin: 5em;
+      color: #6D6E70;
+      font-family: AGaramondPro-Regular;
+      font-size: 1.0625em; }
+    .about .white-board:before {
+      content: "";
+      background: url("../images/sin-gluten-sticker.png") no-repeat;
+      width: 26.1875em;
+      height: 8em;
+      position: absolute;
+      top: -2.5em;
+      left: 9%; }
 
 /*# sourceMappingURL=style.css.map */
