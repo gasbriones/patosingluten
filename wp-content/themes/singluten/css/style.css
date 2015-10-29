@@ -61,7 +61,7 @@ html, body {
   font-size: 16px; }
 
 body {
-  background: url("../images/site-bg.png") repeat top center fixed;
+  background: url("../images/site-bg.jpg") repeat top center fixed;
   background-size: 100%; }
 
 .wrapper {
@@ -87,6 +87,14 @@ body {
     float: left;
     position: relative; }
 
+.social {
+  background: url("../images/mancha.svg");
+  background-size: 100% 100%; }
+  .social li a {
+    text-decoration: none; }
+    .social li a:before {
+      color: #222121; }
+
 #header {
   box-sizing: border-box;
   position: relative; }
@@ -109,16 +117,13 @@ body {
     right: 0;
     top: 2em;
     width: 9.3125em;
-    height: 3.5em;
-    background: url("../images/mancha.svg");
-    background-size: 100% 100%; }
+    height: 3.5em; }
     #header .social li {
       float: left;
       margin: 1em 0 0 0.75em; }
       #header .social li:first-child {
         margin-left: 1.25em; }
       #header .social li a {
-        text-decoration: none;
         font-size: 1.3125em; }
         #header .social li a:before {
           color: #222121; }
@@ -291,5 +296,24 @@ body {
       position: absolute;
       top: -2.5em;
       left: 9%; }
+  .about .social {
+    position: absolute;
+    left: 9%;
+    top: 33em;
+    width: 21.5em;
+    height: 10.9375em;
+    z-index: 99;
+    box-sizing: border-box;
+    padding: 2.5em 0 0 2.1875em; }
+    .about .social li {
+      display: block;
+      line-height: 2.1875em; }
+      .about .social li a {
+        font-size: 1.5em; }
+        .about .social li a:before {
+          color: #ffffff; }
+        .about .social li a span {
+          font-family: TwentySingles, sans-serif;
+          font-size: 1.25rem; }
 
 /*# sourceMappingURL=style.css.map */
