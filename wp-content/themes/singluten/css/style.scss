@@ -64,12 +64,12 @@
     width: inherit !important;
     right: 2% !important;
 
-    a{
+    a {
       width: (15rem/16) !important;
       height: (18em/16) !important;
       border-radius: (20rem/16) !important;
       background-color: rgba(255, 255, 255, 0.5) !important;
-      &.active{
+      &.active {
         background-color: #FFFFFF !important;
       }
     }
@@ -107,20 +107,19 @@ body {
   margin: 0 auto;
 }
 
-.margin{
+.margin {
   width: 93%;
   position: relative;
 }
 
-.menu{
+.menu {
   font-family: TwentySingles;
   box-sizing: border-box;
-  li{
+  li {
     float: left;
     position: relative;
   }
 }
-
 
 .social {
   background: url("../images/mancha.svg");
@@ -135,8 +134,6 @@ body {
     }
   }
 }
-
-
 
 #header {
   box-sizing: border-box;
@@ -264,20 +261,19 @@ body {
   }
 }
 
-.main-menu{
-  margin-top:(36em/16);
+.main-menu {
+  margin-top: (36em/16);
 }
 
-
-.category-nav{
+.category-nav {
   width: (100%);
-  li{
+  li {
     width: (95%/6);
     height: (170rem/16);
     position: relative;
     background-size: 100% !important;
     margin: 0 .5%;
-    a{
+    a {
       font-size: (51em/16);
       color: #FFFFFF;
       text-decoration: none;
@@ -289,58 +285,58 @@ body {
       letter-spacing: (3em/76);
       position: absolute;
       bottom: 0;
-      left:0;
-      right:0;
+      left: 0;
+      right: 0;
       margin: 0 auto;
     }
 
-    &:first-child{
-      margin-left:0 ;
+    &:first-child {
+      margin-left: 0;
     }
 
-    &:last-child{
-      margin-right:0 ;
+    &:last-child {
+      margin-right: 0;
     }
 
-    &.dulces-te{
+    &.dulces-te {
       background: url("../images/para-el-te-bg.png") no-repeat;
 
-      a{
+      a {
         max-width: (176rem/16);
         background: url("../images/category-menu-yellow-bg.png");
       }
     }
-    &.panes-snacks{
+    &.panes-snacks {
       background: url("../images/panes-bg.png") no-repeat;
-      a{
+      a {
         max-width: (166rem/16);
         background: url("../images/category-menu-green-bg.png");
       }
     }
-    &.platos-principales{
+    &.platos-principales {
       background: url("../images/platos-principales-bg.png") no-repeat;
-      a{
+      a {
         max-width: (176rem/16);
         background: url("../images/category-menu-orange-bg.png");
       }
     }
-    &.postres{
+    &.postres {
       background: url("../images/postres-bg.png") no-repeat;
-      a{
+      a {
         max-width: (166rem/16);
         background: url("../images/category-menu-blue-bg.png");
       }
     }
-    &.para-festejar{
+    &.para-festejar {
       background: url("../images/para-festejar-bg.png") no-repeat;
-      a{
+      a {
         max-width: (166rem/16);
         background: url("../images/category-menu-brown-bg.png");
       }
     }
-    &.tortas{
+    &.tortas {
       background: url("../images/tortas-bg.png") no-repeat;
-      a{
+      a {
         max-width: (166rem/16);
         background: url("../images/category-menu-pink-bg.png");
       }
@@ -348,7 +344,7 @@ body {
   }
 }
 
-.page-title{
+.page-title {
   font-family: VTKSINKED;
   color: #FFFFFF;
   font-size: (61em/16);
@@ -358,41 +354,74 @@ body {
   background: url("../images/title-decorator.png") no-repeat center;
 }
 
-.white-board{
+.white-board {
   background: url("../images/pizarron-blanco.png") no-repeat;
+  position: relative;
+  box-sizing: border-box;
 }
 
-.about{
+.about {
   margin: (155em/16) 0 0;
 
-  .pic-one{
+  .pic-one {
     position: absolute;
     left: 6.5%;
     top: (20em/16);
     z-index: 999;
   }
-  .pic-two{
+  .pic-two {
     position: absolute;
     top: (235em/16);
     left: 5%;
     z-index: 999;
   }
 
-  .white-board{
+  .white-board {
     width: (829em/16);
     height: (614em/16);
     float: right;
     margin: (70em/16) (80em/16) 0 0;
     position: relative;
+    padding: (90em/16);
 
-    article{
-      margin: (80em/16);
+    .decoration-pic-1 {
+      width: (229em/16);
+      height: (222em/16);
+      position: absolute;
+      background: url("../images/sobre-pato-decoration-1.png") no-repeat;
+      bottom: (-122em/16);
+      left: (-107em/16);
+    }
+    .decoration-pic-2 {
+      width: (315em/16);
+      height: (286em/16);
+      position: absolute;
+      background: url("../images/sobre-pato-decoration-2.png") no-repeat;
+      top: (-145em/16);
+      right: (40em/16);
+    }
+    .decoration-pic-3 {
+      width: (145em/16);
+      height: (149em/16);
+      position: absolute;
+      background: url("../images/sobre-pato-decoration-3.png") no-repeat;
+      bottom: (30em/16);
+      right: (-60em/16);
+    }
+
+    article {
       color: #6D6E70;
       font-family: AGaramondPro-Regular;
       font-size: (17em/16);
+
+      .title{
+        color: #6A3327;
+        font-size: (23em/16);
+        font-family: RockwellStdBold;
+      }
     }
 
-    &:before{
+    &:before {
       content: "";
       background: url("../images/sin-gluten-sticker.png") no-repeat;
       width: (419em/16);
@@ -415,16 +444,26 @@ body {
 
     li {
       display: block;
-      line-height: (35em/16);
+
       a {
         font-size: (24em/16);
+        line-height: (30em/24);
+        color: #ffffff;
 
         &:before {
           color: #ffffff;
         }
-        span{
+        span {
           font-family: TwentySingles, sans-serif;
-          font-size: (20rem/16);
+          font-size: (50rem/16);
+          letter-spacing: (2rem/16);
+          margin-left: (8rem/16);
+          text-transform: lowercase;
+          i {
+            font-size: (35rem/16);
+            margin-right: (3rem/16);
+            font-style: normal;
+          }
         }
       }
     }

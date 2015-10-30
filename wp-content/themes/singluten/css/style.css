@@ -263,7 +263,9 @@ body {
   background: url("../images/title-decorator.png") no-repeat center; }
 
 .white-board {
-  background: url("../images/pizarron-blanco.png") no-repeat; }
+  background: url("../images/pizarron-blanco.png") no-repeat;
+  position: relative;
+  box-sizing: border-box; }
 
 .about {
   margin: 9.6875em 0 0; }
@@ -282,12 +284,37 @@ body {
     height: 38.375em;
     float: right;
     margin: 4.375em 5em 0 0;
-    position: relative; }
+    position: relative;
+    padding: 5.625em; }
+    .about .white-board .decoration-pic-1 {
+      width: 14.3125em;
+      height: 13.875em;
+      position: absolute;
+      background: url("../images/sobre-pato-decoration-1.png") no-repeat;
+      bottom: -7.625em;
+      left: -6.6875em; }
+    .about .white-board .decoration-pic-2 {
+      width: 19.6875em;
+      height: 17.875em;
+      position: absolute;
+      background: url("../images/sobre-pato-decoration-2.png") no-repeat;
+      top: -9.0625em;
+      right: 2.5em; }
+    .about .white-board .decoration-pic-3 {
+      width: 9.0625em;
+      height: 9.3125em;
+      position: absolute;
+      background: url("../images/sobre-pato-decoration-3.png") no-repeat;
+      bottom: 1.875em;
+      right: -3.75em; }
     .about .white-board article {
-      margin: 5em;
       color: #6D6E70;
       font-family: AGaramondPro-Regular;
       font-size: 1.0625em; }
+      .about .white-board article .title {
+        color: #6A3327;
+        font-size: 1.4375em;
+        font-family: RockwellStdBold; }
     .about .white-board:before {
       content: "";
       background: url("../images/sin-gluten-sticker.png") no-repeat;
@@ -306,14 +333,22 @@ body {
     box-sizing: border-box;
     padding: 2.5em 0 0 2.1875em; }
     .about .social li {
-      display: block;
-      line-height: 2.1875em; }
+      display: block; }
       .about .social li a {
-        font-size: 1.5em; }
+        font-size: 1.5em;
+        line-height: 1.25em;
+        color: #ffffff; }
         .about .social li a:before {
           color: #ffffff; }
         .about .social li a span {
           font-family: TwentySingles, sans-serif;
-          font-size: 1.25rem; }
+          font-size: 3.125rem;
+          letter-spacing: 0.125rem;
+          margin-left: 0.5rem;
+          text-transform: lowercase; }
+          .about .social li a span i {
+            font-size: 2.1875rem;
+            margin-right: 0.1875rem;
+            font-style: normal; }
 
 /*# sourceMappingURL=style.css.map */
