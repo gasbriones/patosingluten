@@ -468,6 +468,48 @@ body {
       }
     }
   }
+
+  .desire{
+    box-sizing: border-box;
+    position: relative;
+    padding: (150em/16) 0 0 (230em/16);
+    article{
+      color: #FFFFFF;
+      font-size: (87em/16);
+      font-family: TwentySingles, sans-serif;
+      letter-spacing: (4rem/16);
+      line-height: (65rem/16);
+      position: relative;
+      display: table;
+      padding: 0 0 0 (27rem/16);
+
+      &:after,&:before{
+        content: "";
+        position: absolute;
+        width: (51rem/16);
+        height: (42rem/16);
+        background: url("../images/comillas.png") no-repeat;
+      }
+
+      &:after{
+        top: (10rem/16);
+        left: 0;
+      }
+      &:before{
+        bottom: (10rem/16);
+        right: 0;
+      }
+    }
+
+    .decoration-pic-4 {
+      width: (214em/16);
+      height: (224em/16);
+      position: absolute;
+      background: url("../images/sobre-pato-decoration-4.png") no-repeat;
+      top: (30em/16);
+      left: (10em/16);
+    }
+  }
 }
 
 

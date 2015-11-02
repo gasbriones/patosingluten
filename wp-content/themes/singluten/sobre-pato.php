@@ -1,13 +1,12 @@
 <?php
     query_posts('page_id=6');
-
     $fb = get_field('facebook', 'user_2');
     $tw = get_field('twitter', 'user_2');
     $inst = get_field('instagram', 'user_2');
 
 ?>
 <?php while (have_posts()) : the_post(); ?>
-    <div class="about-pato">
+    <div class="about-pato clearfix">
         <h4 class="page-title">
             <?php the_title(); ?>
         </h4>
@@ -34,6 +33,7 @@
     </div>
 
     <div class="desire">
+        <div class="decoration-pic-4"></div>
         <article>
             <?php echo the_field('sobre_pato_deseo') ?>
         </article>

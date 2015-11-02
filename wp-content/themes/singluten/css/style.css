@@ -350,5 +350,37 @@ body {
             font-size: 2.1875rem;
             margin-right: 0.1875rem;
             font-style: normal; }
+  .about .desire {
+    box-sizing: border-box;
+    position: relative;
+    padding: 9.375em 0 0 14.375em; }
+    .about .desire article {
+      color: #FFFFFF;
+      font-size: 5.4375em;
+      font-family: TwentySingles, sans-serif;
+      letter-spacing: 0.25rem;
+      line-height: 4.0625rem;
+      position: relative;
+      display: table;
+      padding: 0 0 0 1.6875rem; }
+      .about .desire article:after, .about .desire article:before {
+        content: "";
+        position: absolute;
+        width: 3.1875rem;
+        height: 2.625rem;
+        background: url("../images/comillas.png") no-repeat; }
+      .about .desire article:after {
+        top: 0.625rem;
+        left: 0; }
+      .about .desire article:before {
+        bottom: 0.625rem;
+        right: 0; }
+    .about .desire .decoration-pic-4 {
+      width: 13.375em;
+      height: 14em;
+      position: absolute;
+      background: url("../images/sobre-pato-decoration-4.png") no-repeat;
+      top: 1.875em;
+      left: 0.625em; }
 
 /*# sourceMappingURL=style.css.map */
