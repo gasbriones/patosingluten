@@ -11,7 +11,7 @@
         <?php include 'sobre-pato.php' ?>
     </section>
     <section class="block recipe clearfix">
-        recetas
+        <?php include 'recetas.php' ?>
     </section>
     <section class="block news clearfix">
         novedades
