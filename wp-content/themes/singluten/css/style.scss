@@ -112,6 +112,11 @@ body {
   position: relative;
 }
 
+.decoration-pic-3 {
+  position: absolute;
+  background: url("../images/sobre-pato-decoration-3.png") no-repeat;
+}
+
 .menu {
   font-family: TwentySingles;
   box-sizing: border-box;
@@ -268,11 +273,11 @@ body {
 .category-nav {
   width: (100%);
   li {
-    width: (95%/6);
+    width: (100%/6);
     height: (170rem/16);
     position: relative;
     background-size: 100% !important;
-    margin: 0 .5%;
+    //margin: 0 .5%;
     a {
       font-size: (51em/16);
       color: #FFFFFF;
@@ -393,8 +398,8 @@ body {
       left: (-107em/16);
     }
     .decoration-pic-2 {
-      width: (315em/16);
-      height: (286em/16);
+      width: (279em/16);
+      height: (248em/16);
       position: absolute;
       background: url("../images/sobre-pato-decoration-2.png") no-repeat;
       top: (-145em/16);
@@ -403,8 +408,7 @@ body {
     .decoration-pic-3 {
       width: (145em/16);
       height: (149em/16);
-      position: absolute;
-      background: url("../images/sobre-pato-decoration-3.png") no-repeat;
+      background-size: cover;
       bottom: (30em/16);
       right: (-60em/16);
     }
@@ -414,7 +418,7 @@ body {
       font-family: AGaramondPro-Regular;
       font-size: (17em/16);
 
-      .title{
+      .title {
         color: #6A3327;
         font-size: (23em/16);
         font-family: RockwellStdBold;
@@ -453,6 +457,7 @@ body {
         &:before {
           color: #ffffff;
         }
+
         span {
           font-family: TwentySingles, sans-serif;
           font-size: (50rem/16);
@@ -469,21 +474,26 @@ body {
     }
   }
 
-  .desire{
+  .desire {
     box-sizing: border-box;
     position: relative;
-    padding: (150em/16) 0 0 (230em/16);
-    article{
+    padding: (150em/16) 0 (340em/16) (200em/16);
+
+    article {
       color: #FFFFFF;
+      box-sizing: border-box;
       font-size: (87em/16);
       font-family: TwentySingles, sans-serif;
-      letter-spacing: (4rem/16);
+      letter-spacing: (2rem/16);
       line-height: (65rem/16);
       position: relative;
       display: table;
-      padding: 0 0 0 (27rem/16);
+      padding: 0 0 (50rem/16) 0;
+      background: url("../images/rayon.png") center bottom no-repeat;
+      text-align: center;
 
-      &:after,&:before{
+
+      &:after, &:before {
         content: "";
         position: absolute;
         width: (51rem/16);
@@ -491,13 +501,14 @@ body {
         background: url("../images/comillas.png") no-repeat;
       }
 
-      &:after{
+      &:after {
         top: (10rem/16);
-        left: 0;
+        left: (20rem/16);
       }
-      &:before{
-        bottom: (10rem/16);
-        right: 0;
+
+      &:before {
+        bottom: (65rem/16);
+        right: (-15rem/16);
       }
     }
 
@@ -508,6 +519,42 @@ body {
       background: url("../images/sobre-pato-decoration-4.png") no-repeat;
       top: (30em/16);
       left: (10em/16);
+    }
+
+    .decoration-pic-5 {
+      background: url("../images/sobre-pato-decoration-5.png") no-repeat;
+      width: (491em/16);
+      height: (497em/16);
+      background-size: cover;
+      position: absolute;
+      top: (120em/16);
+      right: 0;
+    }
+
+    .decoration-pic-6 {
+      background: url("../images/sobre-pato-decoration-6.png") no-repeat;
+      width: (222em/16);
+      height: (215em/16);
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    .pic-three {
+      position: absolute;
+      right: 0;
+      top: (120em/16);
+    }
+
+    .decoration-pic-7 {
+      background: url("../images/sobre-pato-decoration-7.png") no-repeat;
+      width: (544em/16);
+      height: (361em/16);
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      left: 0;
     }
   }
 }

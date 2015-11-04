@@ -80,6 +80,10 @@ body {
   width: 93%;
   position: relative; }
 
+.decoration-pic-3 {
+  position: absolute;
+  background: url("../images/sobre-pato-decoration-3.png") no-repeat; }
+
 .menu {
   font-family: TwentySingles;
   box-sizing: border-box; }
@@ -198,11 +202,10 @@ body {
 .category-nav {
   width: 100%; }
   .category-nav li {
-    width: 15.83333%;
+    width: 16.66667%;
     height: 10.625rem;
     position: relative;
-    background-size: 100% !important;
-    margin: 0 .5%; }
+    background-size: 100% !important; }
     .category-nav li a {
       font-size: 3.1875em;
       color: #FFFFFF;
@@ -294,8 +297,8 @@ body {
       bottom: -7.625em;
       left: -6.6875em; }
     .about .white-board .decoration-pic-2 {
-      width: 19.6875em;
-      height: 17.875em;
+      width: 17.4375em;
+      height: 15.5em;
       position: absolute;
       background: url("../images/sobre-pato-decoration-2.png") no-repeat;
       top: -9.0625em;
@@ -303,8 +306,7 @@ body {
     .about .white-board .decoration-pic-3 {
       width: 9.0625em;
       height: 9.3125em;
-      position: absolute;
-      background: url("../images/sobre-pato-decoration-3.png") no-repeat;
+      background-size: cover;
       bottom: 1.875em;
       right: -3.75em; }
     .about .white-board article {
@@ -353,16 +355,19 @@ body {
   .about .desire {
     box-sizing: border-box;
     position: relative;
-    padding: 9.375em 0 0 14.375em; }
+    padding: 9.375em 0 21.25em 12.5em; }
     .about .desire article {
       color: #FFFFFF;
+      box-sizing: border-box;
       font-size: 5.4375em;
       font-family: TwentySingles, sans-serif;
-      letter-spacing: 0.25rem;
+      letter-spacing: 0.125rem;
       line-height: 4.0625rem;
       position: relative;
       display: table;
-      padding: 0 0 0 1.6875rem; }
+      padding: 0 0 3.125rem 0;
+      background: url("../images/rayon.png") center bottom no-repeat;
+      text-align: center; }
       .about .desire article:after, .about .desire article:before {
         content: "";
         position: absolute;
@@ -371,10 +376,10 @@ body {
         background: url("../images/comillas.png") no-repeat; }
       .about .desire article:after {
         top: 0.625rem;
-        left: 0; }
+        left: 1.25rem; }
       .about .desire article:before {
-        bottom: 0.625rem;
-        right: 0; }
+        bottom: 4.0625rem;
+        right: -0.9375rem; }
     .about .desire .decoration-pic-4 {
       width: 13.375em;
       height: 14em;
@@ -382,5 +387,33 @@ body {
       background: url("../images/sobre-pato-decoration-4.png") no-repeat;
       top: 1.875em;
       left: 0.625em; }
+    .about .desire .decoration-pic-5 {
+      background: url("../images/sobre-pato-decoration-5.png") no-repeat;
+      width: 30.6875em;
+      height: 31.0625em;
+      background-size: cover;
+      position: absolute;
+      top: 7.5em;
+      right: 0; }
+    .about .desire .decoration-pic-6 {
+      background: url("../images/sobre-pato-decoration-6.png") no-repeat;
+      width: 13.875em;
+      height: 13.4375em;
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      right: 0; }
+    .about .desire .pic-three {
+      position: absolute;
+      right: 0;
+      top: 7.5em; }
+    .about .desire .decoration-pic-7 {
+      background: url("../images/sobre-pato-decoration-7.png") no-repeat;
+      width: 34em;
+      height: 22.5625em;
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      left: 0; }
 
 /*# sourceMappingURL=style.css.map */

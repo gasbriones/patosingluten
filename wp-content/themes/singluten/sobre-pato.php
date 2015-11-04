@@ -34,6 +34,9 @@
 
     <div class="desire">
         <div class="decoration-pic-4"></div>
+        <div class="decoration-pic-5"></div>
+        <div class="decoration-pic-6"></div>
+        <div class="decoration-pic-7"></div>
         <article>
             <?php echo the_field('sobre_pato_deseo') ?>
         </article>
