@@ -11,6 +11,7 @@
         <?php include 'sobre-pato.php' ?>
     </section>
     <section class="block recipe clearfix">
+        <div class="decoration-pic-8"></div>
         <?php include 'recetas.php' ?>
     </section>
     <section class="block news clearfix">

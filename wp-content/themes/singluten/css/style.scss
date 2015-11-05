@@ -48,6 +48,10 @@
   font-weight: normal;
   font-style: normal;
 }
+.grayScale{
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out 0s;
+}
 
 .bx-wrapper .bx-viewport {
   border: none !important;
@@ -474,6 +478,7 @@ body {
     }
   }
 
+
   .desire {
     box-sizing: border-box;
     position: relative;
@@ -491,7 +496,6 @@ body {
       padding: 0 0 (50rem/16) 0;
       background: url("../images/rayon.png") center bottom no-repeat;
       text-align: center;
-
 
       &:after, &:before {
         content: "";
@@ -559,8 +563,67 @@ body {
   }
 }
 
-
 .recipe {
   margin: (155em/16) 0 0;
+
+  .category-nav {
+    width: 82%;
+    margin: 0 auto;
+
+    li {
+      width: (90%/3);
+      height: (237em/16);
+      margin-left: 5%;
+      margin-bottom: 10%;
+
+      &:nth-child(3n-2) {
+        margin-left: 0 !important;
+      }
+
+      a {
+        max-width: 95%;
+        height: (72rem/16);
+        font-size: (75rem/16);
+        line-height: (72rem/16);
+      }
+
+      &:before{
+        width:(151em/16);
+        height: (49em/16);
+        background: url("../images/more.png") no-repeat;
+        position: absolute;
+        content: "";
+        bottom: (-50em/16);
+        right: 10%;
+      }
+    }
+
+    &:before,
+    &:after{
+      background: url("../images/saparator.png");
+      height: (7em/16);
+      position: absolute;
+      width: 67%;
+      left:0;
+      right:0;
+      margin: 0 auto;
+    }
+
+    &:after{
+      top: 45%;
+    }
+
+    &:before{
+      bottom: 2%;
+    }
+  }
+  .decoration-pic-8{
+    position: absolute;
+    top: (-90em/16);
+    right: 0;
+    width: (354em/16);
+    height: (400em/16);
+    background: url("../images/recetas-decoration-1.png");
+  }
 }
 

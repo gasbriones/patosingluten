@@ -33,6 +33,10 @@
   src: url("../fonts/TwentySingles.eot?#iefix") format("embedded-opentype"), url("../fonts/TwentySingles.woff") format("woff"), url("../fonts/TwentySingles.ttf") format("truetype"), url("../fonts/TwentySingles.svg#TwentySingles") format("svg");
   font-weight: normal;
   font-style: normal; }
+.grayScale {
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out 0s; }
+
 .bx-wrapper .bx-viewport {
   border: none !important;
   box-shadow: none !important;
@@ -418,5 +422,47 @@ body {
 
 .recipe {
   margin: 9.6875em 0 0; }
+  .recipe .category-nav {
+    width: 82%;
+    margin: 0 auto; }
+    .recipe .category-nav li {
+      width: 30%;
+      height: 14.8125em;
+      margin-left: 5%;
+      margin-bottom: 10%; }
+      .recipe .category-nav li:nth-child(3n-2) {
+        margin-left: 0 !important; }
+      .recipe .category-nav li a {
+        max-width: 95%;
+        height: 4.5rem;
+        font-size: 4.6875rem;
+        line-height: 4.5rem; }
+      .recipe .category-nav li:before {
+        width: 9.4375em;
+        height: 3.0625em;
+        background: url("../images/more.png") no-repeat;
+        position: absolute;
+        content: "";
+        bottom: -3.125em;
+        right: 10%; }
+    .recipe .category-nav:before, .recipe .category-nav:after {
+      background: url("../images/saparator.png");
+      height: 0.4375em;
+      position: absolute;
+      width: 67%;
+      left: 0;
+      right: 0;
+      margin: 0 auto; }
+    .recipe .category-nav:after {
+      top: 45%; }
+    .recipe .category-nav:before {
+      bottom: 2%; }
+  .recipe .decoration-pic-8 {
+    position: absolute;
+    top: -5.625em;
+    right: 0;
+    width: 22.125em;
+    height: 25em;
+    background: url("../images/recetas-decoration-1.png"); }
 
 /*# sourceMappingURL=style.css.map */
