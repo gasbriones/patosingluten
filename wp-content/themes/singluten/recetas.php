@@ -2,7 +2,7 @@
 query_posts('page_id=98');
 ?>
 <?php while (have_posts()) : the_post(); ?>
-    <h4 class="page-title">
+    <h4 class="page-title  wow bounceInDown">
         <?php the_title(); ?>
     </h4>
     <div class="main-menu margin center">

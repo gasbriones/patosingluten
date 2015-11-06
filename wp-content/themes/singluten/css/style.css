@@ -68,6 +68,9 @@ body {
   background: url("../images/site-bg.jpg") repeat top center fixed;
   background-size: 100%; }
 
+#site {
+  overflow: hidden; }
+
 .wrapper {
   margin: 0 auto;
   width: 100%;
@@ -429,22 +432,26 @@ body {
       width: 30%;
       height: 14.8125em;
       margin-left: 5%;
-      margin-bottom: 10%; }
+      margin-bottom: 10%;
+      position: relative; }
       .recipe .category-nav li:nth-child(3n-2) {
         margin-left: 0 !important; }
       .recipe .category-nav li a {
         max-width: 95%;
-        height: 4.5rem;
+        height: 100%;
         font-size: 4.6875rem;
-        line-height: 4.5rem; }
-      .recipe .category-nav li:before {
-        width: 9.4375em;
-        height: 3.0625em;
-        background: url("../images/more.png") no-repeat;
-        position: absolute;
-        content: "";
-        bottom: -3.125em;
-        right: 10%; }
+        background-repeat: no-repeat;
+        background-size: 100% auto !important;
+        background-position: bottom;
+        line-height: 25rem; }
+        .recipe .category-nav li a:before {
+          width: 9.4375em;
+          height: 3.0625em;
+          background: url("../images/more.png") no-repeat;
+          position: absolute;
+          content: "";
+          bottom: -3.125em;
+          left: 40%; }
     .recipe .category-nav:before, .recipe .category-nav:after {
       background: url("../images/saparator.png");
       height: 0.4375em;

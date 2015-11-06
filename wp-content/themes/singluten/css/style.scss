@@ -94,6 +94,10 @@ body {
 
 }
 
+#site{
+  overflow:  hidden;
+}
+
 .wrapper {
   margin: 0 auto;
   width: 100%;
@@ -575,6 +579,7 @@ body {
       height: (237em/16);
       margin-left: 5%;
       margin-bottom: 10%;
+      position: relative;
 
       &:nth-child(3n-2) {
         margin-left: 0 !important;
@@ -582,20 +587,25 @@ body {
 
       a {
         max-width: 95%;
-        height: (72rem/16);
+        height:100%;
         font-size: (75rem/16);
-        line-height: (72rem/16);
+        background-repeat: no-repeat;
+        background-size: 100% auto !important;
+        background-position: bottom;
+        line-height: (400rem/16);
+
+        &:before{
+          width:(151em/16);
+          height: (49em/16);
+          background: url("../images/more.png") no-repeat;
+          position: absolute;
+          content: "";
+          bottom: (-50em/16);
+          left: 40%;
+        }
       }
 
-      &:before{
-        width:(151em/16);
-        height: (49em/16);
-        background: url("../images/more.png") no-repeat;
-        position: absolute;
-        content: "";
-        bottom: (-50em/16);
-        right: 10%;
-      }
+
     }
 
     &:before,

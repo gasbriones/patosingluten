@@ -11,7 +11,7 @@
         <?php include 'sobre-pato.php' ?>
     </section>
     <section class="block recipe clearfix">
-        <div class="decoration-pic-8"></div>
+        <div class="decoration-pic-8 wow fadeIn"></div>
         <?php include 'recetas.php' ?>
     </section>
     <section class="block news clearfix">
