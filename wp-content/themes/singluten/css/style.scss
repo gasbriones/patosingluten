@@ -595,7 +595,7 @@ body {
         line-height: (400rem/16);
 
         &:before{
-          width:(151em/16);
+          width:(151rem/16);
           height: (49em/16);
           background: url("../images/more.png") no-repeat;
           position: absolute;
@@ -637,3 +637,58 @@ body {
   }
 }
 
+
+.news {
+  margin: (35em/16) 0 0;
+
+  .white-board {
+    width: (829em/16);
+    height: (614em/16);
+    float: right;
+    margin: (70em/16) (80em/16) 0 0;
+    position: relative;
+    padding: (90em/16);
+
+    .title {
+      color: #6A3327;
+      font-size: (23em/16);
+      font-family: RockwellStdBold;
+    }
+
+    .decoration-pic-1 {
+      width: (229em/16);
+      height: (222em/16);
+      position: absolute;
+      background: url("../images/sobre-pato-decoration-1.png") no-repeat;
+      bottom: (-122em/16);
+      left: (-107em/16);
+    }
+    .decoration-pic-2 {
+      width: (279em/16);
+      height: (248em/16);
+      position: absolute;
+      background: url("../images/sobre-pato-decoration-2.png") no-repeat;
+      top: (-145em/16);
+      right: (40em/16);
+    }
+    .decoration-pic-3 {
+      width: (145em/16);
+      height: (149em/16);
+      background-size: cover;
+      bottom: (30em/16);
+      right: (-60em/16);
+    }
+
+    article {
+      color: #6D6E70;
+      font-family: AGaramondPro-Regular;
+      font-size: (17em/16);
+
+      .title {
+        color: #6A3327;
+        font-size: (23em/16);
+        font-family: RockwellStdBold;
+      }
+    }
+  }
+}

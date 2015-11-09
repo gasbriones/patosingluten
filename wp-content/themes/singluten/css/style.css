@@ -445,7 +445,7 @@ body {
         background-position: bottom;
         line-height: 25rem; }
         .recipe .category-nav li a:before {
-          width: 9.4375em;
+          width: 9.4375rem;
           height: 3.0625em;
           background: url("../images/more.png") no-repeat;
           position: absolute;
@@ -471,5 +471,47 @@ body {
     width: 22.125em;
     height: 25em;
     background: url("../images/recetas-decoration-1.png"); }
+
+.news {
+  margin: 2.1875em 0 0; }
+  .news .white-board {
+    width: 51.8125em;
+    height: 38.375em;
+    float: right;
+    margin: 4.375em 5em 0 0;
+    position: relative;
+    padding: 5.625em; }
+    .news .white-board .title {
+      color: #6A3327;
+      font-size: 1.4375em;
+      font-family: RockwellStdBold; }
+    .news .white-board .decoration-pic-1 {
+      width: 14.3125em;
+      height: 13.875em;
+      position: absolute;
+      background: url("../images/sobre-pato-decoration-1.png") no-repeat;
+      bottom: -7.625em;
+      left: -6.6875em; }
+    .news .white-board .decoration-pic-2 {
+      width: 17.4375em;
+      height: 15.5em;
+      position: absolute;
+      background: url("../images/sobre-pato-decoration-2.png") no-repeat;
+      top: -9.0625em;
+      right: 2.5em; }
+    .news .white-board .decoration-pic-3 {
+      width: 9.0625em;
+      height: 9.3125em;
+      background-size: cover;
+      bottom: 1.875em;
+      right: -3.75em; }
+    .news .white-board article {
+      color: #6D6E70;
+      font-family: AGaramondPro-Regular;
+      font-size: 1.0625em; }
+      .news .white-board article .title {
+        color: #6A3327;
+        font-size: 1.4375em;
+        font-family: RockwellStdBold; }
 
 /*# sourceMappingURL=style.css.map */
