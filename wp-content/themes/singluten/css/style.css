@@ -99,7 +99,7 @@ body {
     position: relative; }
 
 .social {
-  background: url("../images/mancha.svg");
+  background: url("../images/mancha.svg") no-repeat;
   background-size: 100% 100%; }
   .social li a {
     text-decoration: none; }
@@ -473,38 +473,46 @@ body {
     background: url("../images/recetas-decoration-1.png"); }
 
 .news {
-  margin: 2.1875em 0 0; }
+  margin: 2.1875em auto 6.25em;
+  position: relative;
+  width: 87%; }
+  .news .decoration-pic-1 {
+    width: 22em;
+    height: 20.75em;
+    position: absolute;
+    background: url("../images/news-decoration-2.png") no-repeat;
+    bottom: -5.3125em;
+    left: 0; }
   .news .white-board {
-    width: 51.8125em;
-    height: 38.375em;
+    width: 47rem;
+    height: 44.1875rem;
     float: right;
-    margin: 4.375em 5em 0 0;
+    margin: 4.375em 0 0 0;
     position: relative;
-    padding: 5.625em; }
+    padding: 5.625em;
+    background-size: contain;
+    background-size: 100% 100%; }
     .news .white-board .title {
       color: #6A3327;
       font-size: 1.4375em;
-      font-family: RockwellStdBold; }
-    .news .white-board .decoration-pic-1 {
-      width: 14.3125em;
-      height: 13.875em;
-      position: absolute;
-      background: url("../images/sobre-pato-decoration-1.png") no-repeat;
-      bottom: -7.625em;
-      left: -6.6875em; }
+      font-family: RockwellStdBold;
+      position: relative;
+      margin-bottom: 1.875rem; }
+      .news .white-board .title:before {
+        content: "";
+        width: 100%;
+        height: 0.375rem;
+        position: absolute;
+        left: 0;
+        bottom: -0.9375rem;
+        background: url("../images/separator_gray.png"); }
     .news .white-board .decoration-pic-2 {
-      width: 17.4375em;
-      height: 15.5em;
+      width: 15.125em;
+      height: 11.9375em;
       position: absolute;
-      background: url("../images/sobre-pato-decoration-2.png") no-repeat;
+      background: url("../images/news-decoration-1.png") no-repeat;
       top: -9.0625em;
-      right: 2.5em; }
-    .news .white-board .decoration-pic-3 {
-      width: 9.0625em;
-      height: 9.3125em;
-      background-size: cover;
-      bottom: 1.875em;
-      right: -3.75em; }
+      right: 0; }
     .news .white-board article {
       color: #6D6E70;
       font-family: AGaramondPro-Regular;
@@ -513,5 +521,10 @@ body {
         color: #6A3327;
         font-size: 1.4375em;
         font-family: RockwellStdBold; }
-
-/*# sourceMappingURL=style.css.map */
+  .news aside {
+    width: 17.125em;
+    height: 25.625em;
+    margin: 6.875em 0 0;
+    background: url("../images/pizarron-blanco.png") no-repeat;
+    float: left;
+    background-size: 100% 100%; }

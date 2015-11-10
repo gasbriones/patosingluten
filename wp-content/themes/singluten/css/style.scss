@@ -135,7 +135,7 @@ body {
 }
 
 .social {
-  background: url("../images/mancha.svg");
+  background: url("../images/mancha.svg") no-repeat;
   background-size: 100% 100%;
 
   li {
@@ -639,44 +639,55 @@ body {
 
 
 .news {
-  margin: (35em/16) 0 0;
+  margin: (35em/16) auto (100em/16);
+  position: relative;
+  width: 87%;
+
+  .decoration-pic-1 {
+    width: (352em/16);
+    height: (332em/16);
+    position: absolute;
+    background: url("../images/news-decoration-2.png") no-repeat;
+    bottom: (-85em/16);
+    left: 0;
+  }
 
   .white-board {
-    width: (829em/16);
-    height: (614em/16);
+    width: (752rem/16);
+    height: (707rem/16);
     float: right;
-    margin: (70em/16) (80em/16) 0 0;
+    margin: (70em/16) 0 0 0;
     position: relative;
     padding: (90em/16);
+    background-size: contain;
+    background-size: 100% 100%;
 
     .title {
       color: #6A3327;
       font-size: (23em/16);
       font-family: RockwellStdBold;
+      position: relative;
+      margin-bottom: (30rem/16);
+
+      &:before{
+        content: "";
+        width: 100%;
+        height: (6rem/16);
+        position: absolute;
+        left: 0;
+        bottom: (-15rem/16);
+        background: url("../images/separator_gray.png");
+      }
     }
 
-    .decoration-pic-1 {
-      width: (229em/16);
-      height: (222em/16);
-      position: absolute;
-      background: url("../images/sobre-pato-decoration-1.png") no-repeat;
-      bottom: (-122em/16);
-      left: (-107em/16);
-    }
+
     .decoration-pic-2 {
-      width: (279em/16);
-      height: (248em/16);
+      width: (242em/16);
+      height: (191em/16);
       position: absolute;
-      background: url("../images/sobre-pato-decoration-2.png") no-repeat;
+      background: url("../images/news-decoration-1.png") no-repeat;
       top: (-145em/16);
-      right: (40em/16);
-    }
-    .decoration-pic-3 {
-      width: (145em/16);
-      height: (149em/16);
-      background-size: cover;
-      bottom: (30em/16);
-      right: (-60em/16);
+      right: 0;
     }
 
     article {
@@ -690,5 +701,14 @@ body {
         font-family: RockwellStdBold;
       }
     }
+  }
+
+  aside{
+    width: (274em/16);
+    height: (410em/16);
+    margin: (110em/16) 0 0;
+    background: url("../images/pizarron-blanco.png") no-repeat;
+    float: left;
+    background-size: 100% 100%;
   }
 }
