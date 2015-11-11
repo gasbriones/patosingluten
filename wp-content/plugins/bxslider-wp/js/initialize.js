@@ -29,4 +29,10 @@ jQuery(document).ready(function(){
             controls:false
         });
     });
+
+    jQuery('.slider').bxSlider({
+        minSlides:2
+    });
+
+
 });

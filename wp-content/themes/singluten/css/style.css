@@ -42,19 +42,19 @@
   box-shadow: none !important;
   left: 0 !important; }
 
-.bx-wrapper {
+.home .bx-wrapper {
   position: relative;
   margin: 0 auto !important; }
-  .bx-wrapper .bx-pager {
+  .home .bx-wrapper .bx-pager {
     bottom: 5% !important;
     width: inherit !important;
     right: 2% !important; }
-    .bx-wrapper .bx-pager a {
+    .home .bx-wrapper .bx-pager a {
       width: 0.9375rem !important;
       height: 1.125em !important;
       border-radius: 1.25rem !important;
       background-color: rgba(255, 255, 255, 0.5) !important; }
-      .bx-wrapper .bx-pager a.active {
+      .home .bx-wrapper .bx-pager a.active {
         background-color: #FFFFFF !important; }
 
 html, body {
@@ -491,7 +491,8 @@ body {
     position: relative;
     padding: 5.625em;
     background-size: contain;
-    background-size: 100% 100%; }
+    background-size: 100% 100%;
+    box-sizing: border-box; }
     .news .white-board .title {
       color: #6A3327;
       font-size: 1.4375em;
@@ -528,3 +529,9 @@ body {
     background: url("../images/pizarron-blanco.png") no-repeat;
     float: left;
     background-size: 100% 100%; }
+  .news .carousel {
+    position: absolute;
+    bottom: 12%;
+    background: #D0D2D3;
+    width: 100%;
+    left: 0; }

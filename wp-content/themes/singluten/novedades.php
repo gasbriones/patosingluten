@@ -3,18 +3,18 @@
 Template Name: novedades
 */
 
-$month = spanish_months(date("F"));
+
 $year = date("Y");
+$month = $_GET["tag"] != '' ? $_GET["tag"] : spanish_months(date("F"));
+$tag = $month . '+' . $year;
 
 $args = array(
     'cat' => 6,
-    'tag' => $_GET["tag"] != '' ? $_GET["tag"] : $month . '+' . $year,
+    'tag' => $tag,
     'orderby' => 'ASC'
 );
 
 $query = new WP_Query($args);
-
-
 
 ?>
 <?php get_header(); ?>
@@ -50,14 +50,16 @@ $query = new WP_Query($args);
                         </article>
                         <?php
                         $fields = get_fields($post_id);
-                           if ($fields):
+                        if (count(array_filter($fields))):
                             ?>
-                            <div class="carrousel">
-                                <ul>
+                            <div class="carousel">
+                                <ul class="slider">
                                     <?php
-                                    foreach ($fields as $field):?>
-                                        <li><img src="<?php echo $field; ?>"/></li>
-                                    <?php endforeach; ?>
+                                    foreach ($fields as $field => $value):
+                                        if (trim($value) != ''):
+                                            ?>
+                                            <li><img src="<?php echo $value; ?>"/></li>
+                                        <?php endif;endforeach; ?>
                                 </ul>
                             </div>
                         <?php endif;endwhile;
@@ -68,8 +70,7 @@ $query = new WP_Query($args);
         </section>
     </div>
 </div>
-<script src="<?php echo get_template_directory_uri(); ?>/js/libs/wow.min.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/js/init.js"></script>
+
 <?php wp_footer(); ?>
 </body>
 </html>
