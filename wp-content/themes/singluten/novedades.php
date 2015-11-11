@@ -42,35 +42,71 @@ $query = new WP_Query($args);
                 <h3 class="title">
                     <?php echo $month . ' ' . $year ?>
                 </h3>
-                <?php
-                if ($query->have_posts()):
-                    while ($query->have_posts()):$query->the_post(); ?>
-                        <article>
-                            <?php the_content(); ?>
-                        </article>
-                        <?php
-                        $fields = get_fields($post_id);
-                        if (count(array_filter($fields))):
-                            ?>
-                            <div class="carousel">
-                                <ul class="slider">
-                                    <?php
-                                    foreach ($fields as $field => $value):
-                                        if (trim($value) != ''):
-                                            ?>
-                                            <li><img src="<?php echo $value; ?>"/></li>
-                                        <?php endif;endforeach; ?>
-                                </ul>
-                            </div>
-                        <?php endif;endwhile;
-                else:
-                    echo '<li class="error">No se encontraron novedades</li>';
-                endif;
-                ?>
+                <ul class="news-list">
+                    <?php
+                    if ($query->have_posts()):
+                        while ($query->have_posts()):$query->the_post(); ?>
+                            <li data-slide="<?php echo get_the_ID() ?>">
+                                <?php the_content(); ?>
+                            </li>
+                        <?php endwhile;
+                    else:
+                        echo '<li class="error">No se encontraron novedades</li>';
+                    endif;
+                    ?>
+                </ul>
+                <div class="carousel-wrap">
+                    <?php
+                    $index = 0;
+                    if ($query->have_posts()):
+                        while ($query->have_posts()):$query->the_post(); ?>
+                            <?php
+                            $fields = get_fields($post_id);
+                            $index++;
+                               if (count(array_filter($fields))):
+                                ?>
+                                <div class="carousel <?php echo get_the_ID(); $index == 1 ? ' show' :''; ?>">
+                                    <ul class="slider">
+                                        <?php
+                                        foreach ($fields as $field => $value):
+                                            if (trim($value) != ''):
+                                                ?>
+                                                <li><img src="<?php echo $value; ?>"/></li>
+                                            <?php endif;endforeach; ?>
+                                    </ul>
+                                </div>
+                            <?php endif;endwhile;
+                    else:
+                        echo '<ul><li class="error">No se encontraron novedades</li></ul>';
+                    endif;
+                    ?>
+                </div>
         </section>
     </div>
 </div>
+<script>
+    jQuery(document).ready(function(){
 
+       jQuery('.slider').bxSlider({
+            minSlides:2,
+            maxSlides:2,
+            slideWidth:400,
+            pager:false,
+            infiniteLoop:false
+        });
+
+
+        jQuery('.news-list li').click(function(){
+
+            var id = jQuery(this).data('slide');
+
+            jQuery('.news-list li').removeClass('active');
+            jQuery('.carousel').removeClass('show');
+            jQuery(this).addClass('active');
+            jQuery('.'+id).addClass('show');
+        });
+    })
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>

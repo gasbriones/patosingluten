@@ -26,13 +26,12 @@ jQuery(document).ready(function(){
             preventDefaultSwipeX: jQuery(this).data('bxslider-prevent-default-swipe-x'),
             preventDefaultSwipeY: jQuery(this).data('bxslider-prevent-default-swipe-y'),
             auto:true,
-            controls:false
+            controls:false,
+            mode:'fade'
         });
     });
 
-    jQuery('.slider').bxSlider({
-        minSlides:2
-    });
+
 
 
 });

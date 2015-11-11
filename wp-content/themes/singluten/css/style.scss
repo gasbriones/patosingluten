@@ -656,7 +656,7 @@ body {
 
   .white-board {
     width: (752rem/16);
-    height: (707rem/16);
+    height: (750rem/16);
     float: right;
     margin: (70em/16) 0 0 0;
     position: relative;
@@ -683,7 +683,6 @@ body {
       }
     }
 
-
     .decoration-pic-2 {
       width: (242em/16);
       height: (191em/16);
@@ -693,15 +692,15 @@ body {
       right: 0;
     }
 
-    article {
+    .news-list {
       color: #6D6E70;
       font-family: AGaramondPro-Regular;
       font-size: (17em/16);
+      height: 30%;
+      overflow: auto;
 
-      .title {
-        color: #6A3327;
-        font-size: (23em/16);
-        font-family: RockwellStdBold;
+      li{
+        cursor: pointer;
       }
     }
   }
@@ -714,11 +713,22 @@ body {
     float: left;
     background-size: 100% 100%;
   }
-  .carousel{
-    position: absolute;
-    bottom: 12%;
-    background: #D0D2D3;
-    width: 100%;
-    left:0;
+
+  .carousel-wrap{
+    .carousel{
+      position: absolute;
+      bottom: 12%;
+      background: #D0D2D3;
+      width: 100%;
+      left:0;
+      padding: (7em/16);
+      visibility: hidden;
+
+      &.show{
+        visibility:visible !important;
+      }
+    }
   }
+
+
 }
