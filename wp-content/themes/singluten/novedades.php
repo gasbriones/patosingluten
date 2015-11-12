@@ -26,12 +26,13 @@ $query = new WP_Query($args);
 
             <aside>
                 <ul class="years">
+                    <li class="title"><?php echo $year ?></li>
                     <?php
                     $tags = get_tags('order=DESC');
                     foreach ($tags as $tag):
                         if ($tag->name != '2015'):?>
                             <li>
-                                <?php echo $tag->name; ?>
+                                <a href="<?php echo  post_permalink($post_id).'?tag='.$tag->name.'+'.$year; ?>"><?php echo $tag->name; ?></a>
                             </li>
                         <?php endif;endforeach; ?>
                 </ul>
@@ -44,9 +45,12 @@ $query = new WP_Query($args);
                 </h3>
                 <ul class="news-list">
                     <?php
+                    $i = 0;
                     if ($query->have_posts()):
-                        while ($query->have_posts()):$query->the_post(); ?>
-                            <li data-slide="<?php echo get_the_ID() ?>">
+                        while ($query->have_posts()):$query->the_post();
+                            $i++;
+                            ?>
+                            <li data-slide="<?php echo get_the_ID();?>" class="<?php echo $i == 1 ? ' active' : '';?>">
                                 <?php the_content(); ?>
                             </li>
                         <?php endwhile;
@@ -57,15 +61,17 @@ $query = new WP_Query($args);
                 </ul>
                 <div class="carousel-wrap">
                     <?php
-                    $index = 0;
+                    $j = 0;
                     if ($query->have_posts()):
                         while ($query->have_posts()):$query->the_post(); ?>
                             <?php
                             $fields = get_fields($post_id);
-                            $index++;
-                               if (count(array_filter($fields))):
+                            $j++;
+
+
                                 ?>
-                                <div class="carousel <?php echo get_the_ID(); $index == 1 ? ' show' :''; ?>">
+                                <div class="carousel <?php echo get_the_ID();  echo $j == 1 ? ' show' : '';?>">
+                                   <?php if (count(array_filter($fields))): ?>
                                     <ul class="slider">
                                         <?php
                                         foreach ($fields as $field => $value):
@@ -74,10 +80,12 @@ $query = new WP_Query($args);
                                                 <li><img src="<?php echo $value; ?>"/></li>
                                             <?php endif;endforeach; ?>
                                     </ul>
+                                    <?php
+                                        else:
+                                       echo '<span class="error">No se encontraron imágenes disponibles</span>';
+                                   endif; ?>
                                 </div>
-                            <?php endif;endwhile;
-                    else:
-                        echo '<ul><li class="error">No se encontraron novedades</li></ul>';
+                            <?php endwhile;
                     endif;
                     ?>
                 </div>
@@ -85,25 +93,25 @@ $query = new WP_Query($args);
     </div>
 </div>
 <script>
-    jQuery(document).ready(function(){
+    jQuery(document).ready(function () {
 
-       jQuery('.slider').bxSlider({
-            minSlides:2,
-            maxSlides:2,
-            slideWidth:400,
-            pager:false,
-            infiniteLoop:false
+        jQuery('.slider').bxSlider({
+            minSlides: 2,
+            maxSlides: 2,
+            slideWidth: 400,
+            pager: false,
+            infiniteLoop: false
         });
 
 
-        jQuery('.news-list li').click(function(){
+        jQuery('.news-list li').click(function () {
 
             var id = jQuery(this).data('slide');
 
             jQuery('.news-list li').removeClass('active');
             jQuery('.carousel').removeClass('show');
             jQuery(this).addClass('active');
-            jQuery('.'+id).addClass('show');
+            jQuery('.' + id).addClass('show');
         });
     })
 </script>

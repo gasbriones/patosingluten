@@ -483,6 +483,41 @@ body {
     background: url("../images/news-decoration-2.png") no-repeat;
     bottom: -5.3125em;
     left: 0; }
+  .news .title {
+    color: #6A3327;
+    font-size: 1.4375em;
+    font-family: RockwellStdBold;
+    position: relative;
+    margin-bottom: 1.875rem;
+    text-transform: uppercase; }
+    .news .title:before {
+      content: "";
+      width: 100%;
+      height: 0.375rem;
+      position: absolute;
+      left: 0;
+      bottom: -0.9375rem;
+      background: url("../images/separator_gray.png"); }
+  .news .years {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2em;
+    font-family: RockwellStdBold; }
+    .news .years li {
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      line-height: 1.4375rem;
+      padding-left: 10%; }
+      .news .years li a {
+        color: #6D6E70;
+        text-decoration: none; }
+        .news .years li a:hover, .news .years li a.actie {
+          color: #F5A900 !important; }
+      .news .years li.title {
+        color: #6A3327;
+        font-size: 1.4375em;
+        text-align: left;
+        padding-left: 0%; }
   .news .white-board {
     width: 47rem;
     height: 46.875rem;
@@ -493,20 +528,6 @@ body {
     background-size: contain;
     background-size: 100% 100%;
     box-sizing: border-box; }
-    .news .white-board .title {
-      color: #6A3327;
-      font-size: 1.4375em;
-      font-family: RockwellStdBold;
-      position: relative;
-      margin-bottom: 1.875rem; }
-      .news .white-board .title:before {
-        content: "";
-        width: 100%;
-        height: 0.375rem;
-        position: absolute;
-        left: 0;
-        bottom: -0.9375rem;
-        background: url("../images/separator_gray.png"); }
     .news .white-board .decoration-pic-2 {
       width: 15.125em;
       height: 11.9375em;
@@ -518,10 +539,13 @@ body {
       color: #6D6E70;
       font-family: AGaramondPro-Regular;
       font-size: 1.0625em;
-      height: 30%;
+      height: 29%;
       overflow: auto; }
       .news .white-board .news-list li {
         cursor: pointer; }
+        .news .white-board .news-list li.active {
+          color: #F5A900 !important;
+          font-weight: bold; }
   .news aside {
     width: 17.125em;
     height: 25.625em;
@@ -536,8 +560,15 @@ body {
     width: 100%;
     left: 0;
     padding: 0.4375em;
-    visibility: hidden; }
+    visibility: hidden;
+    height: 35.25%; }
     .news .carousel-wrap .carousel.show {
       visibility: visible !important; }
-
-/*# sourceMappingURL=style.css.map */
+    .news .carousel-wrap .carousel .error {
+      color: #6A3327;
+      font-size: 1.125em;
+      font-family: RockwellStdBold;
+      width: 100%;
+      text-align: center;
+      margin: 15% 0;
+      display: block; }
