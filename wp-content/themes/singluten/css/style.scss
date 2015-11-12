@@ -121,6 +121,29 @@ body {
   width: 93%;
   position: relative;
 }
+.back-to-site{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FFFFFF;
+  text-decoration: none;
+  width: (189rem/16);
+  height: (47rem/16);
+  background:  url("../images/category-menu-yellow-bg.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: left;
+  line-height: (47rem/16);
+  font-family: RockwellStdBold;
+  font-size: (14rem/16);
+  padding-left: 3%;
+  box-sizing: border-box;
+  span{
+    font-family: TwentySingles;
+    font-size: (60rem/16);
+    position: absolute;
+    margin-left: 2%;
+  }
+}
 
 .decoration-pic-3 {
   position: absolute;
@@ -659,7 +682,7 @@ body {
     font-size: (23em/16);
     font-family: RockwellStdBold;
     position: relative;
-    margin-bottom: (30rem/16);
+    margin-bottom: (25rem/16);
     text-transform: uppercase;
 
     &:before{
@@ -668,7 +691,7 @@ body {
       height: (6rem/16);
       position: absolute;
       left: 0;
-      bottom: (-15rem/16);
+      bottom: (-13rem/16);
       background: url("../images/separator_gray.png");
     }
   }
@@ -678,6 +701,7 @@ body {
     box-sizing: border-box;
     padding: (32em/16);
     font-family: RockwellStdBold;
+    position: relative;
 
     li{
 
@@ -689,9 +713,22 @@ body {
       a{
         color: #6D6E70;
         text-decoration: none;
-
-        &:hover,&.actie{
+        position: relative;
+        &:hover {
           color:#F5A900 !important;
+        }
+
+        &.active{
+          color:#F5A900 !important;
+          &:before{
+            content: "";
+            background: url("../images/tilde.png") no-repeat;
+            height:(14rem/16);
+            width:(19rem/16);
+            position: absolute;
+            left: (-22rem/16);
+            top: (-2rem/16);
+          }
         }
       }
 
@@ -701,6 +738,16 @@ body {
         text-align: left;
         padding-left: 0%;
       }
+    }
+
+    &:before{
+      content: "";
+      width: 77%;
+      height: (6rem/16);
+      position: absolute;
+      left: 11%;
+      bottom: (20rem/16);
+      background: url("../images/separator_gray.png");
     }
   }
 
