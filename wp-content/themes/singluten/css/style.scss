@@ -160,7 +160,7 @@ body {
 }
 
 .social {
-  background: url("../images/mancha.svg") no-repeat;
+  background: url("../images/social-bg.png") no-repeat;
   background-size: 100% 100%;
 
   li {
@@ -471,7 +471,7 @@ body {
 
   .social {
     position: absolute;
-    left: 9%;
+    left: 8%;
     top: 33em;
     width: (344em/16);
     height: (175em/16);
@@ -758,7 +758,6 @@ body {
     margin: (70em/16) 0 0 0;
     position: relative;
     padding: (90em/16);
-    background-size: contain;
     background-size: 100% 100%;
     box-sizing: border-box;
 
@@ -824,6 +823,97 @@ body {
       }
     }
   }
+}
 
+.recipes-view{
+  margin: (35em/16) auto (100em/16);
+  position: relative;
+  width: 87%;
 
+  aside{
+    float: left;
+    width: 23%;
+    margin: (70em/16) 0 0 0;
+
+    .recipes-list{
+      font-family: 'TwentySingles';
+
+      li{
+        position: relative;
+        line-height: (26rem/16);
+
+        &:before{
+          content: "";
+          background: url("../images/saparator_white.png");
+          position: absolute;
+          height: (5em/16);
+          width: 100%;
+          bottom: 0;
+          left: 0;        }
+
+        a{
+          color: #FFFFFF;
+          font-size: (66em/16);
+          text-decoration: none;
+          letter-spacing: (2rem/16);
+          display: block;
+          padding: (20rem/16) 0;
+        }
+      }
+    }
+  }
+
+  .white-board {
+    float: right;
+    width: 65%;
+    padding: (60em/16);
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    margin: (70em/16) 0 0 0;
+    height: (600rem/16);
+
+    .recipe-img{
+      width: (280em/16);
+      height: (195em/16);
+      box-shadow: 5px 3px 40px #333;
+      background: #FFFFFF;
+      position: absolute;
+      right: 10%;
+      top: (-30em/16);
+      transform: rotate(-5deg);
+      -webkit-transform: rotate(-5deg); /* Safari */
+      padding: (6em/16);
+      padding-left: 0;
+
+      img{
+        width: 100%;
+      }
+    }
+
+    .title {
+      color: #6A3327;
+      font-family: RockwellStdBold;
+      font-size: (24em/16);
+      text-transform: uppercase;
+      margin-bottom: (10rem/16);
+      width: 43%;
+    }
+
+    article{
+      overflow: auto;
+      height: 79%;
+      color: #6D6E70;
+      font-family: AGaramondPro-Regular;
+      font-size: (17em/16);
+
+      p{
+        margin-top: 0;
+      }
+      .sub-title{
+        color: #6A3327;
+        font-family: RockwellStdBold;
+        text-transform: uppercase;
+      }
+    }
+  }
 }

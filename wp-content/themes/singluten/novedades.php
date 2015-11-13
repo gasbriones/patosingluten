@@ -98,6 +98,7 @@ $query = new WP_Query($args);
                     endif;
                     ?>
                 </div>
+            </div>
         </section>
     </div>
 </div>

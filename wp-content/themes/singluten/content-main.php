@@ -14,7 +14,4 @@
         <div class="decoration-pic-8 wow fadeIn"></div>
         <?php include 'recetas.php' ?>
     </section>
-    <section class="block news clearfix">
-        novedades
-    </section>
 </div>
