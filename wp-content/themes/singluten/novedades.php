@@ -6,8 +6,7 @@ Template Name: novedades
 
 $year = date("Y");
 $month = $_GET["tag"] != '' ? $_GET["tag"] : spanish_months(date("F"));
-
-$tag = $month . '+' . $year;
+$tag_l = $month . '+' . $year;
 
 $args = array(
     'cat' => 6,
@@ -24,25 +23,34 @@ $query = new WP_Query($args);
     <div id="main" class="wrapper">
         <section class="block news clearfix">
             <h4 class="page-title wow bounceInDown">Novedades</h4>
+            <a class="back-to-site hvr-float-shadow" href="<?php echo site_url();?>">Volver al <span>home</span></a>
 
             <aside>
                 <ul class="years">
                     <li class="title"><?php echo $year ?></li>
                     <?php
-                    $tags = get_tags('order=DESC');
-                    foreach ($tags as $tag):
-                        if ($tag->name != '2015'):?>
-                            <li>
-                                <a href="<?php echo  post_permalink($post_id).'?tag='.$tag->name.'+'.$year; ?>"><?php echo $tag->name; ?></a>
-                            </li>
-                        <?php endif;endforeach; ?>
+                    $arrayMonths = months();
+
+                    if($_GET["tag"] != ''){
+                        $currentMonth = explode(' ', $_GET["tag"]);
+                        $currentMonth = $currentMonth[0];
+                    }else{
+                        $currentMonth = $month;
+                    }
+
+                    foreach ($arrayMonths as $row):
+                        ?>
+                        <li >
+                            <a class="<?php echo  $row == $currentMonth ? 'active':'' ?>" href="<?php echo post_permalink($post_id) . '?tag=' .$row . '+' . $year; ?>"><?php echo $row; ?></a>
+                        </li>
+                    <?php endforeach; ?>
                 </ul>
             </aside>
             <div class="decoration-pic-1 wow fadeInDown"></div>
             <div class="white-board">
                 <div class="decoration-pic-2 wow bounceInRight"></div>
                 <h3 class="title">
-                    <?php echo $month . ' ' . $year ?>
+                    <?php echo $_GET["tag"] != '' ? $_GET["tag"] : $month . ' ' . $year ?>
                 </h3>
                 <ul class="news-list">
                     <?php
@@ -51,7 +59,8 @@ $query = new WP_Query($args);
                         while ($query->have_posts()):$query->the_post();
                             $i++;
                             ?>
-                            <li data-slide="<?php echo get_the_ID();?>" class="<?php echo $i == 1 ? ' active' : '';?>">
+                            <li data-slide="<?php echo get_the_ID(); ?>"
+                                class="<?php echo $i == 1 ? ' active' : ''; ?>">
                                 <?php the_content(); ?>
                             </li>
                         <?php endwhile;
@@ -68,9 +77,10 @@ $query = new WP_Query($args);
                             <?php
                             $fields = get_fields($post_id);
                             $j++;
-                                ?>
-                                <div class="carousel <?php echo get_the_ID();  echo $j == 1 ? ' show' : '';?>">
-                                   <?php if (count(array_filter($fields))): ?>
+                            ?>
+                            <div class="carousel <?php echo get_the_ID();
+                            echo $j == 1 ? ' show' : ''; ?>">
+                                <?php if (count(array_filter($fields))): ?>
                                     <ul class="slider">
                                         <?php
                                         foreach ($fields as $field => $value):
@@ -79,15 +89,16 @@ $query = new WP_Query($args);
                                                 <li><img src="<?php echo $value; ?>"/></li>
                                             <?php endif;endforeach; ?>
                                     </ul>
-                                    <?php
-                                        else:
-                                       echo '<span class="error">No se encontraron imágenes disponibles</span>';
-                                   endif; ?>
-                                </div>
-                            <?php endwhile;
+                                <?php
+                                else:
+                                    echo '<span class="error">No se encontraron imágenes disponibles</span>';
+                                endif; ?>
+                            </div>
+                        <?php endwhile;
                     endif;
                     ?>
                 </div>
+            </div>
         </section>
     </div>
 </div>

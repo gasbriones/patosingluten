@@ -87,6 +87,28 @@ body {
   width: 93%;
   position: relative; }
 
+.back-to-site {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #FFFFFF;
+  text-decoration: none;
+  width: 11.8125rem;
+  height: 2.9375rem;
+  background: url("../images/category-menu-yellow-bg.png") no-repeat;
+  background-size: 100% 100%;
+  text-align: left;
+  line-height: 2.9375rem;
+  font-family: RockwellStdBold;
+  font-size: 0.875rem;
+  padding-left: 3%;
+  box-sizing: border-box; }
+  .back-to-site span {
+    font-family: TwentySingles;
+    font-size: 3.75rem;
+    position: absolute;
+    margin-left: 2%; }
+
 .decoration-pic-3 {
   position: absolute;
   background: url("../images/sobre-pato-decoration-3.png") no-repeat; }
@@ -99,7 +121,7 @@ body {
     position: relative; }
 
 .social {
-  background: url("../images/mancha.svg") no-repeat;
+  background: url("../images/social-bg.png") no-repeat;
   background-size: 100% 100%; }
   .social li a {
     text-decoration: none; }
@@ -334,7 +356,7 @@ body {
       left: 9%; }
   .about .social {
     position: absolute;
-    left: 9%;
+    left: 8%;
     top: 33em;
     width: 21.5em;
     height: 10.9375em;
@@ -488,7 +510,7 @@ body {
     font-size: 1.4375em;
     font-family: RockwellStdBold;
     position: relative;
-    margin-bottom: 1.875rem;
+    margin-bottom: 1.5625rem;
     text-transform: uppercase; }
     .news .title:before {
       content: "";
@@ -496,13 +518,14 @@ body {
       height: 0.375rem;
       position: absolute;
       left: 0;
-      bottom: -0.9375rem;
+      bottom: -0.8125rem;
       background: url("../images/separator_gray.png"); }
   .news .years {
     width: 100%;
     box-sizing: border-box;
     padding: 2em;
-    font-family: RockwellStdBold; }
+    font-family: RockwellStdBold;
+    position: relative; }
     .news .years li {
       font-size: 0.875rem;
       text-transform: uppercase;
@@ -510,14 +533,33 @@ body {
       padding-left: 10%; }
       .news .years li a {
         color: #6D6E70;
-        text-decoration: none; }
-        .news .years li a:hover, .news .years li a.actie {
+        text-decoration: none;
+        position: relative; }
+        .news .years li a:hover {
           color: #F5A900 !important; }
+        .news .years li a.active {
+          color: #F5A900 !important; }
+          .news .years li a.active:before {
+            content: "";
+            background: url("../images/tilde.png") no-repeat;
+            height: 0.875rem;
+            width: 1.1875rem;
+            position: absolute;
+            left: -1.375rem;
+            top: -0.125rem; }
       .news .years li.title {
         color: #6A3327;
         font-size: 1.4375em;
         text-align: left;
         padding-left: 0%; }
+    .news .years:before {
+      content: "";
+      width: 77%;
+      height: 0.375rem;
+      position: absolute;
+      left: 11%;
+      bottom: 1.25rem;
+      background: url("../images/separator_gray.png"); }
   .news .white-board {
     width: 47rem;
     height: 46.875rem;
@@ -525,7 +567,6 @@ body {
     margin: 4.375em 0 0 0;
     position: relative;
     padding: 5.625em;
-    background-size: contain;
     background-size: 100% 100%;
     box-sizing: border-box; }
     .news .white-board .decoration-pic-2 {
@@ -572,3 +613,74 @@ body {
       text-align: center;
       margin: 15% 0;
       display: block; }
+
+.recipes-view {
+  margin: 2.1875em auto 6.25em;
+  position: relative;
+  width: 87%; }
+  .recipes-view aside {
+    float: left;
+    width: 23%;
+    margin: 4.375em 0 0 0; }
+    .recipes-view aside .recipes-list {
+      font-family: 'TwentySingles'; }
+      .recipes-view aside .recipes-list li {
+        position: relative;
+        line-height: 1.625rem; }
+        .recipes-view aside .recipes-list li:before {
+          content: "";
+          background: url("../images/saparator_white.png");
+          position: absolute;
+          height: 0.3125em;
+          width: 100%;
+          bottom: 0;
+          left: 0; }
+        .recipes-view aside .recipes-list li a {
+          color: #FFFFFF;
+          font-size: 4.125em;
+          text-decoration: none;
+          letter-spacing: 0.125rem;
+          display: block;
+          padding: 1.25rem 0; }
+  .recipes-view .white-board {
+    float: right;
+    width: 65%;
+    padding: 3.75em;
+    background-size: 100% 100%;
+    box-sizing: border-box;
+    margin: 4.375em 0 0 0;
+    height: 37.5rem; }
+    .recipes-view .white-board .recipe-img {
+      width: 17.5em;
+      height: 12.1875em;
+      box-shadow: 5px 3px 40px #333;
+      background: #FFFFFF;
+      position: absolute;
+      right: 10%;
+      top: -1.875em;
+      transform: rotate(-5deg);
+      -webkit-transform: rotate(-5deg);
+      /* Safari */
+      padding: 0.375em;
+      padding-left: 0; }
+      .recipes-view .white-board .recipe-img img {
+        width: 100%; }
+    .recipes-view .white-board .title {
+      color: #6A3327;
+      font-family: RockwellStdBold;
+      font-size: 1.5em;
+      text-transform: uppercase;
+      margin-bottom: 0.625rem;
+      width: 43%; }
+    .recipes-view .white-board article {
+      overflow: auto;
+      height: 79%;
+      color: #6D6E70;
+      font-family: AGaramondPro-Regular;
+      font-size: 1.0625em; }
+      .recipes-view .white-board article p {
+        margin-top: 0; }
+      .recipes-view .white-board article .sub-title {
+        color: #6A3327;
+        font-family: RockwellStdBold;
+        text-transform: uppercase; }
