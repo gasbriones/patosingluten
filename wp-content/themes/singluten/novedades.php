@@ -6,6 +6,7 @@ Template Name: novedades
 
 $year = date("Y");
 $month = $_GET["tag"] != '' ? $_GET["tag"] : spanish_months(date("F"));
+
 $tag = $month . '+' . $year;
 
 $args = array(
@@ -67,8 +68,6 @@ $query = new WP_Query($args);
                             <?php
                             $fields = get_fields($post_id);
                             $j++;
-
-
                                 ?>
                                 <div class="carousel <?php echo get_the_ID();  echo $j == 1 ? ' show' : '';?>">
                                    <?php if (count(array_filter($fields))): ?>
