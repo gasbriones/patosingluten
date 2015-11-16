@@ -38,3 +38,10 @@ function months (){
     return array('Enero', 'Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre');
 }
 
+
+add_filter( 'nav_menu_link_attributes', 'filter_function_name', 10, 3 );
+
+function filter_function_name( $atts, $item, $args ) {
+    // Manipulate attributes
+    return $atts;
+}

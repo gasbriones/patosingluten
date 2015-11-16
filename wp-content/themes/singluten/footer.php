@@ -1,5 +1,5 @@
 <footer id="footer">
-    <section class="wrapper block contact">
+    <section id="contact" class="wrapper block contact">
         contacto
     </section>
 </footer>

@@ -8,8 +8,6 @@ $year = date("Y");
 $month = $_GET["mes"] != '' ? $_GET["mes"] : spanish_months(date("F"));
 $tag_l = $month . '+' . $year;
 
-echo $tag_l;
-
 $args = array(
     'cat' => 6,
     'tag' => $tag_l,
@@ -33,16 +31,10 @@ $query = new WP_Query($args);
                     <?php
                     $arrayMonths = months();
 
-                    if ($_GET["mes"] != '') {
-                        $currentMonth = $_GET["mes"];
-                    } else {
-                        $currentMonth = $month;
-                    }
-
                     foreach ($arrayMonths as $row):
                         ?>
                         <li>
-                            <a class="<?php echo $row == $currentMonth ? 'active' : '' ?>"
+                            <a class="<?php echo $row == $month ? 'active' : '' ?>"
                                href="<?php echo post_permalink($post_id) . '?mes=' . $row; ?>"><?php echo $row; ?></a>
                         </li>
                     <?php endforeach; ?>
@@ -105,9 +97,8 @@ $query = new WP_Query($args);
     </div>
 </div>
 <script>
-    jQuery(document).ready(function () {
-
-        jQuery('.slider').bxSlider({
+    (function ($) {
+        $('.slider').bxSlider({
             minSlides: 2,
             maxSlides: 2,
             slideWidth: 400,
@@ -115,17 +106,17 @@ $query = new WP_Query($args);
             infiniteLoop: false
         });
 
+        $('.news-list li').click(function () {
 
-        jQuery('.news-list li').click(function () {
+            var id = $(this).data('slide');
 
-            var id = jQuery(this).data('slide');
-
-            jQuery('.news-list li').removeClass('active');
-            jQuery('.carousel').removeClass('show');
-            jQuery(this).addClass('active');
-            jQuery('.' + id).addClass('show');
+            $('.news-list li').removeClass('active');
+            $('.carousel').removeClass('show');
+            $(this).addClass('active');
+            $('.' + id).addClass('show');
         });
-    })
+
+    })(jQuery);
 </script>
 <?php wp_footer(); ?>
 </body>
