@@ -5,12 +5,14 @@ Template Name: novedades
 
 
 $year = date("Y");
-$month = $_GET["tag"] != '' ? $_GET["tag"] : spanish_months(date("F"));
+$month = $_GET["mes"] != '' ? $_GET["mes"] : spanish_months(date("F"));
 $tag_l = $month . '+' . $year;
+
+echo $tag_l;
 
 $args = array(
     'cat' => 6,
-    'tag' => $tag,
+    'tag' => $tag_l,
     'orderby' => 'ASC'
 );
 
@@ -23,7 +25,7 @@ $query = new WP_Query($args);
     <div id="main" class="wrapper">
         <section class="block news clearfix">
             <h4 class="page-title wow bounceInDown">Novedades</h4>
-            <a class="back-to-site hvr-float-shadow" href="<?php echo site_url();?>">Volver al <span>home</span></a>
+            <a class="back-to-site hvr-float-shadow" href="<?php echo site_url(); ?>">Volver al <span>home</span></a>
 
             <aside>
                 <ul class="years">
@@ -31,17 +33,17 @@ $query = new WP_Query($args);
                     <?php
                     $arrayMonths = months();
 
-                    if($_GET["tag"] != ''){
-                        $currentMonth = explode(' ', $_GET["tag"]);
-                        $currentMonth = $currentMonth[0];
-                    }else{
+                    if ($_GET["mes"] != '') {
+                        $currentMonth = $_GET["mes"];
+                    } else {
                         $currentMonth = $month;
                     }
 
                     foreach ($arrayMonths as $row):
                         ?>
-                        <li >
-                            <a class="<?php echo  $row == $currentMonth ? 'active':'' ?>" href="<?php echo post_permalink($post_id) . '?tag=' .$row . '+' . $year; ?>"><?php echo $row; ?></a>
+                        <li>
+                            <a class="<?php echo $row == $currentMonth ? 'active' : '' ?>"
+                               href="<?php echo post_permalink($post_id) . '?mes=' . $row; ?>"><?php echo $row; ?></a>
                         </li>
                     <?php endforeach; ?>
                 </ul>
@@ -50,7 +52,7 @@ $query = new WP_Query($args);
             <div class="white-board">
                 <div class="decoration-pic-2 wow bounceInRight"></div>
                 <h3 class="title">
-                    <?php echo $_GET["tag"] != '' ? $_GET["tag"] : $month . ' ' . $year ?>
+                    <?php echo $_GET["mes"] != '' ? $_GET["mes"] . ' ' . $year : $month . ' ' . $year ?>
                 </h3>
                 <ul class="news-list">
                     <?php
