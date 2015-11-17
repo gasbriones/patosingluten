@@ -30,8 +30,4 @@ jQuery(document).ready(function(){
             mode:'fade'
         });
     });
-
-
-
-
 });
