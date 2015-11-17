@@ -129,7 +129,7 @@ body {
   text-decoration: none;
   width: (189rem/16);
   height: (47rem/16);
-  background:  url("../images/category-menu-yellow-bg.png") no-repeat;
+  background:  url("../images/dulces_te.png") no-repeat;
   background-size: 100% 100%;
   text-align: left;
   line-height: (47rem/16);
@@ -341,42 +341,42 @@ body {
 
       a {
         max-width: (176rem/16);
-        background: url("../images/category-menu-yellow-bg.png");
+        background: url("../images/dulces_te.png");
       }
     }
     &.panes-snacks {
       background: url("../images/panes-bg.png") no-repeat;
       a {
         max-width: (166rem/16);
-        background: url("../images/category-menu-green-bg.png");
+        background: url("../images/panes_snacks.png");
       }
     }
     &.platos-principales {
       background: url("../images/platos-principales-bg.png") no-repeat;
       a {
         max-width: (176rem/16);
-        background: url("../images/category-menu-orange-bg.png");
+        background: url("../images/platos_principales.png");
       }
     }
     &.postres {
       background: url("../images/postres-bg.png") no-repeat;
       a {
         max-width: (166rem/16);
-        background: url("../images/category-menu-blue-bg.png");
+        background: url("../images/postres.png");
       }
     }
     &.para-festejar {
       background: url("../images/para-festejar-bg.png") no-repeat;
       a {
         max-width: (166rem/16);
-        background: url("../images/category-menu-brown-bg.png");
+        background: url("../images/para_festejar.png");
       }
     }
     &.tortas {
       background: url("../images/tortas-bg.png") no-repeat;
       a {
         max-width: (166rem/16);
-        background: url("../images/category-menu-pink-bg.png");
+        background: url("../images/tortas.png");
       }
     }
   }
@@ -615,7 +615,7 @@ body {
         height:100%;
         font-size: (75rem/16);
         background-repeat: no-repeat;
-        background-size: 100% auto !important;
+        background-size: 100% 29% !important;
         background-position: bottom;
         line-height: (400rem/16);
 
@@ -972,6 +972,20 @@ body {
         font-family: RockwellStdBold;
         text-transform: uppercase;
       }
+    }
+  }
+
+  .category-nav{
+    margin: (10rem/16) 0 (10rem/16) 9%;
+    li{
+      background: none;
+      height: inherit;
+      height: (54rem/16);
+    }
+
+    .current-menu-item {
+      display: none;
+      visibility: hidden;
     }
   }
 }

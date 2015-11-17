@@ -95,7 +95,7 @@ body {
   text-decoration: none;
   width: 11.8125rem;
   height: 2.9375rem;
-  background: url("../images/category-menu-yellow-bg.png") no-repeat;
+  background: url("../images/dulces_te.png") no-repeat;
   background-size: 100% 100%;
   text-align: left;
   line-height: 2.9375rem;
@@ -258,32 +258,32 @@ body {
       background: url("../images/para-el-te-bg.png") no-repeat; }
       .category-nav li.dulces-te a {
         max-width: 11rem;
-        background: url("../images/category-menu-yellow-bg.png"); }
+        background: url("../images/dulces_te.png"); }
     .category-nav li.panes-snacks {
       background: url("../images/panes-bg.png") no-repeat; }
       .category-nav li.panes-snacks a {
         max-width: 10.375rem;
-        background: url("../images/category-menu-green-bg.png"); }
+        background: url("../images/panes_snacks.png"); }
     .category-nav li.platos-principales {
       background: url("../images/platos-principales-bg.png") no-repeat; }
       .category-nav li.platos-principales a {
         max-width: 11rem;
-        background: url("../images/category-menu-orange-bg.png"); }
+        background: url("../images/platos_principales.png"); }
     .category-nav li.postres {
       background: url("../images/postres-bg.png") no-repeat; }
       .category-nav li.postres a {
         max-width: 10.375rem;
-        background: url("../images/category-menu-blue-bg.png"); }
+        background: url("../images/postres.png"); }
     .category-nav li.para-festejar {
       background: url("../images/para-festejar-bg.png") no-repeat; }
       .category-nav li.para-festejar a {
         max-width: 10.375rem;
-        background: url("../images/category-menu-brown-bg.png"); }
+        background: url("../images/para_festejar.png"); }
     .category-nav li.tortas {
       background: url("../images/tortas-bg.png") no-repeat; }
       .category-nav li.tortas a {
         max-width: 10.375rem;
-        background: url("../images/category-menu-pink-bg.png"); }
+        background: url("../images/tortas.png"); }
 
 .page-title {
   font-family: VTKSINKED;
@@ -463,7 +463,7 @@ body {
         height: 100%;
         font-size: 4.6875rem;
         background-repeat: no-repeat;
-        background-size: 100% auto !important;
+        background-size: 100% 29% !important;
         background-position: bottom;
         line-height: 25rem; }
         .recipe .category-nav li a:before {
@@ -722,3 +722,14 @@ body {
         color: #6A3327;
         font-family: RockwellStdBold;
         text-transform: uppercase; }
+  .recipes-view .category-nav {
+    margin: 0.625rem 0 0.625rem 9%; }
+    .recipes-view .category-nav li {
+      background: none;
+      height: inherit;
+      height: 3.375rem; }
+    .recipes-view .category-nav .current-menu-item {
+      display: none;
+      visibility: hidden; }
+
+/*# sourceMappingURL=style.css.map */
