@@ -28,20 +28,26 @@ switch ($post_id) {
         break;
 }
 
+$paged = ( get_query_var( 'paged' ) ) ? absint( get_query_var( 'paged' ) ) : 1;
 $args = array(
     'cat' => 28,
     'tag' => $tag,
+    'paged' => $paged,
     'orderby' => 'ASC',
     'showposts' => '1'
 );
 
+$query = new WP_Query($args);
+
+
 $args_menu = array(
     'cat' => 28,
     'tag' => $tag,
+    'showposts' => '1',
+    'paged' => $paged,
     'orderby' => 'ASC'
 );
 
-$query = new WP_Query($args);
 $menu_query = new WP_Query($args_menu);
 
 ?>
@@ -57,23 +63,54 @@ $menu_query = new WP_Query($args_menu);
                 <ul class="recipes-list">
                     <?php
                     if ($menu_query->have_posts()):
-                        $i = 0;
+                        $i=0;
                         while ($menu_query->have_posts()):$menu_query->the_post();
                             ?>
                             <li>
-                                <a  class="<?php echo $i == 0 ? 'active' : ''; ?>" href="<?php echo post_permalink($post_id) . "?receta=" . $post->ID ?>"><?php the_title(); ?></a>
+                                <a  class="<?php echo $post->ID == $get_post_id || ($get_post_id == '' && $i== 0) ? 'active' : ''; ?>" href="<?php echo post_permalink($post_id) . "?receta=" . $post->ID ?>"><?php the_title(); ?></a>
                             </li>
                         <?php $i++; endwhile;
+
                     endif;
                     ?>
                 </ul>
+                <div class="paginator">
+                <?php
+                    $big = 999999999; // need an unlikely integer
+
+                    echo paginate_links( array(
+                        'base' => str_replace( $big, '%#%', esc_url( get_pagenum_link( $big ) ) ),
+                        'format' => '?paged=%#%',
+                        'current' => max( 1, get_query_var('paged') ),
+                        'total' => $menu_query->max_num_pages
+                    ) );
+                ?>
+                </div>
+
+
+                <?php
+                if($menu_query->max_num_pages > 1){?>
+                    <p class="navrechts">
+                        <?php
+                        if ($paged > 1) { ?>
+                            <a href="<?php echo '?paged=' . ($paged -1); //prev link ?>"><</a>
+                        <?php }
+                        for($i=1;$i<=$loopb->max_num_pages;$i++){?>
+                            <a href="<?php echo '?paged=' . $i; ?>" <?php echo ($paged==$i)? 'class="selected"':'';?>><?php echo $i;?></a>
+                        <?php
+                        }
+                        if($paged < $loopb->max_num_pages){?>
+                            <a href="<?php echo '?paged=' . ($paged + 1); //next link ?>">></a>
+                        <?php } ?>
+                    </p>
+                <?php } ?>
+
             </aside>
             <div class="white-board">
                 <?php
                 if ($get_post_id != '') {
                     $query = new WP_Query(array('p' => $get_post_id));
                 }
-
                 if ($query->have_posts()):
                     while ($query->have_posts()): $query->the_post();?>
                     <?php the_title('<h3 class="title">', '</h3>'); ?>

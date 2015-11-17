@@ -546,7 +546,8 @@ body {
             width: 1.1875rem;
             position: absolute;
             left: -1.375rem;
-            top: -0.125rem; }
+            top: -0.125rem;
+            background-size: contain; }
       .news .years li.title {
         color: #6A3327;
         font-size: 1.4375em;
@@ -649,11 +650,38 @@ body {
             .recipes-view aside .recipes-list li a.active:before {
               content: "";
               background: url("../images/tilde.png") no-repeat;
-              height: 0.875rem;
-              width: 1.1875rem;
+              height: 1.5rem;
+              width: 2.0625rem;
               position: absolute;
-              left: -1.375rem;
-              top: -0.125rem; }
+              left: -2.5rem;
+              top: 1.25rem; }
+    .recipes-view aside .paginator {
+      font-family: 'TwentySingles';
+      margin-top: 1.875rem;
+      color: #F5A900;
+      font-size: 4.125em; }
+      .recipes-view aside .paginator a {
+        color: #FFFFFF;
+        text-decoration: none; }
+      .recipes-view aside .paginator .next, .recipes-view aside .paginator .prev {
+        display: none; }
+      .recipes-view aside .paginator .page-numbers {
+        position: relative;
+        margin-right: 1.25rem; }
+        .recipes-view aside .paginator .page-numbers:before {
+          content: "";
+          width: 0.3125rem;
+          height: 2.625rem;
+          background: url("../images/pipe.png") no-repeat;
+          position: absolute;
+          top: 0.3125rem;
+          right: -1.0625rem; }
+        .recipes-view aside .paginator .page-numbers:nth-last-child(2):before {
+          background: none; }
+        .recipes-view aside .paginator .page-numbers:nth-last-child(2):before {
+          background: none; }
+    .recipes-view aside .navrechts {
+      display: none; }
   .recipes-view .white-board {
     float: right;
     width: 65%;
