@@ -909,13 +909,7 @@ body {
           right: (-17rem/16);
         }
 
-        &:nth-last-child(2){
-          &:before{
-            background: none;
-          }
-        }
-
-        &:nth-last-child(2){
+        &:last-child{
           &:before{
             background: none;
           }

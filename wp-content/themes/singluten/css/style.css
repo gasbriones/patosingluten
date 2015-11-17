@@ -676,9 +676,7 @@ body {
           position: absolute;
           top: 0.3125rem;
           right: -1.0625rem; }
-        .recipes-view aside .paginator .page-numbers:nth-last-child(2):before {
-          background: none; }
-        .recipes-view aside .paginator .page-numbers:nth-last-child(2):before {
+        .recipes-view aside .paginator .page-numbers:last-child:before {
           background: none; }
     .recipes-view aside .navrechts {
       display: none; }
