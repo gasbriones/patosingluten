@@ -51,18 +51,19 @@ $menu_query = new WP_Query($args_menu);
     <div id="main" class="wrapper">
         <section class="block recipes-view clearfix">
             <h4 class="page-title wow bounceInDown"><?php echo get_the_title(); ?></h4>
-            <a class="back-to-site hvr-float-shadow" href="<?php echo site_url(); ?>">Volver al <span>home</span></a>
+            <a class="back-to-site hvr-float-shadow" href="<?php echo site_url()."#recetas" ; ?>">Volver al <span>home</span></a>
 
             <aside>
                 <ul class="recipes-list">
                     <?php
                     if ($menu_query->have_posts()):
+                        $i = 0;
                         while ($menu_query->have_posts()):$menu_query->the_post();
                             ?>
                             <li>
-                                <a href="<?php echo post_permalink($post_id) . "?receta=" . $post->ID ?>"><?php the_title(); ?></a>
+                                <a  class="<?php echo $i == 0 ? 'active' : ''; ?>" href="<?php echo post_permalink($post_id) . "?receta=" . $post->ID ?>"><?php the_title(); ?></a>
                             </li>
-                        <?php endwhile;
+                        <?php $i++; endwhile;
                     endif;
                     ?>
                 </ul>

@@ -849,7 +849,8 @@ body {
           height: (5em/16);
           width: 100%;
           bottom: 0;
-          left: 0;        }
+          left: 0;
+        }
 
         a{
           color: #FFFFFF;
@@ -858,6 +859,23 @@ body {
           letter-spacing: (2rem/16);
           display: block;
           padding: (20rem/16) 0;
+
+          &:hover {
+            color:#F5A900 !important;
+          }
+
+          &.active{
+            color:#F5A900 !important;
+            &:before{
+              content: "";
+              background: url("../images/tilde.png") no-repeat;
+              height:(14rem/16);
+              width:(19rem/16);
+              position: absolute;
+              left: (-22rem/16);
+              top: (-2rem/16);
+            }
+          }
         }
       }
     }
@@ -879,7 +897,7 @@ body {
       background: #FFFFFF;
       position: absolute;
       right: 10%;
-      top: (-30em/16);
+      top: (-40em/16);
       transform: rotate(-5deg);
       -webkit-transform: rotate(-5deg); /* Safari */
       padding: (6em/16);

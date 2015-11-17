@@ -642,6 +642,18 @@ body {
           letter-spacing: 0.125rem;
           display: block;
           padding: 1.25rem 0; }
+          .recipes-view aside .recipes-list li a:hover {
+            color: #F5A900 !important; }
+          .recipes-view aside .recipes-list li a.active {
+            color: #F5A900 !important; }
+            .recipes-view aside .recipes-list li a.active:before {
+              content: "";
+              background: url("../images/tilde.png") no-repeat;
+              height: 0.875rem;
+              width: 1.1875rem;
+              position: absolute;
+              left: -1.375rem;
+              top: -0.125rem; }
   .recipes-view .white-board {
     float: right;
     width: 65%;
@@ -657,7 +669,7 @@ body {
       background: #FFFFFF;
       position: absolute;
       right: 10%;
-      top: -1.875em;
+      top: -2.5em;
       transform: rotate(-5deg);
       -webkit-transform: rotate(-5deg);
       /* Safari */

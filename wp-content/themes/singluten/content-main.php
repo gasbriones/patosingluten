@@ -7,10 +7,10 @@
             <?php wp_nav_menu( array( 'theme_location' => 'category-menu','menu_class' => 'menu category-nav clearfix')); ?>
         <div>
     </section>
-    <section class="block about clearfix">
+    <section id="sobre-pato" class="block about clearfix">
         <?php include 'sobre-pato.php' ?>
     </section>
-    <section class="block recipe clearfix">
+    <section id="recetas" class="block recipe clearfix">
         <div class="decoration-pic-8 wow fadeIn"></div>
         <?php include 'recetas.php' ?>
     </section>
