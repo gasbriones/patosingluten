@@ -145,6 +145,68 @@ body {
   }
 }
 
+
+.plinth-wrapper{
+  background: url("../images/dulces_te.png") no-repeat;
+  background-position: center center;
+  background-size: 73% 100%;
+
+  .plinth{
+    height: (59rem/16);
+    background: #F5A900;
+    font-size: (66rem/16);
+    line-height: (59rem/16);
+    font-family: TwentySingles;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: (2rem/16);
+    position: relative;
+    margin: (25rem/16) 0 (18rem/16);
+
+    &:before,&:after{
+      content: "";
+      width: 100%;
+      position: absolute;
+      height: (59rem/16);
+      background: #F5A900;
+      top: 0;
+    }
+
+    &:before{
+      right: -100%;
+    }
+    &:after{
+      left: -100%;
+    }
+
+    .slogan{
+      position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: (-120rem/16);
+        background: url("../images/celi-market.png") no-repeat;
+        width: (104rem/16);
+        height:(79rem/16) ;
+      }
+    }
+
+    .firm{
+      position: relative;
+      &:before{
+        content: "";
+        position: absolute;
+        bottom: (0rem/16);
+        left: 0;
+        background: url("../images/tachon-white.png") no-repeat;
+        width: (115rem/16);
+        height:(13rem/16) ;
+      }
+    }
+  }
+}
+
 .decoration-pic-3 {
   position: absolute;
   background: url("../images/sobre-pato-decoration-3.png") no-repeat;
@@ -570,8 +632,9 @@ body {
       height: (215em/16);
       background-size: cover;
       position: absolute;
-      bottom: 0;
+      bottom: (-65rem/16);
       right: 0;
+      z-index: 10;
     }
 
     .pic-three {
@@ -593,7 +656,7 @@ body {
 }
 
 .recipe {
-  margin: (155em/16) 0 0;
+  margin: (90rem/16) 0 0;
 
   .category-nav {
     width: 82%;
@@ -988,4 +1051,43 @@ body {
       visibility: hidden;
     }
   }
+  .page-title{
+    background-position:center bottom, center bottom !important;
+    background-repeat:no-repeat !important;
+    line-height: (110rem/16);
+  }
 }
+
+
+.page-id-42{
+  .page-title{
+    background: url("../images/title-decorator.png"), url("../images/dulces_te.png");
+  }
+}
+.page-id-44{
+  .page-title{
+    background: url("../images/title-decorator.png"), url("../images/panes_snacks.png");
+  }
+}
+.page-id-46{
+  .page-title{
+    background: url("../images/title-decorator.png"), url("../images/platos_principales.png");
+  }
+}
+
+.page-id-48{
+  .page-title{
+    background: url("../images/title-decorator.png"), url("../images/postres.png");
+  }
+}
+.page-id-50{
+  .page-title{
+    background: url("../images/title-decorator.png"), url("../images/para_festejar.png");
+  }
+}
+.page-id-52{
+  .page-title{
+    background: url("../images/title-decorator.png"), url("../images/tortas.png");
+  }
+}
+
