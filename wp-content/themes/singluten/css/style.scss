@@ -710,7 +710,7 @@ body {
     }
 
     &:before{
-      bottom: 2%;
+      background: none;
     }
   }
   .decoration-pic-8{
@@ -894,7 +894,7 @@ body {
 
   aside{
     float: left;
-    width: 23%;
+    width: 24%;
     margin: (70em/16) 0 0 0;
 
     .recipes-list{
@@ -1024,7 +1024,7 @@ body {
       color: #6D6E70;
       font-family: AGaramondPro-Regular;
       font-size: (17em/16);
-
+      padding: 0 (25rem/16) 0 0;
       p{
         margin-top: 0;
       }
@@ -1086,6 +1086,74 @@ body {
 .page-id-52{
   .page-title{
     background: url("../images/title-decorator.png"), url("../images/tortas.png");
+  }
+}
+
+#footer{
+  background: #F5A900;
+  margin-top: (50rem/16);
+  padding-top: (10rem/16);
+}
+
+#contact{
+  .contact-board{
+    background: url("../images/pizarra-contacto.png") no-repeat;
+    background-size: cover;
+    width:(493rem/16);
+    height: (413rem/16);
+    float: right;
+    box-sizing: border-box;
+    padding: (10rem/16) 0 0 (80rem/16);
+    font-family: AGaramondPro-Regular;
+    margin: (60rem/16) 18% 0;
+
+    .title{
+      color: #6A3327;
+      font-family: TwentySingles;
+      font-size: (76rem/16);
+      letter-spacing: 1px;
+    }
+
+    label{
+      display: block;
+      color: #6D6E70;
+
+    }
+
+    input[type="text"]{
+      width: 85%;
+      background: none;
+      border: none;
+      border-bottom: solid 1px #E4E4E6;
+      margin-bottom: (10rem/16);
+    }
+
+    .submit{
+      color: #FFFFFF;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: (12rem/16);
+      background: #6B3225;
+      border: none;
+      padding: (7rem/16) (20rem/16);
+      margin: (10rem/16) 15% 0;
+      float: right;
+    }
+
+    .msj{
+      color: #6A3327;
+      font-family: TwentySingles;
+      font-size: (58rem/16);
+      letter-spacing: 1px;
+      position: relative;
+      i{
+        font-size: (38rem/16);
+        font-style:normal;
+        margin-top: (-5rem/16);
+        position: absolute;
+        right: (-17rem/16);
+        top:0;
+      }
+    }
   }
 }
 

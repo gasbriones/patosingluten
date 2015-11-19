@@ -533,7 +533,7 @@ body {
     .recipe .category-nav:after {
       top: 45%; }
     .recipe .category-nav:before {
-      bottom: 2%; }
+      background: none; }
   .recipe .decoration-pic-8 {
     position: absolute;
     top: -5.625em;
@@ -669,7 +669,7 @@ body {
   width: 87%; }
   .recipes-view aside {
     float: left;
-    width: 23%;
+    width: 24%;
     margin: 4.375em 0 0 0; }
     .recipes-view aside .recipes-list {
       font-family: 'TwentySingles'; }
@@ -763,7 +763,8 @@ body {
       height: 79%;
       color: #6D6E70;
       font-family: AGaramondPro-Regular;
-      font-size: 1.0625em; }
+      font-size: 1.0625em;
+      padding: 0 1.5625rem 0 0; }
       .recipes-view .white-board article p {
         margin-top: 0; }
       .recipes-view .white-board article .sub-title {
@@ -801,5 +802,57 @@ body {
 
 .page-id-52 .page-title {
   background: url("../images/title-decorator.png"), url("../images/tortas.png"); }
+
+#footer {
+  background: #F5A900;
+  margin-top: 3.125rem;
+  padding-top: 0.625rem; }
+
+#contact .contact-board {
+  background: url("../images/pizarra-contacto.png") no-repeat;
+  background-size: cover;
+  width: 30.8125rem;
+  height: 25.8125rem;
+  float: right;
+  box-sizing: border-box;
+  padding: 0.625rem 0 0 5rem;
+  font-family: AGaramondPro-Regular;
+  margin: 3.75rem 18% 0; }
+  #contact .contact-board .title {
+    color: #6A3327;
+    font-family: TwentySingles;
+    font-size: 4.75rem;
+    letter-spacing: 1px; }
+  #contact .contact-board label {
+    display: block;
+    color: #6D6E70; }
+  #contact .contact-board input[type="text"] {
+    width: 85%;
+    background: none;
+    border: none;
+    border-bottom: solid 1px #E4E4E6;
+    margin-bottom: 0.625rem; }
+  #contact .contact-board .submit {
+    color: #FFFFFF;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 0.75rem;
+    background: #6B3225;
+    border: none;
+    padding: 0.4375rem 1.25rem;
+    margin: 0.625rem 15% 0;
+    float: right; }
+  #contact .contact-board .msj {
+    color: #6A3327;
+    font-family: TwentySingles;
+    font-size: 3.625rem;
+    letter-spacing: 1px;
+    position: relative; }
+    #contact .contact-board .msj i {
+      font-size: 2.375rem;
+      font-style: normal;
+      margin-top: -0.3125rem;
+      position: absolute;
+      right: -1.0625rem;
+      top: 0; }
 
 /*# sourceMappingURL=style.css.map */
