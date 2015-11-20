@@ -48,7 +48,8 @@
   font-weight: normal;
   font-style: normal;
 }
-.grayScale{
+
+.grayScale {
   filter: grayscale(100%);
   transition: all 0.3s ease-in-out 0s;
 }
@@ -59,7 +60,7 @@
   left: 0 !important;
 }
 
-.home{
+.home {
   .bx-wrapper {
     position: relative;
     margin: 0 auto !important;
@@ -81,7 +82,6 @@
   }
 }
 
-
 html, body {
   margin: 0;
   padding: 0;
@@ -96,8 +96,8 @@ body {
 
 }
 
-#site{
-  overflow:  hidden;
+#site {
+  overflow: hidden;
 }
 
 .wrapper {
@@ -121,7 +121,8 @@ body {
   width: 93%;
   position: relative;
 }
-.back-to-site{
+
+.back-to-site {
   position: absolute;
   top: 0;
   left: 0;
@@ -129,7 +130,7 @@ body {
   text-decoration: none;
   width: (189rem/16);
   height: (47rem/16);
-  background:  url("../images/dulces_te.png") no-repeat;
+  background: url("../images/dulces_te.png") no-repeat;
   background-size: 100% 100%;
   text-align: left;
   line-height: (47rem/16);
@@ -137,7 +138,7 @@ body {
   font-size: (14rem/16);
   padding-left: 3%;
   box-sizing: border-box;
-  span{
+  span {
     font-family: TwentySingles;
     font-size: (60rem/16);
     position: absolute;
@@ -145,13 +146,12 @@ body {
   }
 }
 
-
-.plinth-wrapper{
+.plinth-wrapper {
   background: url("../images/dulces_te.png") no-repeat;
-  background-position: center center;
+  background-position: center center !important;
   background-size: 73% 100%;
 
-  .plinth{
+  .plinth {
     height: (59rem/16);
     background: #F5A900;
     font-size: (66rem/16);
@@ -163,7 +163,7 @@ body {
     position: relative;
     margin: (25rem/16) 0 (18rem/16);
 
-    &:before,&:after{
+    &:before, &:after {
       content: "";
       width: 100%;
       position: absolute;
@@ -172,36 +172,36 @@ body {
       top: 0;
     }
 
-    &:before{
+    &:before {
       right: -100%;
     }
-    &:after{
+    &:after {
       left: -100%;
     }
 
-    .slogan{
+    .slogan {
       position: relative;
-      &:before{
+      &:before {
         content: "";
         position: absolute;
         bottom: 0;
         left: (-120rem/16);
         background: url("../images/celi-market.png") no-repeat;
         width: (104rem/16);
-        height:(79rem/16) ;
+        height: (79rem/16);
       }
     }
 
-    .firm{
+    .firm {
       position: relative;
-      &:before{
+      &:before {
         content: "";
         position: absolute;
         bottom: (0rem/16);
         left: 0;
         background: url("../images/tachon-white.png") no-repeat;
         width: (115rem/16);
-        height:(13rem/16) ;
+        height: (13rem/16);
       }
     }
   }
@@ -569,7 +569,6 @@ body {
     }
   }
 
-
   .desire {
     box-sizing: border-box;
     position: relative;
@@ -675,15 +674,15 @@ body {
 
       a {
         max-width: 95%;
-        height:100%;
+        height: 100%;
         font-size: (75rem/16);
         background-repeat: no-repeat;
         background-size: 100% 29% !important;
         background-position: bottom;
         line-height: (400rem/16);
 
-        &:before{
-          width:(151rem/16);
+        &:before {
+          width: (151rem/16);
           height: (49em/16);
           background: url("../images/more.png") no-repeat;
           position: absolute;
@@ -695,25 +694,25 @@ body {
     }
 
     &:before,
-    &:after{
+    &:after {
       background: url("../images/saparator.png");
       height: (7em/16);
       position: absolute;
       width: 67%;
-      left:0;
-      right:0;
+      left: 0;
+      right: 0;
       margin: 0 auto;
     }
 
-    &:after{
+    &:after {
       top: 45%;
     }
 
-    &:before{
+    &:before {
       background: none;
     }
   }
-  .decoration-pic-8{
+  .decoration-pic-8 {
     position: absolute;
     top: (-90em/16);
     right: 0;
@@ -722,7 +721,6 @@ body {
     background: url("../images/recetas-decoration-1.png");
   }
 }
-
 
 .news {
   margin: (35em/16) auto (100em/16);
@@ -746,7 +744,7 @@ body {
     margin-bottom: (25rem/16);
     text-transform: uppercase;
 
-    &:before{
+    &:before {
       content: "";
       width: 100%;
       height: (6rem/16);
@@ -757,35 +755,35 @@ body {
     }
   }
 
-  .years{
+  .years {
     width: 100%;
     box-sizing: border-box;
     padding: (32em/16);
     font-family: RockwellStdBold;
     position: relative;
 
-    li{
+    li {
 
-      font-size:(14rem/16) ;
+      font-size: (14rem/16);
       text-transform: uppercase;
       line-height: (23rem/16);
       padding-left: 10%;
 
-      a{
+      a {
         color: #6D6E70;
         text-decoration: none;
         position: relative;
         &:hover {
-          color:#F5A900 !important;
+          color: #F5A900 !important;
         }
 
-        &.active{
-          color:#F5A900 !important;
-          &:before{
+        &.active {
+          color: #F5A900 !important;
+          &:before {
             content: "";
             background: url("../images/tilde.png") no-repeat;
-            height:(14rem/16);
-            width:(19rem/16);
+            height: (14rem/16);
+            width: (19rem/16);
             position: absolute;
             left: (-22rem/16);
             top: (-2rem/16);
@@ -794,7 +792,7 @@ body {
         }
       }
 
-      &.title{
+      &.title {
         color: #6A3327;
         font-size: (23em/16);
         text-align: left;
@@ -802,7 +800,7 @@ body {
       }
     }
 
-    &:before{
+    &:before {
       content: "";
       width: 77%;
       height: (6rem/16);
@@ -823,7 +821,6 @@ body {
     background-size: 100% 100%;
     box-sizing: border-box;
 
-
     .decoration-pic-2 {
       width: (242em/16);
       height: (191em/16);
@@ -840,17 +837,17 @@ body {
       height: 29%;
       overflow: auto;
 
-      li{
+      li {
         cursor: pointer;
-        &.active{
-          color:#F5A900 !important;
+        &.active {
+          color: #F5A900 !important;
           font-weight: bold;
         }
       }
     }
   }
 
-  aside{
+  aside {
     width: (274em/16);
     height: (410em/16);
     margin: (110em/16) 0 0;
@@ -859,22 +856,22 @@ body {
     background-size: 100% 100%;
   }
 
-  .carousel-wrap{
-    .carousel{
+  .carousel-wrap {
+    .carousel {
       position: absolute;
       bottom: 12%;
       background: #D0D2D3;
       width: 100%;
-      left:0;
+      left: 0;
       padding: (7em/16);
       visibility: hidden;
       height: 35.25%;
 
-      &.show{
-        visibility:visible !important;
+      &.show {
+        visibility: visible !important;
       }
 
-      .error{
+      .error {
         color: #6A3327;
         font-size: (18em/16);
         font-family: RockwellStdBold;
@@ -887,24 +884,24 @@ body {
   }
 }
 
-.recipes-view{
+.recipes-view {
   margin: (35em/16) auto (100em/16);
   position: relative;
   width: 87%;
 
-  aside{
+  aside {
     float: left;
     width: 24%;
     margin: (70em/16) 0 0 0;
 
-    .recipes-list{
+    .recipes-list {
       font-family: 'TwentySingles';
 
-      li{
+      li {
         position: relative;
         line-height: (26rem/16);
 
-        &:before{
+        &:before {
           content: "";
           background: url("../images/saparator_white.png");
           position: absolute;
@@ -914,7 +911,7 @@ body {
           left: 0;
         }
 
-        a{
+        a {
           color: #FFFFFF;
           font-size: (66em/16);
           text-decoration: none;
@@ -923,16 +920,16 @@ body {
           padding: (20rem/16) 0;
 
           &:hover {
-            color:#F5A900 !important;
+            color: #F5A900 !important;
           }
 
-          &.active{
-            color:#F5A900 !important;
-            &:before{
+          &.active {
+            color: #F5A900 !important;
+            &:before {
               content: "";
               background: url("../images/tilde.png") no-repeat;
-              height:(24rem/16);
-              width:(33rem/16);
+              height: (24rem/16);
+              width: (33rem/16);
               position: absolute;
               left: (-40rem/16);
               top: (20rem/16);
@@ -942,25 +939,25 @@ body {
       }
     }
 
-    .paginator{
+    .paginator {
       font-family: 'TwentySingles';
       margin-top: (30rem/16);
 
-      color:#F5A900;
+      color: #F5A900;
       font-size: (66em/16);
-      a{
+      a {
         color: #FFFFFF;
         text-decoration: none;
       }
-      .next,.prev{
+      .next, .prev {
         display: none;
       }
 
-      .page-numbers{
+      .page-numbers {
         position: relative;
-        margin-right:(20rem/16) ;
+        margin-right: (20rem/16);
 
-        &:before{
+        &:before {
           content: "";
           width: (5rem/16);
           height: (42rem/16);
@@ -970,14 +967,14 @@ body {
           right: (-17rem/16);
         }
 
-        &:last-child{
-          &:before{
+        &:last-child {
+          &:before {
             background: none;
           }
         }
       }
     }
-    .navrechts{
+    .navrechts {
       display: none;
     }
   }
@@ -991,7 +988,7 @@ body {
     margin: (70em/16) 0 0 0;
     height: (600rem/16);
 
-    .recipe-img{
+    .recipe-img {
       width: (280em/16);
       height: (195em/16);
       box-shadow: 5px 3px 40px #333;
@@ -1004,7 +1001,7 @@ body {
       padding: (6em/16);
       padding-left: 0;
 
-      img{
+      img {
         width: 100%;
       }
     }
@@ -1018,17 +1015,17 @@ body {
       width: 43%;
     }
 
-    article{
+    article {
       overflow: auto;
       height: 79%;
       color: #6D6E70;
       font-family: AGaramondPro-Regular;
       font-size: (17em/16);
       padding: 0 (25rem/16) 0 0;
-      p{
+      p {
         margin-top: 0;
       }
-      .sub-title{
+      .sub-title {
         color: #6A3327;
         font-family: RockwellStdBold;
         text-transform: uppercase;
@@ -1036,9 +1033,9 @@ body {
     }
   }
 
-  .category-nav{
+  .category-nav {
     margin: (10rem/16) 0 (10rem/16) 9%;
-    li{
+    li {
       background: none;
       height: inherit;
       height: (54rem/16);
@@ -1049,78 +1046,111 @@ body {
       visibility: hidden;
     }
   }
-  .page-title{
-    background-position:center bottom, center bottom !important;
-    background-repeat:no-repeat !important;
+  .page-title {
+    background-position: center bottom, center bottom !important;
+    background-repeat: no-repeat !important;
     line-height: (110rem/16);
   }
 }
 
-
-.page-id-42{
-  .page-title{
+.page-id-42 {
+  .page-title {
     background: url("../images/title-decorator.png"), url("../images/dulces_te.png");
   }
 }
-.page-id-44{
-  .page-title{
+
+.page-id-44 {
+  .page-title {
     background: url("../images/title-decorator.png"), url("../images/panes_snacks.png");
   }
 }
-.page-id-46{
-  .page-title{
+
+.page-id-46 {
+  .page-title {
     background: url("../images/title-decorator.png"), url("../images/platos_principales.png");
   }
 }
 
-.page-id-48{
-  .page-title{
+.page-id-48 {
+  .page-title {
     background: url("../images/title-decorator.png"), url("../images/postres.png");
   }
 }
-.page-id-50{
-  .page-title{
+
+.page-id-50 {
+  .page-title {
     background: url("../images/title-decorator.png"), url("../images/para_festejar.png");
   }
 }
-.page-id-52{
-  .page-title{
+
+.page-id-52 {
+  .page-title {
     background: url("../images/title-decorator.png"), url("../images/tortas.png");
   }
 }
 
-#footer{
-  background: #F5A900;
+#footer {
   margin-top: (50rem/16);
-  padding-top: (10rem/16);
+  position: relative;
+  background: #F5A900;
+  &:before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    content: "";
+    top: (-20rem/16);
+    background: url("../images/dulces_te.png") no-repeat;
+    background-position: top center;
+    height: (66rem/16);
+    z-index: -1;
+  }
+
+  .plinth-wrapper {
+    background: #FFFFFF;
+    background: url("../images/contacto-mancha-white.png") no-repeat;
+    background-size: 73% auto !important;
+    .plinth {
+      background: #FFFFFF;
+      color: #F5A900;
+      &:after, &:before {
+        background: #FFFFFF;
+      }
+
+      .firm{
+        &:before{
+          background: url("../images/tachon-yellow.png") no-repeat;
+        }
+      }
+    }
+  }
 }
 
-#contact{
-  .contact-board{
+#contact {
+  position: relative;
+  .contact-board {
     background: url("../images/pizarra-contacto.png") no-repeat;
     background-size: cover;
-    width:(493rem/16);
+    width: (493rem/16);
     height: (413rem/16);
     float: right;
     box-sizing: border-box;
     padding: (10rem/16) 0 0 (80rem/16);
     font-family: AGaramondPro-Regular;
-    margin: (60rem/16) 18% 0;
+    margin:(60rem/16) 15% 0 0;
 
-    .title{
+    .title {
       color: #6A3327;
       font-family: TwentySingles;
       font-size: (76rem/16);
       letter-spacing: 1px;
     }
 
-    label{
+    label {
       display: block;
       color: #6D6E70;
-
     }
 
-    input[type="text"]{
+    input[type="text"] {
       width: 85%;
       background: none;
       border: none;
@@ -1128,7 +1158,7 @@ body {
       margin-bottom: (10rem/16);
     }
 
-    .submit{
+    .submit {
       color: #FFFFFF;
       font-family: Helvetica, Arial, sans-serif;
       font-size: (12rem/16);
@@ -1139,19 +1169,70 @@ body {
       float: right;
     }
 
-    .msj{
+    .msj {
       color: #6A3327;
       font-family: TwentySingles;
       font-size: (58rem/16);
       letter-spacing: 1px;
       position: relative;
-      i{
+      i {
         font-size: (38rem/16);
-        font-style:normal;
+        font-style: normal;
         margin-top: (-5rem/16);
         position: absolute;
         right: (-17rem/16);
-        top:0;
+        top: 0;
+      }
+    }
+  }
+
+  .decoration-1 {
+    background: url("../images/contacto-decoration-1.png") no-repeat;
+    position: absolute;
+    top: (20rem/16);
+    left: 7%;
+    width: (561rem/16);
+    height: (505rem/16);
+    z-index: 99;
+  }
+
+  .social {
+    position: absolute;
+    left: 8%;
+    bottom: 0;
+    width: (344em/16);
+    height: (175em/16);
+    z-index: 99;
+    box-sizing: border-box;
+    padding: (40em/16) 0 0 (35em/16);
+    background: url("../images/social-bg-brown.png") no-repeat;
+    background-size: contain;
+
+    li {
+      display: block;
+
+      a {
+        font-size: (24em/16);
+        line-height: (30em/24);
+        color: #ffffff;
+
+        &:before {
+          color: #ffffff;
+        }
+
+        span {
+          font-family: TwentySingles, sans-serif;
+          font-size: (50rem/16);
+          letter-spacing: (2rem/16);
+          margin-left: (8rem/16);
+          text-transform: lowercase;
+
+          i {
+            font-size: (35rem/16);
+            margin-right: (3rem/16);
+            font-style: normal;
+          }
+        }
       }
     }
   }

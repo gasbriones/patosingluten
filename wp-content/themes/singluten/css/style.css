@@ -111,7 +111,7 @@ body {
 
 .plinth-wrapper {
   background: url("../images/dulces_te.png") no-repeat;
-  background-position: center center;
+  background-position: center center !important;
   background-size: 73% 100%; }
   .plinth-wrapper .plinth {
     height: 3.6875rem;
@@ -804,55 +804,113 @@ body {
   background: url("../images/title-decorator.png"), url("../images/tortas.png"); }
 
 #footer {
-  background: #F5A900;
   margin-top: 3.125rem;
-  padding-top: 0.625rem; }
+  position: relative;
+  background: #F5A900; }
+  #footer:before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    content: "";
+    top: -1.25rem;
+    background: url("../images/dulces_te.png") no-repeat;
+    background-position: top center;
+    height: 4.125rem;
+    z-index: -1; }
+  #footer .plinth-wrapper {
+    background: #FFFFFF;
+    background: url("../images/contacto-mancha-white.png") no-repeat;
+    background-size: 73% auto !important; }
+    #footer .plinth-wrapper .plinth {
+      background: #FFFFFF;
+      color: #F5A900; }
+      #footer .plinth-wrapper .plinth:after, #footer .plinth-wrapper .plinth:before {
+        background: #FFFFFF; }
+      #footer .plinth-wrapper .plinth .firm:before {
+        background: url("../images/tachon-yellow.png") no-repeat; }
 
-#contact .contact-board {
-  background: url("../images/pizarra-contacto.png") no-repeat;
-  background-size: cover;
-  width: 30.8125rem;
-  height: 25.8125rem;
-  float: right;
-  box-sizing: border-box;
-  padding: 0.625rem 0 0 5rem;
-  font-family: AGaramondPro-Regular;
-  margin: 3.75rem 18% 0; }
-  #contact .contact-board .title {
-    color: #6A3327;
-    font-family: TwentySingles;
-    font-size: 4.75rem;
-    letter-spacing: 1px; }
-  #contact .contact-board label {
-    display: block;
-    color: #6D6E70; }
-  #contact .contact-board input[type="text"] {
-    width: 85%;
-    background: none;
-    border: none;
-    border-bottom: solid 1px #E4E4E6;
-    margin-bottom: 0.625rem; }
-  #contact .contact-board .submit {
-    color: #FFFFFF;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 0.75rem;
-    background: #6B3225;
-    border: none;
-    padding: 0.4375rem 1.25rem;
-    margin: 0.625rem 15% 0;
-    float: right; }
-  #contact .contact-board .msj {
-    color: #6A3327;
-    font-family: TwentySingles;
-    font-size: 3.625rem;
-    letter-spacing: 1px;
-    position: relative; }
-    #contact .contact-board .msj i {
-      font-size: 2.375rem;
-      font-style: normal;
-      margin-top: -0.3125rem;
-      position: absolute;
-      right: -1.0625rem;
-      top: 0; }
-
-/*# sourceMappingURL=style.css.map */
+#contact {
+  position: relative; }
+  #contact .contact-board {
+    background: url("../images/pizarra-contacto.png") no-repeat;
+    background-size: cover;
+    width: 30.8125rem;
+    height: 25.8125rem;
+    float: right;
+    box-sizing: border-box;
+    padding: 0.625rem 0 0 5rem;
+    font-family: AGaramondPro-Regular;
+    margin: 3.75rem 15% 0 0; }
+    #contact .contact-board .title {
+      color: #6A3327;
+      font-family: TwentySingles;
+      font-size: 4.75rem;
+      letter-spacing: 1px; }
+    #contact .contact-board label {
+      display: block;
+      color: #6D6E70; }
+    #contact .contact-board input[type="text"] {
+      width: 85%;
+      background: none;
+      border: none;
+      border-bottom: solid 1px #E4E4E6;
+      margin-bottom: 0.625rem; }
+    #contact .contact-board .submit {
+      color: #FFFFFF;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 0.75rem;
+      background: #6B3225;
+      border: none;
+      padding: 0.4375rem 1.25rem;
+      margin: 0.625rem 15% 0;
+      float: right; }
+    #contact .contact-board .msj {
+      color: #6A3327;
+      font-family: TwentySingles;
+      font-size: 3.625rem;
+      letter-spacing: 1px;
+      position: relative; }
+      #contact .contact-board .msj i {
+        font-size: 2.375rem;
+        font-style: normal;
+        margin-top: -0.3125rem;
+        position: absolute;
+        right: -1.0625rem;
+        top: 0; }
+  #contact .decoration-1 {
+    background: url("../images/contacto-decoration-1.png") no-repeat;
+    position: absolute;
+    top: 1.25rem;
+    left: 7%;
+    width: 35.0625rem;
+    height: 31.5625rem;
+    z-index: 99; }
+  #contact .social {
+    position: absolute;
+    left: 8%;
+    bottom: 0;
+    width: 21.5em;
+    height: 10.9375em;
+    z-index: 99;
+    box-sizing: border-box;
+    padding: 2.5em 0 0 2.1875em;
+    background: url("../images/social-bg-brown.png") no-repeat;
+    background-size: contain; }
+    #contact .social li {
+      display: block; }
+      #contact .social li a {
+        font-size: 1.5em;
+        line-height: 1.25em;
+        color: #ffffff; }
+        #contact .social li a:before {
+          color: #ffffff; }
+        #contact .social li a span {
+          font-family: TwentySingles, sans-serif;
+          font-size: 3.125rem;
+          letter-spacing: 0.125rem;
+          margin-left: 0.5rem;
+          text-transform: lowercase; }
+          #contact .social li a span i {
+            font-size: 2.1875rem;
+            margin-right: 0.1875rem;
+            font-style: normal; }
