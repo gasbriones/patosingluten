@@ -7,5 +7,5 @@ query_posts('page_id=98');
     </h4>
     <div class="main-menu margin center">
     <?php wp_nav_menu(array('theme_location' => 'category-menu', 'menu_class' => 'menu category-nav clearfix')); ?>
-    <div>
+    </div>
 <?php endwhile; ?>

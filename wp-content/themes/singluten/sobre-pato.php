@@ -17,9 +17,9 @@
             <img src="<?php echo the_field('sobre_pato_imagen_2') ?>">
         </figure>
         <ul class="social wow fadeIn">
-            <li><a href="<?php echo $fb; ?>" class="socicon socicon-facebook "><span class="fb-url"><i>/</i><?php echo basename(parse_url($fb, PHP_URL_PATH)); ?></span></a></li>
-            <li><a href="<?php echo $tw; ?>" class="socicon socicon-twitter"><span class="tw-url"><i>@</i><?php echo basename(parse_url($tw, PHP_URL_PATH)); ?></span></a></li>
-            <li><a href="<?php echo $inst; ?>" class="socicon socicon-instagram"><span class="inst-url"><i>/</i><?php echo basename(parse_url($inst, PHP_URL_PATH)); ?></span></a></li>
+            <li><a href="<?php echo $fb; ?>" class="socicon socicon-facebook" target="_blank"><span class="fb-url"><i>/</i><?php echo basename(parse_url($fb, PHP_URL_PATH)); ?></span></a></li>
+            <li><a href="<?php echo $tw; ?>" class="socicon socicon-twitter" target="_blank"><span class="tw-url"><i>@</i><?php echo basename(parse_url($tw, PHP_URL_PATH)); ?></span></a></li>
+            <li><a href="<?php echo $inst; ?>" class="socicon socicon-instagram" target="_blank"><span class="inst-url"><i>/</i><?php echo basename(parse_url($inst, PHP_URL_PATH)); ?></span></a></li>
         </ul>
 
         <div class="white-board">

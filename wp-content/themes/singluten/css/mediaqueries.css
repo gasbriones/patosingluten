@@ -1,5 +1,9 @@
 @media screen and (max-width: 1024px) {
   html, body {
-    font-size: 14px !important; } }
+    font-size: 14px !important; }
 
-/*# sourceMappingURL=mediaqueries.css.map */
+  .page-title {
+    background-size: 17% 100%; }
+
+  .about-pato figure {
+    width: 35%; } }

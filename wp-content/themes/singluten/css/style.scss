@@ -71,7 +71,7 @@
 
       a {
         width: (15rem/16) !important;
-        height: (18em/16) !important;
+        height: (18rem/16) !important;
         border-radius: (20rem/16) !important;
         background-color: rgba(255, 255, 255, 0.5) !important;
         &.active {
@@ -187,6 +187,7 @@ body {
         bottom: 0;
         left: (-120rem/16);
         background: url("../images/celi-market.png") no-repeat;
+        background-size: 100% 100%;
         width: (104rem/16);
         height: (79rem/16);
       }
@@ -210,6 +211,7 @@ body {
 .decoration-pic-3 {
   position: absolute;
   background: url("../images/sobre-pato-decoration-3.png") no-repeat;
+  background-size: 100% 100%;
 }
 
 .menu {
@@ -246,35 +248,36 @@ body {
     &:before {
       content: "";
       background-image: url("../images/slogan.png");
-      width: (189em/16);
-      height: (65em/16);
+      background-size: 100%;
+      width: (189rem/16);
+      height: (65rem/16);
       position: absolute;
-      top: 4em;
-      right: -15em;
+      top: 4rem;
+      right: -15rem;
     }
 
     .logo {
       float: left;
-      margin: 1em 0 0 (20em/16);
+      margin: 1rem 0 0 (20rem/16);
     }
   }
 
   .social {
     position: absolute;
     right: 0;
-    top: 2em;
-    width: (149em/16);
-    height: (56em/16);
+    top: 2rem;
+    width: (149rem/16);
+    height: (56rem/16);
 
     li {
       float: left;
-      margin: 1em 0 0 (12em/16);
+      margin: 1rem 0 0 (12rem/16);
 
       &:first-child {
-        margin-left: (20em/16);
+        margin-left: (20rem/16);
       }
       a {
-        font-size: (21em/16);
+        font-size: (21rem/16);
         &:before {
           color: #222121;
         }
@@ -284,7 +287,7 @@ body {
 
   .search {
     position: absolute;
-    top: (48em/16);
+    top: (48rem/16);
     left: 0;
 
     input[type='text'] {
@@ -293,10 +296,10 @@ body {
       border-bottom: solid 2px #ffffff;
       color: #ffffff;
       font-family: Avenir45BookBook;
-      font-size: (15em/16);
-      width: (152em/16);
-      padding: 0 0 (5em/16) 0;
-      line-height: (24em/16);
+      font-size: (15rem/16);
+      width: (152rem/16);
+      padding: 0 0 (5rem/16) 0;
+      line-height: (24rem/16);
 
       @include placeholder {
         color: #ffffff;
@@ -305,40 +308,40 @@ body {
     input[type='submit'] {
       background: url("../images/lupa.png") no-repeat;
       border: none;
-      width: (23em/16);
-      height: (27em/16);
-      text-indent: -9999em;
+      width: (23rem/16);
+      height: (27rem/16);
+      text-indent: -9999rem;
     }
   }
 
   #menu-header {
-
-    font-size: (76em/16);
+    font-size: (76rem/16);
     width: 100%;
-    max-width: (889em/76);
-    height: (57em/76);
+    max-width: (889rem/16);
+    height: (57rem/16);
     background: url("../images/menu-principal-bg.png") no-repeat;
+    background-size:100% 100% ;
     position: absolute;
     left: 50%;
-    bottom: (-36em/76);
+    bottom: (-36rem/16);
     transform: translate(-50%, 0);
     padding: 0 10%;
     z-index: 99;
 
     li {
       width: 25%;
-      letter-spacing: (2em/76);
+      letter-spacing: (2rem/16);
       text-align: right;
-      line-height: (50em/76);
+      line-height: (50rem/16);
 
       &:before {
         position: absolute;
         content: "";
-        top: (30em/76);
+        top: (30rem/16);
         background: url("../images/disc.png") no-repeat;
-        width: (8em/16);
-        height: (8em/16);
-        right: (-56em/76);
+        width: (8rem/16);
+        height: (8rem/16);
+        right: (-33rem/16);
       }
 
       a {
@@ -350,11 +353,11 @@ body {
         &:after {
           position: absolute;
           content: "";
-          top: (30em/76);
+          top: (30rem/16);
           background: url("../images/disc.png") no-repeat;
-          width: (8em/76);
-          height: (8em/76);
-          left: (5em/76);
+          width: (8rem/16);
+          height: (8rem/16);
+          left: (5rem/16);
         }
       }
     }
@@ -362,7 +365,7 @@ body {
 }
 
 .main-menu {
-  margin-top: (36em/16);
+  margin-top: (36rem/16);
 }
 
 .category-nav {
@@ -374,7 +377,7 @@ body {
     background-size: 100% !important;
     //margin: 0 .5%;
     a {
-      font-size: (51em/16);
+      font-size: (51rem/16);
       color: #FFFFFF;
       text-decoration: none;
       width: 100%;
@@ -382,7 +385,7 @@ body {
       line-height: (54rem/16);
       text-align: center;
       background-size: 100% 100% !important;
-      letter-spacing: (3em/76);
+      letter-spacing: (3rem/16);
       position: absolute;
       bottom: 0;
       left: 0;
@@ -447,7 +450,7 @@ body {
 .page-title {
   font-family: VTKSINKED;
   color: #FFFFFF;
-  font-size: (61em/16);
+  font-size: (61rem/16);
   line-height: (103rem/16);
   text-align: center;
   box-sizing: border-box;
@@ -456,66 +459,69 @@ body {
 
 .white-board {
   background: url("../images/pizarron-blanco.png") no-repeat;
+  background-size: 100% 100%;
   position: relative;
   box-sizing: border-box;
 }
 
 .about {
-  margin: (155em/16) 0 0;
+  margin: (155rem/16) 0 0;
 
   .pic-one {
     position: absolute;
     left: 6.5%;
-    top: (20em/16);
+    top: (20rem/16);
     z-index: 999;
   }
   .pic-two {
     position: absolute;
-    top: (235em/16);
+    top: (235rem/16);
     left: 5%;
     z-index: 999;
   }
 
   .white-board {
-    width: (829em/16);
-    height: (614em/16);
+    width: (829rem/16);
+    height: (614rem/16);
     float: right;
-    margin: (70em/16) (80em/16) 0 0;
+    margin: (70rem/16) (80rem/16) 0 0;
     position: relative;
-    padding: (90em/16);
+    padding: (90rem/16);
 
     .decoration-pic-1 {
-      width: (229em/16);
-      height: (222em/16);
+      width: (229rem/16);
+      height: (222rem/16);
       position: absolute;
       background: url("../images/sobre-pato-decoration-1.png") no-repeat;
-      bottom: (-122em/16);
-      left: (-107em/16);
+      background-size: 100% 100%;
+      bottom: (-122rem/16);
+      left: (-107rem/16);
     }
     .decoration-pic-2 {
-      width: (279em/16);
-      height: (248em/16);
+      width: (279rem/16);
+      height: (248rem/16);
       position: absolute;
       background: url("../images/sobre-pato-decoration-2.png") no-repeat;
-      top: (-145em/16);
-      right: (40em/16);
+      background-size: 100% 100%;
+      top: (-145rem/16);
+      right: (40rem/16);
     }
     .decoration-pic-3 {
-      width: (145em/16);
-      height: (149em/16);
-      background-size: cover;
-      bottom: (30em/16);
-      right: (-60em/16);
+      width: (145rem/16);
+      height: (149rem/16);
+      background-size: 100% 100%;
+      bottom: (30rem/16);
+      right: (-60rem/16);
     }
 
     article {
       color: #6D6E70;
       font-family: AGaramondPro-Regular;
-      font-size: (17em/16);
+      font-size: (17rem/16);
 
       .title {
         color: #6A3327;
-        font-size: (23em/16);
+        font-size: (23rem/16);
         font-family: RockwellStdBold;
       }
     }
@@ -523,10 +529,11 @@ body {
     &:before {
       content: "";
       background: url("../images/sin-gluten-sticker.png") no-repeat;
-      width: (419em/16);
-      height: (128em/16);
+      background-size: 100;
+      width: (419rem/16);
+      height: (128rem/16);
       position: absolute;
-      top: (-40em/16);
+      top: (-40rem/16);
       left: 9%;
     }
   }
@@ -534,19 +541,19 @@ body {
   .social {
     position: absolute;
     left: 8%;
-    top: 33em;
-    width: (344em/16);
-    height: (175em/16);
+    top: 33rem;
+    width: (344rem/16);
+    height: (175rem/16);
     z-index: 99;
     box-sizing: border-box;
-    padding: (40em/16) 0 0 (35em/16);
+    padding: (40rem/16) 0 0 (35rem/16);
 
     li {
       display: block;
 
       a {
-        font-size: (24em/16);
-        line-height: (30em/24);
+        font-size: (24rem/16);
+        line-height: (30rem/24);
         color: #ffffff;
 
         &:before {
@@ -572,12 +579,12 @@ body {
   .desire {
     box-sizing: border-box;
     position: relative;
-    padding: (150em/16) 0 (340em/16) (200em/16);
+    padding: (150rem/16) 0 (340rem/16) (200rem/16);
 
     article {
       color: #FFFFFF;
       box-sizing: border-box;
-      font-size: (87em/16);
+      font-size: (87rem/16);
       font-family: TwentySingles, sans-serif;
       letter-spacing: (2rem/16);
       line-height: (65rem/16);
@@ -607,29 +614,30 @@ body {
     }
 
     .decoration-pic-4 {
-      width: (214em/16);
-      height: (224em/16);
+      width: (214rem/16);
+      height: (224rem/16);
       position: absolute;
       background: url("../images/sobre-pato-decoration-4.png") no-repeat;
-      top: (30em/16);
-      left: (10em/16);
+      background-size: 100% 100%;
+      top: (30rem/16);
+      left: (10rem/16);
     }
 
     .decoration-pic-5 {
       background: url("../images/sobre-pato-decoration-5.png") no-repeat;
-      width: (491em/16);
-      height: (497em/16);
-      background-size: cover;
+      background-size: 100% 100%;
+      width: (491rem/16);
+      height: (497rem/16);
       position: absolute;
-      top: (120em/16);
+      top: (120rem/16);
       right: 0;
     }
 
     .decoration-pic-6 {
       background: url("../images/sobre-pato-decoration-6.png") no-repeat;
-      width: (222em/16);
-      height: (215em/16);
-      background-size: cover;
+      width: (222rem/16);
+      height: (215rem/16);
+      background-size: 100% 100%;
       position: absolute;
       bottom: (-65rem/16);
       right: 0;
@@ -639,14 +647,14 @@ body {
     .pic-three {
       position: absolute;
       right: 0;
-      top: (120em/16);
+      top: (120rem/16);
     }
 
     .decoration-pic-7 {
       background: url("../images/sobre-pato-decoration-7.png") no-repeat;
-      width: (544em/16);
-      height: (361em/16);
-      background-size: cover;
+      width: (544rem/16);
+      height: (361rem/16);
+      background-size: 100% 100%;
       position: absolute;
       bottom: 0;
       left: 0;
@@ -663,7 +671,7 @@ body {
 
     li {
       width: (90%/3);
-      height: (237em/16);
+      height: (237rem/16);
       margin-left: 5%;
       margin-bottom: 10%;
       position: relative;
@@ -683,11 +691,11 @@ body {
 
         &:before {
           width: (151rem/16);
-          height: (49em/16);
+          height: (49rem/16);
           background: url("../images/more.png") no-repeat;
           position: absolute;
           content: "";
-          bottom: (-50em/16);
+          bottom: (-50rem/16);
           left: 40%;
         }
       }
@@ -696,7 +704,7 @@ body {
     &:before,
     &:after {
       background: url("../images/saparator.png");
-      height: (7em/16);
+      height: (7rem/16);
       position: absolute;
       width: 67%;
       left: 0;
@@ -714,31 +722,33 @@ body {
   }
   .decoration-pic-8 {
     position: absolute;
-    top: (-90em/16);
+    top: (-90rem/16);
     right: 0;
-    width: (354em/16);
-    height: (400em/16);
+    width: (354rem/16);
+    height: (400rem/16);
     background: url("../images/recetas-decoration-1.png");
+    background-size: 100% 100%;
   }
 }
 
 .news {
-  margin: (35em/16) auto (100em/16);
+  margin: (35rem/16) auto (100rem/16);
   position: relative;
   width: 87%;
 
   .decoration-pic-1 {
-    width: (352em/16);
-    height: (332em/16);
+    width: (352rem/16);
+    height: (332rem/16);
     position: absolute;
     background: url("../images/news-decoration-2.png") no-repeat;
-    bottom: (-85em/16);
+    background-size: 100% 100%;
+    bottom: (-85rem/16);
     left: 0;
   }
 
   .title {
     color: #6A3327;
-    font-size: (23em/16);
+    font-size: (23rem/16);
     font-family: RockwellStdBold;
     position: relative;
     margin-bottom: (25rem/16);
@@ -758,7 +768,7 @@ body {
   .years {
     width: 100%;
     box-sizing: border-box;
-    padding: (32em/16);
+    padding: (32rem/16);
     font-family: RockwellStdBold;
     position: relative;
 
@@ -794,7 +804,7 @@ body {
 
       &.title {
         color: #6A3327;
-        font-size: (23em/16);
+        font-size: (23rem/16);
         text-align: left;
         padding-left: 0%;
       }
@@ -815,25 +825,26 @@ body {
     width: (752rem/16);
     height: (750rem/16);
     float: right;
-    margin: (70em/16) 0 0 0;
+    margin: (70rem/16) 0 0 0;
     position: relative;
-    padding: (90em/16);
+    padding: (90rem/16);
     background-size: 100% 100%;
     box-sizing: border-box;
 
     .decoration-pic-2 {
-      width: (242em/16);
-      height: (191em/16);
+      width: (242rem/16);
+      height: (191rem/16);
       position: absolute;
       background: url("../images/news-decoration-1.png") no-repeat;
-      top: (-145em/16);
+      background-size: 100% 100%;
+      top: (-145rem/16);
       right: 0;
     }
 
     .news-list {
       color: #6D6E70;
       font-family: AGaramondPro-Regular;
-      font-size: (17em/16);
+      font-size: (17rem/16);
       height: 29%;
       overflow: auto;
 
@@ -848,9 +859,9 @@ body {
   }
 
   aside {
-    width: (274em/16);
-    height: (410em/16);
-    margin: (110em/16) 0 0;
+    width: (274rem/16);
+    height: (410rem/16);
+    margin: (110rem/16) 0 0;
     background: url("../images/pizarron-blanco.png") no-repeat;
     float: left;
     background-size: 100% 100%;
@@ -863,7 +874,7 @@ body {
       background: #D0D2D3;
       width: 100%;
       left: 0;
-      padding: (7em/16);
+      padding: (7rem/16);
       visibility: hidden;
       height: 35.25%;
 
@@ -873,7 +884,7 @@ body {
 
       .error {
         color: #6A3327;
-        font-size: (18em/16);
+        font-size: (18rem/16);
         font-family: RockwellStdBold;
         width: 100%;
         text-align: center;
@@ -885,14 +896,13 @@ body {
 }
 
 .recipes-view {
-  margin: (35em/16) auto (100em/16);
+  margin: (35rem/16) auto (100rem/16);
   position: relative;
   width: 87%;
 
   aside {
     float: left;
-    width: 24%;
-    margin: (70em/16) 0 0 0;
+    margin: (70rem/16) 0 0 0;
 
     .recipes-list {
       font-family: 'TwentySingles';
@@ -905,7 +915,7 @@ body {
           content: "";
           background: url("../images/saparator_white.png");
           position: absolute;
-          height: (5em/16);
+          height: (5rem/16);
           width: 100%;
           bottom: 0;
           left: 0;
@@ -913,7 +923,7 @@ body {
 
         a {
           color: #FFFFFF;
-          font-size: (66em/16);
+          font-size: (66rem/16);
           text-decoration: none;
           letter-spacing: (2rem/16);
           display: block;
@@ -944,7 +954,7 @@ body {
       margin-top: (30rem/16);
 
       color: #F5A900;
-      font-size: (66em/16);
+      font-size: (66rem/16);
       a {
         color: #FFFFFF;
         text-decoration: none;
@@ -982,23 +992,23 @@ body {
   .white-board {
     float: right;
     width: 65%;
-    padding: (60em/16);
+    padding: (60rem/16);
     background-size: 100% 100%;
     box-sizing: border-box;
-    margin: (70em/16) 0 0 0;
+    margin: (70rem/16) 0 0 0;
     height: (600rem/16);
 
     .recipe-img {
-      width: (280em/16);
-      height: (195em/16);
+      width: (280rem/16);
+      height: (195rem/16);
       box-shadow: 5px 3px 40px #333;
       background: #FFFFFF;
       position: absolute;
       right: 10%;
-      top: (-40em/16);
+      top: (-40rem/16);
       transform: rotate(-5deg);
       -webkit-transform: rotate(-5deg); /* Safari */
-      padding: (6em/16);
+      padding: (6rem/16);
       padding-left: 0;
 
       img {
@@ -1009,7 +1019,7 @@ body {
     .title {
       color: #6A3327;
       font-family: RockwellStdBold;
-      font-size: (24em/16);
+      font-size: (24rem/16);
       text-transform: uppercase;
       margin-bottom: (10rem/16);
       width: 43%;
@@ -1020,7 +1030,7 @@ body {
       height: 79%;
       color: #6D6E70;
       font-family: AGaramondPro-Regular;
-      font-size: (17em/16);
+      font-size: (17rem/16);
       padding: 0 (25rem/16) 0 0;
       p {
         margin-top: 0;
@@ -1100,6 +1110,7 @@ body {
     content: "";
     top: (-20rem/16);
     background: url("../images/dulces_te.png") no-repeat;
+    background-size: 100% 100%;
     background-position: top center;
     height: (66rem/16);
     z-index: -1;
@@ -1112,6 +1123,10 @@ body {
     .plinth {
       background: #FFFFFF;
       color: #F5A900;
+      margin-bottom: 0;
+      padding-bottom: (35rem/16);
+      line-height: (85rem/16);
+      height: (55rem/16);
       &:after, &:before {
         background: #FFFFFF;
       }
@@ -1121,15 +1136,21 @@ body {
           background: url("../images/tachon-yellow.png") no-repeat;
         }
       }
+      .slogan{
+        &:before{
+          bottom: (-15rem/16);
+        }
+      }
     }
   }
 }
 
 #contact {
   position: relative;
+  margin-bottom: (150rem/16);
   .contact-board {
     background: url("../images/pizarra-contacto.png") no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
     width: (493rem/16);
     height: (413rem/16);
     float: right;
@@ -1142,7 +1163,7 @@ body {
       color: #6A3327;
       font-family: TwentySingles;
       font-size: (76rem/16);
-      letter-spacing: 1px;
+      letter-spacing: (1rem/16);
     }
 
     label {
@@ -1173,7 +1194,7 @@ body {
       color: #6A3327;
       font-family: TwentySingles;
       font-size: (58rem/16);
-      letter-spacing: 1px;
+      letter-spacing: (1rem/16);
       position: relative;
       i {
         font-size: (38rem/16);
@@ -1188,32 +1209,70 @@ body {
 
   .decoration-1 {
     background: url("../images/contacto-decoration-1.png") no-repeat;
+    background-size: 100% 100%;
     position: absolute;
     top: (20rem/16);
     left: 7%;
     width: (561rem/16);
-    height: (505rem/16);
+    height: (530rem/16);
     z-index: 99;
+  }
+
+  .decoration-2 {
+    background: url("../images/contacto-decoration-2.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: (-150rem/16);
+    right: 3%;
+    width: (180rem/16);
+    height: (204rem/16);
+    z-index: 99;
+  }
+
+  .decoration-3{
+    background: url("../images/contacto-decoration-4.png") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    width: (250rem/16);
+    height: (106rem/16);
+    z-index: 0;
+    content: "";
+    bottom: (-73rem/16);
+    left: (350rem/16);
   }
 
   .social {
     position: absolute;
     left: 8%;
-    bottom: 0;
-    width: (344em/16);
-    height: (175em/16);
-    z-index: 99;
+    bottom: (-110rem/16);
+    width: (344rem/16);
+    height: (175rem/16);
+    z-index: 95;
     box-sizing: border-box;
-    padding: (40em/16) 0 0 (35em/16);
+    padding: (40rem/16) 0 0 (35rem/16);
     background: url("../images/social-bg-brown.png") no-repeat;
+    background-size: 100% 100%;
     background-size: contain;
+
+    &:before{
+      background: url("../images/contacto-decoration-3.png") no-repeat;
+      background-size: 100% 100%;
+      position: absolute;
+      width: (146rem/16);
+      height: (98rem/16);
+      z-index: 99;
+      content: "";
+      bottom: (-28rem/16);
+      right: (-14rem/16);
+    }
+
 
     li {
       display: block;
 
       a {
-        font-size: (24em/16);
-        line-height: (30em/24);
+        font-size: (24rem/16);
+        line-height: (30rem/16);
         color: #ffffff;
 
         &:before {

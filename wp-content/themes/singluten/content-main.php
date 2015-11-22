@@ -5,7 +5,7 @@
         </div>
         <div class="main-menu margin center">
             <?php wp_nav_menu( array( 'theme_location' => 'category-menu','menu_class' => 'menu category-nav clearfix')); ?>
-        <div>
+        </div>
     </section>
     <section id="about" class="block about clearfix">
         <?php include 'sobre-pato.php' ?>
