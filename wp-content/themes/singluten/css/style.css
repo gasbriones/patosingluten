@@ -182,8 +182,7 @@ body {
 
 #header {
   box-sizing: border-box;
-  position: relative;
-  height: inherit !important; }
+  position: relative; }
   #header .logo-wrapper {
     position: relative;
     margin-bottom: 2.5em; }
