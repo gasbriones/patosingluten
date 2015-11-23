@@ -1,4 +1,4 @@
-<header id="header" class="block wrapper clearfix">
+<section id="header" class="block wrapper clearfix">
     <div class="margin center">
         <div class="search">
             <form action="/sarch">
@@ -17,4 +17,12 @@
         </ul>
         <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
     </div>
-</header>
+    <div class="block home clearfix">
+        <div class="carrousel">
+            <?php include 'carousel.php' ?>
+        </div>
+        <div class="main-menu margin center">
+            <?php wp_nav_menu( array( 'theme_location' => 'category-menu','menu_class' => 'menu category-nav clearfix')); ?>
+        </div>
+    </div>
+</section>

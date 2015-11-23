@@ -163,6 +163,10 @@ body {
     position: relative;
     margin: (25rem/16) 0 (18rem/16);
 
+    a{
+      color: #FFFFFF;
+      text-decoration: none;
+    }
     &:before, &:after {
       content: "";
       width: 100%;
@@ -240,6 +244,7 @@ body {
 #header {
   box-sizing: border-box;
   position: relative;
+  height: inherit !important;
 
   .logo-wrapper {
     position: relative;
@@ -1122,11 +1127,14 @@ body {
     background-size: 73% auto !important;
     .plinth {
       background: #FFFFFF;
-      color: #F5A900;
       margin-bottom: 0;
       padding-bottom: (35rem/16);
       line-height: (85rem/16);
       height: (55rem/16);
+      a{
+        color: #F5A900;
+        text-decoration: none;
+      }
       &:after, &:before {
         background: #FFFFFF;
       }
@@ -1266,7 +1274,6 @@ body {
       right: (-14rem/16);
     }
 
-
     li {
       display: block;
 
@@ -1297,3 +1304,39 @@ body {
   }
 }
 
+.nav-vert-top {
+  background: rgba(0, 0, 0, 0) url("../images/bg-opacity.png") repeat;
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 105;
+  display: none;
+  z-index: 99999;
+
+  a {
+    display: block;
+    height: 21px;
+    margin: 10px auto;
+    opacity: 0.8;
+    width: 80px;
+    z-index: 99999;
+  }
+}
+
+.nav-vert-bottom {
+  background: rgba(0, 0, 0, 0) url("../images/bg-opacity.png")repeat;
+  bottom: 0;
+  height: 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 105;
+  z-index: 99999;
+  a {
+    display: block;
+    height: 21px;
+    margin: 10px auto;
+    opacity: 0.8;
+    width: 80px;
+    z-index: 99999;
+  }
+}

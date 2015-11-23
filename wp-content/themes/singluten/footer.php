@@ -6,8 +6,8 @@ $inst = get_field('instagram', 'user_2');
 
 ?>
 
-<footer id="footer" class="clearfix">
-    <section id="contact" class="wrapper contact">
+<section id="footer" class="clearfix">
+    <div id="contact" class="wrapper contact">
         <h4 class="page-title wow bounceInDown">
             Contacto
         </h4>
@@ -46,6 +46,6 @@ $inst = get_field('instagram', 'user_2');
                 </form>
             </div>
         </div>
-    </section>
+    </div>
     <?php include 'plinth.php' ?>
-</footer>
+</section>
