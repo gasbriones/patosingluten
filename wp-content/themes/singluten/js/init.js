@@ -1,38 +1,68 @@
 new WOW().init();
-
 (function ($) {
 
+    $('#menu-header li a').click(function () {
+        var section = $(this).attr('rel');
 
-    $.scrollify({
-        section : "section",
-        sectionName : "section-name",
-        easing: "easeOutExpo",
-        scrollSpeed: 1100,
-        offset : 0,
-        scrollbars: true,
-        before:function() {
-            var currentSection = $($.scrollify.current()).attr('id');
-
-            if(currentSection == 'footer'){
-                $('.nav-vert-bottom').fadeOut()
-            }else{
-                $('.nav-vert-bottom').fadeIn()
-            }
-            if(currentSection == 'header'){
-                $('.nav-vert-top').fadeOut()
-            }else{
-                $('.nav-vert-top').fadeIn()
-            }
+        if (section != 'news') {
+            $('#' + section).animatescroll({
+                padding: '32'
+            });
         }
     });
 
 
-    $('.nav-vert-bottom img').click(function(){
-        $.scrollify.next();
-    })
+    $(window).scroll(function () {
+        var window = $(document).scrollTop();
 
-    $('.nav-vert-top img').click(function(){
-        $.scrollify.previous();
-    })
+        console.log('window ---> ',window);
+
+        if(window < 500 ){
+            sect = 'sobre-pato'
+            console.log('window ---> ',sect);
+        }else if(window > 914 && window < 2759){
+            sect = 'recetas'
+            console.log('window ---> ',sect);
+        }else if(window > 2759 && window < 3500){
+            sect = 'contacto'
+            console.log('window ---> ',sect);
+        }
+
+        if (window > 3500){
+            $('.nav-vert-bottom').fadeOut();
+        }else{
+            $('.nav-vert-bottom').fadeIn();
+        }
+
+        if (window > 3500){
+            $('.nav-vert-bottom').fadeOut();
+        }else{
+            $('.nav-vert-bottom').fadeIn();
+        }
+
+
+        $('.nav-vert-bottom img').unbind().click(function(){
+            console.log('about ---> ',sect);
+            $('#' + sect).animatescroll({
+                padding: '32'
+            });
+
+        });
+
+
+    });
+
 
 })(jQuery);
+
+function getPosition(element) {
+    var xPosition = 0;
+    var yPosition = 0;
+
+    while (element) {
+        xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+        yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+        element = element.offsetParent;
+    }
+    return {x: xPosition, y: yPosition};
+}

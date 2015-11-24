@@ -1,50 +1,31 @@
 <?php
 /*
-Template Name: recetas
+Template Name: Search Page
 */
 
 
 $post_id = get_the_ID();
-$get_post_id = $_GET['receta'];
+$get_post_search = $_GET['receta'];
 
-switch ($post_id) {
-    case 42:
-        $tag = 'dulces-para-el-te';
-        break;
-    case 44:
-        $tag = 'panes-y-snacks';
-        break;
-    case 46:
-        $tag = 'platos-principales';
-        break;
-    case 48:
-        $tag = 'postres';
-        break;
-    case 50:
-        $tag = 'para-festejar';
-        break;
-    case 52:
-        $tag = 'tortas';
-        break;
-}
+
 
 $paged = (get_query_var('paged')) ? absint(get_query_var('paged')) : 1;
 $args = array(
     'cat' => 28,
-    'tag' => $tag,
     'paged' => $paged,
     'orderby' => 'ASC',
-    'showposts' => '1'
+    'showposts' => '1',
+    's' => $get_post_search,
 );
 
 $query = new WP_Query($args);
 
 $args_menu = array(
     'cat' => 28,
-    'tag' => $tag,
     'showposts' => '8',
     'paged' => $paged,
-    'orderby' => 'ASC'
+    'orderby' => 'ASC',
+    's' => $get_post_search
 );
 
 $menu_query = new WP_Query($args_menu);
@@ -69,11 +50,13 @@ $menu_query = new WP_Query($args_menu);
                             if ($menu_query->have_posts()):
                                 $i = 0;
                                 while ($menu_query->have_posts()):$menu_query->the_post();
+                                    $post_tag = wp_get_post_tags($post->ID);
                                     ?>
                                     <li>
                                         <a class="<?php echo $post->ID == $get_post_id || ($get_post_id == '' && $i == 0) ? 'active' : ''; ?>"
-                                           href="<?php echo post_permalink($post_id) . "?receta=" . $post->ID ?>"><?php the_title(); ?></a>
+                                           href="<?php echo '../'.$post_tag[0]-> slug . "/?receta=" . $post->ID ?>"><?php the_title(); ?></a>
                                     </li>
+
                                     <?php $i++; endwhile;
                             endif;
                             ?>
