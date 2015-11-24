@@ -355,7 +355,8 @@ body {
   box-sizing: border-box; }
 
 .about {
-  margin: 9.6875rem 0 0; }
+  margin: 9.6875rem 0 0;
+  height: inherit !important; }
   .about .pic-one {
     position: absolute;
     left: 6.5%;
@@ -425,7 +426,7 @@ body {
       display: block; }
       .about .social li a {
         font-size: 1.5rem;
-        line-height: 1.25rem;
+        line-height: 1.875rem;
         color: #ffffff; }
         .about .social li a:before {
           color: #ffffff; }
@@ -433,12 +434,12 @@ body {
           font-family: TwentySingles, sans-serif;
           font-size: 3.125rem;
           letter-spacing: 0.125rem;
-          margin-left: 0.5rem;
           text-transform: lowercase; }
-          .about .social li a span i {
-            font-size: 2.1875rem;
-            margin-right: 0.1875rem;
-            font-style: normal; }
+        .about .social li a i {
+          font-family: TwentySingles, sans-serif;
+          font-size: 2.1875rem;
+          margin-left: 0.5rem;
+          font-style: normal; }
   .about .desire {
     box-sizing: border-box;
     position: relative;
@@ -817,11 +818,11 @@ body {
 .page-id-52 .page-title {
   background: url("../images/title-decorator.png"), url("../images/tortas.png"); }
 
-#footer {
+#contacto {
   margin-top: 3.125rem;
   position: relative;
   background: #F5A900; }
-  #footer:before {
+  #contacto:before {
     position: absolute;
     left: 0;
     width: 100%;
@@ -832,30 +833,30 @@ body {
     background-position: top center;
     height: 4.125rem;
     z-index: -1; }
-  #footer .plinth-wrapper {
+  #contacto .plinth-wrapper {
     background: #FFFFFF;
     background: url("../images/contacto-mancha-white.png") no-repeat;
     background-size: 73% auto !important; }
-    #footer .plinth-wrapper .plinth {
+    #contacto .plinth-wrapper .plinth {
       background: #FFFFFF;
       margin-bottom: 0;
       padding-bottom: 2.1875rem;
       line-height: 5.3125rem;
       height: 3.4375rem; }
-      #footer .plinth-wrapper .plinth a {
+      #contacto .plinth-wrapper .plinth a {
         color: #F5A900;
         text-decoration: none; }
-      #footer .plinth-wrapper .plinth:after, #footer .plinth-wrapper .plinth:before {
+      #contacto .plinth-wrapper .plinth:after, #contacto .plinth-wrapper .plinth:before {
         background: #FFFFFF; }
-      #footer .plinth-wrapper .plinth .firm:before {
+      #contacto .plinth-wrapper .plinth .firm:before {
         background: url("../images/tachon-yellow.png") no-repeat; }
-      #footer .plinth-wrapper .plinth .slogan:before {
+      #contacto .plinth-wrapper .plinth .slogan:before {
         bottom: -0.9375rem; }
 
-#contact {
+.contact {
   position: relative;
   margin-bottom: 9.375rem; }
-  #contact .contact-board {
+  .contact .contact-board {
     background: url("../images/pizarra-contacto.png") no-repeat;
     background-size: 100% 100%;
     width: 30.8125rem;
@@ -865,21 +866,21 @@ body {
     padding: 0.625rem 0 0 5rem;
     font-family: AGaramondPro-Regular;
     margin: 3.75rem 15% 0 0; }
-    #contact .contact-board .title {
+    .contact .contact-board .title {
       color: #6A3327;
       font-family: TwentySingles;
       font-size: 4.75rem;
       letter-spacing: 0.0625rem; }
-    #contact .contact-board label {
+    .contact .contact-board label {
       display: block;
       color: #6D6E70; }
-    #contact .contact-board input[type="text"] {
+    .contact .contact-board input[type="text"] {
       width: 85%;
       background: none;
       border: none;
       border-bottom: solid 1px #E4E4E6;
       margin-bottom: 0.625rem; }
-    #contact .contact-board .submit {
+    .contact .contact-board .submit {
       color: #FFFFFF;
       font-family: Helvetica, Arial, sans-serif;
       font-size: 0.75rem;
@@ -888,20 +889,20 @@ body {
       padding: 0.4375rem 1.25rem;
       margin: 0.625rem 15% 0;
       float: right; }
-    #contact .contact-board .msj {
+    .contact .contact-board .msj {
       color: #6A3327;
       font-family: TwentySingles;
       font-size: 3.625rem;
       letter-spacing: 0.0625rem;
       position: relative; }
-      #contact .contact-board .msj i {
+      .contact .contact-board .msj i {
         font-size: 2.375rem;
         font-style: normal;
         margin-top: -0.3125rem;
         position: absolute;
         right: -1.0625rem;
         top: 0; }
-  #contact .decoration-1 {
+  .contact .decoration-1 {
     background: url("../images/contacto-decoration-1.png") no-repeat;
     background-size: 100% 100%;
     position: absolute;
@@ -910,7 +911,7 @@ body {
     width: 35.0625rem;
     height: 33.125rem;
     z-index: 99; }
-  #contact .decoration-2 {
+  .contact .decoration-2 {
     background: url("../images/contacto-decoration-2.png") no-repeat;
     background-size: 100% 100%;
     position: absolute;
@@ -919,7 +920,7 @@ body {
     width: 11.25rem;
     height: 12.75rem;
     z-index: 99; }
-  #contact .decoration-3 {
+  .contact .decoration-3 {
     background: url("../images/contacto-decoration-4.png") no-repeat;
     background-size: 100% 100%;
     position: absolute;
@@ -929,7 +930,7 @@ body {
     content: "";
     bottom: -4.5625rem;
     left: 21.875rem; }
-  #contact .social {
+  .contact .social {
     position: absolute;
     left: 8%;
     bottom: -6.875rem;
@@ -941,7 +942,7 @@ body {
     background: url("../images/social-bg-brown.png") no-repeat;
     background-size: 100% 100%;
     background-size: contain; }
-    #contact .social:before {
+    .contact .social:before {
       background: url("../images/contacto-decoration-3.png") no-repeat;
       background-size: 100% 100%;
       position: absolute;
@@ -951,24 +952,24 @@ body {
       content: "";
       bottom: -1.75rem;
       right: -0.875rem; }
-    #contact .social li {
+    .contact .social li {
       display: block; }
-      #contact .social li a {
+      .contact .social li a {
         font-size: 1.5rem;
-        line-height: 1.875rem;
+        line-height: 2.1875rem;
         color: #ffffff; }
-        #contact .social li a:before {
+        .contact .social li a:before {
           color: #ffffff; }
-        #contact .social li a span {
+        .contact .social li a i {
+          font-size: 2.1875rem;
+          margin-left: 0.5rem;
+          font-style: normal;
+          font-family: TwentySingles, sans-serif; }
+        .contact .social li a span {
           font-family: TwentySingles, sans-serif;
           font-size: 3.125rem;
           letter-spacing: 0.125rem;
-          margin-left: 0.5rem;
           text-transform: lowercase; }
-          #contact .social li a span i {
-            font-size: 2.1875rem;
-            margin-right: 0.1875rem;
-            font-style: normal; }
 
 .nav-vert-top {
   background: transparent url("../images/bg-opacity.png") repeat;
@@ -1001,5 +1002,3 @@ body {
     opacity: 0.8;
     width: 80px;
     z-index: 99999; }
-
-/*# sourceMappingURL=style.css.map */

@@ -470,7 +470,7 @@ body {
 
 .about {
   margin: (155rem/16) 0 0;
-
+  height: inherit !important;
   .pic-one {
     position: absolute;
     left: 6.5%;
@@ -557,7 +557,7 @@ body {
 
       a {
         font-size: (24rem/16);
-        line-height: (30rem/24);
+        line-height: (30rem/16);
         color: #ffffff;
 
         &:before {
@@ -568,13 +568,14 @@ body {
           font-family: TwentySingles, sans-serif;
           font-size: (50rem/16);
           letter-spacing: (2rem/16);
-          margin-left: (8rem/16);
           text-transform: lowercase;
-          i {
-            font-size: (35rem/16);
-            margin-right: (3rem/16);
-            font-style: normal;
-          }
+        }
+
+        i {
+          font-family: TwentySingles, sans-serif;
+          font-size: (35rem/16);
+          margin-left: (8rem/16);
+          font-style: normal;
         }
       }
     }
@@ -1103,7 +1104,7 @@ body {
   }
 }
 
-#footer {
+#contacto {
   margin-top: (50rem/16);
   position: relative;
   background: #F5A900;
@@ -1152,7 +1153,7 @@ body {
   }
 }
 
-#contact {
+.contact {
   position: relative;
   margin-bottom: (150rem/16);
   .contact-board {
@@ -1278,25 +1279,25 @@ body {
 
       a {
         font-size: (24rem/16);
-        line-height: (30rem/16);
+        line-height: (35rem/16);
         color: #ffffff;
 
         &:before {
           color: #ffffff;
         }
 
+        i {
+          font-size: (35rem/16);
+          margin-left: (8rem/16);
+          font-style: normal;
+          font-family: TwentySingles, sans-serif;
+        }
+
         span {
           font-family: TwentySingles, sans-serif;
           font-size: (50rem/16);
           letter-spacing: (2rem/16);
-          margin-left: (8rem/16);
           text-transform: lowercase;
-
-          i {
-            font-size: (35rem/16);
-            margin-right: (3rem/16);
-            font-style: normal;
-          }
         }
       }
     }

@@ -13,8 +13,6 @@ new WOW().init();
         before:function() {
             var currentSection = $($.scrollify.current()).attr('id');
 
-            console.log(currentSection);
-
             if(currentSection == 'footer'){
                 $('.nav-vert-bottom').fadeOut()
             }else{
