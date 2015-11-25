@@ -1,7 +1,7 @@
 <section id="header" class="block wrapper clearfix">
     <div class="margin center">
         <div class="search">
-            <form role="search" method="get" action="<?php echo home_url( '/busqueda' ); ?>">
+            <form role="search" method="get" action="<?php echo home_url( '/busqueda/' ); ?>">
                 <input type="text" placeholder="buscar recetas" value="" name="receta" id="s"/>
                 <input type="submit" src="<?php echo get_site_url();?>/images/lupa.png">
             </form>

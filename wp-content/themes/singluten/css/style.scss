@@ -90,6 +90,10 @@ html, body {
   font-size: 16px;
 }
 
+section{
+  height: inherit !important;
+}
+
 body {
   background: url("../images/site-bg.jpg") repeat top center fixed;
   background-size: 100%;
