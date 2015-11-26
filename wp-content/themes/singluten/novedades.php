@@ -23,7 +23,7 @@ $query = new WP_Query($args);
     <div id="main" class="wrapper">
         <section class="block news clearfix">
             <h4 class="page-title wow bounceInDown">Novedades</h4>
-            <a class="back-to-site hvr-float-shadow" href="<?php echo site_url(); ?>">Volver al <span>home</span></a>
+            <a class="back-to-site hvr-float-shadow" href="<?php echo site_url(); ?>">HOME</a>
 
             <aside>
                 <ul class="years">

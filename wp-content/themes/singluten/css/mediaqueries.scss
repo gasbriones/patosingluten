@@ -95,6 +95,24 @@
       height: (400rem/14);
     }
   }
+
+  .recipes-view{
+    .main-menu{
+      .category-nav{
+        margin-left: 0;
+        li{
+          width: (100%/5);
+          height: (50rem/14);
+          a{
+            font-size: (55rem/14);
+            line-height: (22rem/14);
+            padding-top: (9rem/14);
+            height: (50rem/14);
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

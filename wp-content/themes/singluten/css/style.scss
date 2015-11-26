@@ -132,22 +132,16 @@ body {
   left: 0;
   color: #FFFFFF;
   text-decoration: none;
-  width: (189rem/16);
+  width: (115rem/16);
   height: (47rem/16);
   background: url("../images/dulces_te.png") no-repeat;
   background-size: 100% 100%;
-  text-align: left;
+  text-align: center;
   line-height: (47rem/16);
   font-family: RockwellStdBold;
   font-size: (14rem/16);
-  padding-left: 3%;
   box-sizing: border-box;
-  span {
-    font-family: TwentySingles;
-    font-size: (60rem/16);
-    position: absolute;
-    margin-left: 2%;
-  }
+
 }
 
 .plinth-wrapper {
@@ -466,6 +460,7 @@ body {
   text-align: center;
   box-sizing: border-box;
   background: url("../images/title-decorator.png") no-repeat center;
+  background-size:  contain, contain !important;
 }
 
 .white-board {

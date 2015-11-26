@@ -48,4 +48,15 @@
   .contact .contact-board {
     margin-right: 10%;
     width: 80%;
-    height: 28.57143rem; } }
+    height: 28.57143rem; }
+
+  .recipes-view .main-menu .category-nav {
+    margin-left: 0; }
+    .recipes-view .main-menu .category-nav li {
+      width: 20%;
+      height: 3.57143rem; }
+      .recipes-view .main-menu .category-nav li a {
+        font-size: 3.92857rem;
+        line-height: 1.57143rem;
+        padding-top: 0.64286rem;
+        height: 3.57143rem; } }

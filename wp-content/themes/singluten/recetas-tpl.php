@@ -56,7 +56,7 @@ $menu_query = new WP_Query($args_menu);
     <div id="main" class="wrapper">
         <section class="block recipes-view clearfix">
             <h4 class="page-title wow bounceInDown"><?php echo get_the_title(); ?></h4>
-            <a class="back-to-site hvr-float-shadow" href="<?php echo site_url(); ?>">Volver al home</a>
+            <a class="back-to-site hvr-float-shadow" href="<?php echo site_url(); ?>">HOME</a>
 
             <div class="main-menu margin center">
                 <?php

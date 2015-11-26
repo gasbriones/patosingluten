@@ -96,21 +96,15 @@ body {
   left: 0;
   color: #FFFFFF;
   text-decoration: none;
-  width: 11.8125rem;
+  width: 7.1875rem;
   height: 2.9375rem;
   background: url("../images/dulces_te.png") no-repeat;
   background-size: 100% 100%;
-  text-align: left;
+  text-align: center;
   line-height: 2.9375rem;
   font-family: RockwellStdBold;
   font-size: 0.875rem;
-  padding-left: 3%;
   box-sizing: border-box; }
-  .back-to-site span {
-    font-family: TwentySingles;
-    font-size: 3.75rem;
-    position: absolute;
-    margin-left: 2%; }
 
 .plinth-wrapper {
   background: url("../images/dulces_te.png") no-repeat;
@@ -351,7 +345,8 @@ body {
   line-height: 6.4375rem;
   text-align: center;
   box-sizing: border-box;
-  background: url("../images/title-decorator.png") no-repeat center; }
+  background: url("../images/title-decorator.png") no-repeat center;
+  background-size: contain, contain !important; }
 
 .white-board {
   background: url("../images/pizarron-blanco.png") no-repeat;
