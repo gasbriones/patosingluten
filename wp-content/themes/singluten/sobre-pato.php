@@ -10,10 +10,10 @@
         <h4 class="page-title wow bounceInDown">
             <?php the_title(); ?>
         </h4>
-        <figure class="pic-one wow swing" data-wow-delay="500ms">
+        <figure class="pic pic-one wow swing" data-wow-delay="500ms">
             <img src="<?php echo the_field('sobre_pato_imagen_1') ?>">
         </figure>
-        <figure class="pic-two wow swing" data-wow-delay="750ms">
+        <figure class="pic pic-two wow swing" data-wow-delay="750ms">
             <img src="<?php echo the_field('sobre_pato_imagen_2') ?>">
         </figure>
         <ul class="social wow fadeIn">
