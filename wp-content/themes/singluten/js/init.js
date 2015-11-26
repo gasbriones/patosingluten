@@ -8,7 +8,7 @@ new WOW().init();
         sectionName : "section-name",
         easing: "easeOutExpo",
         scrollSpeed: 1100,
-        offset : 0,
+        offset : -25,
         scrollbars: true,
         before:function() {
             var currentSection = $($.scrollify.current()).attr('id');

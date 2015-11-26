@@ -486,8 +486,8 @@ body {
     box-shadow: 5px 3px 40px #333;
     background: #FFFFFF;
     position: absolute;
-    padding: (6rem/16);
-    padding-left: 0;
+    padding: (8rem/16);
+    z-index: 99;
 
     img {
       width: 100%;
@@ -498,16 +498,18 @@ body {
 
 
   .pic-one {
-    right: 10%;
-    top: (-40rem/16);
+    left: 10%;
+    top: (60rem/16);
     transform: rotate(-5deg);
     -webkit-transform: rotate(-5deg); /* Safari */
+    padding-left: 0;
   }
+
   .pic-two {
-    right: 10%;
-    top: (-40rem/16);
-    transform: rotate(-5deg);
-    -webkit-transform: rotate(-5deg); /* Safari */
+    left: 10%;
+    top: (260rem/16);
+    transform: rotate(7deg);
+    -webkit-transform: rotate(7deg); /* Safari */
   }
 
   .white-board {
@@ -1247,7 +1249,7 @@ body {
     position: absolute;
     top: (20rem/16);
     left: 7%;
-    width: (561rem/16);
+    width: (551rem/16);
     height: (530rem/16);
     z-index: 99;
   }

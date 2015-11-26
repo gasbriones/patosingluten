@@ -7,3 +7,45 @@
 
   .about-pato figure {
     width: 35%; } }
+@media screen and (max-width: 800px) {
+  #header .logo-wrapper:before {
+    top: 6.42857rem; }
+
+  .about .pic {
+    display: none; }
+  .about .white-board {
+    margin-right: 0;
+    height: 100%; }
+    .about .white-board article {
+      font-size: 1.28571rem; }
+    .about .white-board .decoration-pic-2 {
+      right: 0; }
+  .about .social {
+    left: 1.07143rem;
+    width: 5.71429rem;
+    top: 21.42857rem; }
+    .about .social i, .about .social span {
+      display: none; }
+  .about .desire .decoration-pic-5 {
+    display: none; }
+
+  .category-nav li {
+    width: 33.33333%;
+    height: 14.64286rem; }
+    .category-nav li a {
+      max-width: 100% !important;
+      font-size: 4.28571rem;
+      height: 4.64286rem;
+      line-height: 4.64286rem; }
+
+  .recipe .category-nav li a {
+    font-size: 3.42857rem; }
+
+  .contact .decoration-1 {
+    display: none; }
+  .contact .decoration-2 {
+    top: 0; }
+  .contact .contact-board {
+    margin-right: 10%;
+    width: 80%;
+    height: 28.57143rem; } }

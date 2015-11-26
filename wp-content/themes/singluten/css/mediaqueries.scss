@@ -16,3 +16,89 @@
   }
 }
 
+
+@media screen and (max-width: 800px) {
+  #header {
+    .logo-wrapper{
+      &:before{
+        top:(90rem/14)
+      }
+    }
+  }
+
+  .about{
+    .pic{
+      display: none;
+    }
+
+    .white-board {
+      margin-right:0;
+      height: 100%;
+      article{
+        font-size: (18rem/14);
+      }
+      .decoration-pic-2{
+        right:0;
+      }
+    }
+
+    .social{
+      left: (15rem/14);
+      width: (80rem/14);
+      top:(300rem/14);
+      i,span{
+        display: none;
+      }
+    }
+
+    .desire {
+      .decoration-pic-5{
+        display: none;
+      }
+    }
+  }
+
+  .category-nav{
+    li{
+      width: (100%/3);
+      height: (205rem/14);
+      a{
+        max-width: 100% !important;
+        font-size: (60rem/14);
+        height: (65rem/14);
+        line-height: (65rem/14);
+      }
+    }
+  }
+
+  .recipe {
+    .category-nav {
+      li {
+        a{
+          font-size:(48rem/14)
+        }
+      }
+    }
+  }
+
+  .contact{
+    .decoration-1{
+     display: none;
+    }
+    .decoration-2{
+      top: 0;
+    }
+
+    .contact-board{
+      margin-right: 10%;
+      width: 80%;
+      height: (400rem/14);
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+
