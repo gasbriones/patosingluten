@@ -20,11 +20,10 @@ $query = new WP_Query($args);
 <?php get_header(); ?>
 <body <?php body_class(); ?>>
 <div id="site">
+    <?php include 'sticky.php' ?>
     <div id="main" class="wrapper">
         <section class="block news clearfix">
             <h4 class="page-title wow bounceInDown">Novedades</h4>
-            <a class="back-to-site hvr-float-shadow" href="<?php echo site_url(); ?>">HOME</a>
-
             <aside>
                 <ul class="years">
                     <li class="title"><?php echo $year ?></li>

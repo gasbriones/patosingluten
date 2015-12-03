@@ -315,55 +315,55 @@ body {
       text-indent: -9999rem;
     }
   }
+}
 
-  #menu-header {
-    font-size: (76rem/16);
-    width: 100%;
-    max-width: (889rem/16);
-    height: (57rem/16);
-    background: url("../images/menu-principal-bg.png") no-repeat;
-    background-size:100% 100% ;
-    position: absolute;
-    bottom: (-36rem/16);
-    padding: 0 10%;
-    z-index: 99;
+#menu-header {
+  font-size: (76rem/16);
+  width: 100%;
+  max-width: (889rem/16);
+  height: (57rem/16);
+  background: url("../images/menu-principal-bg.png") no-repeat;
+  background-size:100% 100% ;
+  position: absolute;
+  bottom: (-36rem/16);
+  padding: 0 10%;
+  z-index: 99;
 
-    left:0;
-    right:0;
-    margin-left:auto;
-    margin-right:auto;
+  left:0;
+  right:0;
+  margin-left:auto;
+  margin-right:auto;
 
-    li {
-      width: 25%;
-      letter-spacing: (2rem/16);
-      text-align: right;
-      line-height: (50rem/16);
+  li {
+    width: 25%;
+    letter-spacing: (2rem/16);
+    text-align: right;
+    line-height: (50rem/16);
 
-      &:before {
+    &:before {
+      position: absolute;
+      content: "";
+      top: (30rem/16);
+      background: url("../images/disc.png") no-repeat;
+      width: (8rem/16);
+      height: (8rem/16);
+      right: (-33rem/16);
+    }
+
+    a {
+      color: #6A3327;
+      text-decoration: none;
+    }
+
+    &:first-child {
+      &:after {
         position: absolute;
         content: "";
         top: (30rem/16);
         background: url("../images/disc.png") no-repeat;
         width: (8rem/16);
         height: (8rem/16);
-        right: (-33rem/16);
-      }
-
-      a {
-        color: #6A3327;
-        text-decoration: none;
-      }
-
-      &:first-child {
-        &:after {
-          position: absolute;
-          content: "";
-          top: (30rem/16);
-          background: url("../images/disc.png") no-repeat;
-          width: (8rem/16);
-          height: (8rem/16);
-          left: (5rem/16);
-        }
+        left: (5rem/16);
       }
     }
   }
@@ -760,7 +760,7 @@ body {
 }
 
 .news {
-  margin: (35rem/16) auto (100rem/16);
+  margin: (95rem/16) auto (100rem/16);
   position: relative;
   width: 87%;
 
@@ -801,7 +801,6 @@ body {
     position: relative;
 
     li {
-
       font-size: (14rem/16);
       text-transform: uppercase;
       line-height: (23rem/16);
@@ -924,7 +923,7 @@ body {
 }
 
 .recipes-view {
-  margin: (35rem/16) auto (100rem/16);
+  margin: (95rem/16) auto (100rem/16);
   position: relative;
   width: 87%;
 
@@ -1078,11 +1077,6 @@ body {
       height: inherit;
       height: (54rem/16);
     }
-
-    .current-menu-item {
-      display: none;
-      visibility: hidden;
-    }
   }
   .page-title {
     background-position: center bottom, center bottom !important;
@@ -1125,6 +1119,11 @@ body {
   .page-title {
     background: url("../images/title-decorator.png"), url("../images/tortas.png");
   }
+}
+
+.current-menu-item {
+  display: none;
+  visibility: hidden;
 }
 
 #contacto {
@@ -1361,5 +1360,79 @@ body {
     opacity: 0.8;
     width: 80px;
     z-index: 99999;
+  }
+}
+
+.sticky{
+  padding: (7rem/16) 0;
+  position: fixed;
+  left: 0;
+  top:0;
+  width: 100%;
+  display: table;
+  z-index: 9999;
+  background: url("../images/site-bg.jpg") repeat top center fixed;
+  .sticky-content{
+    width: 82%;
+    margin:0 auto;
+
+    .logo{
+      float: left;
+    }
+  }
+
+  .menu{
+    font-size: (60rem/16);
+    width: 55%;
+    max-width: (889rem/16);
+    height: (45rem/16);
+    background: url("../images/menu-principal-bg.png") no-repeat;
+    background-size:100% 100% ;
+    padding: 0 8%;
+    z-index: 99;
+    margin-left:10%;
+    float: left;
+    margin-top:(14rem/16);
+
+    li {
+      width: 33%;
+      letter-spacing: (2rem/16);
+      text-align: center;
+      line-height: (40rem/16);
+
+      &:before {
+        position: absolute;
+        content: "";
+        top: (20rem/16);
+        background: url("../images/disc.png") no-repeat;
+        width: (8rem/16);
+        height: (8rem/16);
+        right: (-8rem/16);
+      }
+
+      a {
+        color: #6A3327;
+        text-decoration: none;
+      }
+
+      &:first-child {
+        &:after {
+          position: absolute;
+          content: "";
+          top: (20rem/16);
+          background: url("../images/disc.png") no-repeat;
+          width: (8rem/16);
+          height: (8rem/16);
+          left: (-10rem/16);
+        }
+      }
+    }
+  }
+}
+
+.page-id-44{
+  #menu-item-219{
+    display: none;
+    visibility: hidden;
   }
 }

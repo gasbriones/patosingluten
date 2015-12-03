@@ -59,4 +59,30 @@
         font-size: 3.92857rem;
         line-height: 1.57143rem;
         padding-top: 0.64286rem;
-        height: 3.57143rem; } }
+        height: 3.57143rem; }
+
+  .sticky-content .logo {
+    width: 10%;
+    overflow: hidden; }
+    .sticky-content .logo img {
+      max-width: none; }
+  .sticky-content .menu {
+    width: 70%; }
+
+  .news aside {
+    width: 30%; }
+  .news .white-board {
+    width: 70%;
+    height: 39.28571rem; }
+  .news .decoration-pic-1 {
+    width: 30%;
+    height: 25%; } }
+@media (min-width: 801px) and (max-width: 1024px) {
+  .news .white-board {
+    width: 65%;
+    height: 39.28571rem; }
+  .news .decoration-pic-1 {
+    width: 35%;
+    height: 35%; } }
+
+/*# sourceMappingURL=mediaqueries.css.map */

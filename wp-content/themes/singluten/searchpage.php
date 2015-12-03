@@ -37,8 +37,6 @@ $menu_query = new WP_Query($args_menu);
     <div id="main" class="wrapper">
         <section class="block recipes-view clearfix">
             <h4 class="page-title wow bounceInDown"><?php echo get_the_title(); ?></h4>
-            <a class="back-to-site hvr-float-shadow" href="<?php echo site_url(); ?>">Volver al home</a>
-
             <div class="main-menu margin center">
                 <?php
                 $cleaner_menu = wp_nav_menu(array('theme_location' => 'category-menu', 'menu_class' => 'menu category-nav clearfix'));

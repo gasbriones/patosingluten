@@ -5,7 +5,8 @@ function register_my_menus()
     register_nav_menus(
         array(
             'header-menu' => __('Header Menu'),
-            'category-menu' => __('Category Menu')
+            'category-menu' => __('Category Menu'),
+            'sticky-menu' => __('Sticky Menu')
         )
     );
 }

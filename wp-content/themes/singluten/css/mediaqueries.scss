@@ -1,5 +1,7 @@
 @import 'mixin';
 
+
+
 @media screen and (max-width: 1024px) {
   html, body {
     font-size: 14px !important;
@@ -113,10 +115,49 @@
       }
     }
   }
+
+  .sticky-content{
+    .logo{
+      width:10%;
+      overflow: hidden;
+      img{
+        max-width: none;
+      }
+    }
+
+    .menu{
+      width: 70%;
+    }
+  }
+
+  .news{
+    aside{
+      width: 30%;
+    }
+    .white-board{
+      width: 70%;
+      height: (550rem/14);
+    }
+    .decoration-pic-1{
+      width: 30%;
+      height: 25%;
+    }
+  }
+
+
 }
 
-@media screen and (max-width: 768px) {
-
+@media (min-width: 801px) and (max-width: 1024px) {
+  .news{
+    .white-board{
+      width: 65%;
+      height: (550rem/14);
+    }
+    .decoration-pic-1{
+      width: 35%;
+      height: 35%;
+    }
+  }
 }
 
 

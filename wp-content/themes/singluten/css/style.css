@@ -238,45 +238,46 @@ body {
       width: 1.4375rem;
       height: 1.6875rem;
       text-indent: -9999rem; }
-  #header #menu-header {
-    font-size: 4.75rem;
-    width: 100%;
-    max-width: 55.5625rem;
-    height: 3.5625rem;
-    background: url("../images/menu-principal-bg.png") no-repeat;
-    background-size: 100% 100%;
-    position: absolute;
-    bottom: -2.25rem;
-    padding: 0 10%;
-    z-index: 99;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto; }
-    #header #menu-header li {
-      width: 25%;
-      letter-spacing: 0.125rem;
-      text-align: right;
-      line-height: 3.125rem; }
-      #header #menu-header li:before {
-        position: absolute;
-        content: "";
-        top: 1.875rem;
-        background: url("../images/disc.png") no-repeat;
-        width: 0.5rem;
-        height: 0.5rem;
-        right: -2.0625rem; }
-      #header #menu-header li a {
-        color: #6A3327;
-        text-decoration: none; }
-      #header #menu-header li:first-child:after {
-        position: absolute;
-        content: "";
-        top: 1.875rem;
-        background: url("../images/disc.png") no-repeat;
-        width: 0.5rem;
-        height: 0.5rem;
-        left: 0.3125rem; }
+
+#menu-header {
+  font-size: 4.75rem;
+  width: 100%;
+  max-width: 55.5625rem;
+  height: 3.5625rem;
+  background: url("../images/menu-principal-bg.png") no-repeat;
+  background-size: 100% 100%;
+  position: absolute;
+  bottom: -2.25rem;
+  padding: 0 10%;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; }
+  #menu-header li {
+    width: 25%;
+    letter-spacing: 0.125rem;
+    text-align: right;
+    line-height: 3.125rem; }
+    #menu-header li:before {
+      position: absolute;
+      content: "";
+      top: 1.875rem;
+      background: url("../images/disc.png") no-repeat;
+      width: 0.5rem;
+      height: 0.5rem;
+      right: -2.0625rem; }
+    #menu-header li a {
+      color: #6A3327;
+      text-decoration: none; }
+    #menu-header li:first-child:after {
+      position: absolute;
+      content: "";
+      top: 1.875rem;
+      background: url("../images/disc.png") no-repeat;
+      width: 0.5rem;
+      height: 0.5rem;
+      left: 0.3125rem; }
 
 .main-menu {
   margin-top: 2.25rem; }
@@ -570,7 +571,7 @@ body {
     background-size: 100% 100%; }
 
 .news {
-  margin: 2.1875rem auto 6.25rem;
+  margin: 5.9375rem auto 6.25rem;
   position: relative;
   width: 87%; }
   .news .decoration-pic-1 {
@@ -693,7 +694,7 @@ body {
       display: block; }
 
 .recipes-view {
-  margin: 2.1875rem auto 6.25rem;
+  margin: 5.9375rem auto 6.25rem;
   position: relative;
   width: 87%; }
   .recipes-view aside {
@@ -805,9 +806,6 @@ body {
       background: none;
       height: inherit;
       height: 3.375rem; }
-    .recipes-view .category-nav .current-menu-item {
-      display: none;
-      visibility: hidden; }
   .recipes-view .page-title {
     background-position: center bottom, center bottom !important;
     background-repeat: no-repeat !important;
@@ -830,6 +828,10 @@ body {
 
 .page-id-52 .page-title {
   background: url("../images/title-decorator.png"), url("../images/tortas.png"); }
+
+.current-menu-item {
+  display: none;
+  visibility: hidden; }
 
 #contacto {
   margin-top: 3.125rem;
@@ -1015,3 +1017,60 @@ body {
     opacity: 0.8;
     width: 80px;
     z-index: 99999; }
+
+.sticky {
+  padding: 0.4375rem 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  display: table;
+  z-index: 9999;
+  background: url("../images/site-bg.jpg") repeat top center fixed; }
+  .sticky .sticky-content {
+    width: 82%;
+    margin: 0 auto; }
+    .sticky .sticky-content .logo {
+      float: left; }
+  .sticky .menu {
+    font-size: 3.75rem;
+    width: 55%;
+    max-width: 55.5625rem;
+    height: 2.8125rem;
+    background: url("../images/menu-principal-bg.png") no-repeat;
+    background-size: 100% 100%;
+    padding: 0 8%;
+    z-index: 99;
+    margin-left: 10%;
+    float: left;
+    margin-top: 0.875rem; }
+    .sticky .menu li {
+      width: 33%;
+      letter-spacing: 0.125rem;
+      text-align: center;
+      line-height: 2.5rem; }
+      .sticky .menu li:before {
+        position: absolute;
+        content: "";
+        top: 1.25rem;
+        background: url("../images/disc.png") no-repeat;
+        width: 0.5rem;
+        height: 0.5rem;
+        right: -0.5rem; }
+      .sticky .menu li a {
+        color: #6A3327;
+        text-decoration: none; }
+      .sticky .menu li:first-child:after {
+        position: absolute;
+        content: "";
+        top: 1.25rem;
+        background: url("../images/disc.png") no-repeat;
+        width: 0.5rem;
+        height: 0.5rem;
+        left: -0.625rem; }
+
+.page-id-44 #menu-item-219 {
+  display: none;
+  visibility: hidden; }
+
+/*# sourceMappingURL=style.css.map */
