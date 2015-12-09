@@ -76,13 +76,41 @@
     height: 39.28571rem; }
   .news .decoration-pic-1 {
     width: 30%;
-    height: 25%; } }
+    height: 25%; }
+
+  .recipes-view .white-board {
+    width: 100%;
+    float: none; }
+  .recipes-view aside {
+    float: none; } }
 @media (min-width: 801px) and (max-width: 1024px) {
   .news .white-board {
     width: 65%;
     height: 39.28571rem; }
   .news .decoration-pic-1 {
     width: 35%;
-    height: 35%; } }
+    height: 35%; }
+
+  .about .pic {
+    width: 18%;
+    height: auto; }
+  .about .pic-one {
+    top: 5.9375rem;
+    left: 7%; }
+  .about .pic-two {
+    left: 8%; }
+  .about .social {
+    left: 20%;
+    width: 5.71429rem;
+    top: 29.28571rem; }
+    .about .social i, .about .social span {
+      display: none; }
+  .about .decoration-pic-5 {
+    width: 22.85714rem !important;
+    height: 22.14286rem !important; }
+
+  .contact .decoration-1 {
+    width: 26.42857rem;
+    height: 25rem; } }
 
 /*# sourceMappingURL=mediaqueries.css.map */

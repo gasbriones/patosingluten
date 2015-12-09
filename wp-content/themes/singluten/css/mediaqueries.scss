@@ -114,6 +114,7 @@
         }
       }
     }
+    
   }
 
   .sticky-content{
@@ -144,6 +145,19 @@
     }
   }
 
+  .recipes-view{
+    .white-board{
+      width: 100%;
+      float: none;
+    }
+
+    aside{
+      float: none;
+    }
+  }
+
+
+
 
 }
 
@@ -158,6 +172,45 @@
       height: 35%;
     }
   }
+
+  .about{
+    .pic{
+      width: 18%;
+      height: auto;
+    }
+
+    .pic-one{
+      top: (95rem/16);
+      left: 7%;
+    }
+
+    .pic-two{
+      left: 8%;
+    }
+
+    .social{
+      left: 20%;
+      width: (80rem/14);
+      top:(410rem/14);
+      i,span{
+        display: none;
+      }
+    }
+
+    .decoration-pic-5{
+      width: (320rem/14) !important;
+      height: (310rem/14) !important;
+    }
+
+  }
+
+  .contact {
+    .decoration-1{
+      width: (370rem/14);
+      height: (350rem/14);
+    }
+  }
+
 }
 
 
