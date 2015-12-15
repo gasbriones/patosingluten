@@ -804,6 +804,9 @@ body {
     background-position: center bottom, center bottom !important;
     background-repeat: no-repeat !important;
     line-height: 6.875rem; }
+  .recipes-view .menu-category-container {
+    width: 95%;
+    margin: 0 auto; }
 
 .page-id-42 .page-title {
   background: url("../images/title-decorator.png"), url("../images/dulces_te.png"); }
