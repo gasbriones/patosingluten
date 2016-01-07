@@ -39,9 +39,19 @@ $post_url = explode("?",$current_url);
 
     <!-- twitter -->
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:url" content="<?php echo get_site_url() ?>"/>
-    <meta name="twitter:title" content="<?php bloginfo('name'); ?> "/>
-    <meta name="twitter:description" content="<?php bloginfo('description'); ?>"/>
+
+    <?php if (is_single() || is_page()): ?>
+        <meta name="twitter:title" content="<?php echo get_the_title( $get_post_id); ?>" />
+        <meta name="twitter:description" content="<?php echo custom_excerpt($get_post_id);?>"/>
+        <meta name="twitter:url" content="<?php echo get_site_url(). $post_url[0] . "?receta=" . $get_post_id ?>" />
+    <?php else: ?>
+        <meta name="twitter:title" content="<?php bloginfo('name'); ?>" />
+        <meta name="twitter:description" content="<?php bloginfo( 'description'); ?>" />
+        <meta name="twitter:url" content="<?php bloginfo('url'); ?>" />
+    <?php endif;?>
+
+
+
     <meta name="twitter:site" content="@patosingluten" />
     <meta name="twitter:creator" content="@gasbriones" />
     <!-- Links -->
