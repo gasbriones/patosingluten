@@ -33,7 +33,8 @@ $args = array(
     'cat' => 28,
     'tag' => $tag,
     'paged' => $paged,
-    'orderby' => 'ASC',
+    'orderby' => 'title',
+    'order' => 'ASC',
     'showposts' => '1'
 );
 
@@ -44,10 +45,15 @@ $args_menu = array(
     'tag' => $tag,
     'showposts' => '8',
     'paged' => $paged,
-    'orderby' => 'ASC'
+    'orderby' => 'title',
+    'order' => 'ASC'
 );
 
 $menu_query = new WP_Query($args_menu);
+
+$current_url =  $_SERVER['REQUEST_URI'];
+$post_url = explode("?",$current_url);
+
 
 ?>
 <?php get_header(); ?>
@@ -71,7 +77,7 @@ $menu_query = new WP_Query($args_menu);
                                     ?>
                                     <li>
                                         <a class="<?php echo $post->ID == $get_post_id || ($get_post_id == '' && $i == 0) ? 'active' : ''; ?>"
-                                           href="<?php echo post_permalink($post_id) . "?receta=" . $post->ID ?>"><?php the_title(); ?></a>
+                                           href="<?php echo $post_url[0] . "?receta=" . $post->ID ?>"><?php the_title(); ?></a>
                                     </li>
                                     <?php $i++; endwhile;
                             endif;
@@ -102,7 +108,8 @@ $menu_query = new WP_Query($args_menu);
                         <?php the_title('<h3 class="title">', '</h3>'); ?>
                         <article>
                             <?php if (get_field('recetas_imagen')): ?>
-                                <div class="recipe-img"><img src="<?php echo the_field('recetas_imagen') ?>"/></div>
+                                <div class="recipe-img">
+                                    <figure><img src="<?php echo the_field('recetas_imagen') ?>"/></figure></div>
                             <?php endif; ?>
 
                             <h3 class="sub-title">Ingredientes</h3>

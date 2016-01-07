@@ -49,3 +49,10 @@ function filter_function_name( $atts, $item, $args ) {
 
 remove_action( 'wp_head', 'print_emoji_detection_script', 7 );
 remove_action( 'wp_print_styles', 'print_emoji_styles' );
+
+
+function custom_excerpt($id){
+    $text =  wp_strip_all_tags(get_post_field('post_content', $id));
+    $text = wp_trim_words( $text, $num_words = 55, $more = null);
+    return   esc_attr($text);
+}

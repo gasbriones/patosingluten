@@ -696,7 +696,8 @@ body {
   width: 87%; }
   .recipes-view aside {
     float: left;
-    margin: 4.375rem 0 0 0; }
+    margin: 4.375rem 0 0 0;
+    width: 26%; }
     .recipes-view aside .recipes-list {
       font-family: 'TwentySingles'; }
       .recipes-view aside .recipes-list li {
@@ -763,7 +764,6 @@ body {
     margin: 4.375rem 0 0 0; }
     .recipes-view .white-board .recipe-img {
       width: 17.5rem;
-      height: 12.1875rem;
       box-shadow: 5px 3px 40px #333;
       background: #FFFFFF;
       position: absolute;
@@ -773,8 +773,20 @@ body {
       -webkit-transform: rotate(-5deg);
       /* Safari */
       padding: 0.625rem; }
-      .recipes-view .white-board .recipe-img img {
-        width: 100%; }
+      .recipes-view .white-board .recipe-img figure {
+        width: 100%;
+        padding-bottom: 70.25%;
+        /* 16:9 */
+        position: relative;
+        overflow: hidden; }
+        .recipes-view .white-board .recipe-img figure img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0; }
     .recipes-view .white-board .title {
       color: #6A3327;
       font-family: RockwellStdBold;

@@ -8,6 +8,9 @@
  * @subpackage SinGluten
  * @since SinGluten 1.0
  */
+$get_post_id = $_GET['receta'];
+$current_url =  $_SERVER['REQUEST_URI'];
+$post_url = explode("?",$current_url);
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?> >
@@ -17,11 +20,20 @@
     <meta name="description" content="<?php bloginfo( 'description'); ?>" />
 
     <!-- Facebook -->
-    <meta name="og:type" content="website"/>
-    <meta name="og:title" content="<?php bloginfo('name'); ?>"/>
-    <meta name="og:description" content="<?php bloginfo('description'); ?>"/>
-    <meta name="og:url" content="<?php echo get_site_url() ?>"/>
-    <meta name="og:site_name" content="<?php bloginfo('name'); ?>" />
+
+    <?php if (is_single() || is_page()): ?>
+        <meta name="og:type" content="article" />
+        <meta name="og:title" content="<?php echo get_the_title( $get_post_id); ?>" />
+        <meta name="og:description" content="<?php echo custom_excerpt($get_post_id);?>"/>
+        <meta name="og:url" content="<?php echo get_site_url(). $post_url[0] . "?receta=" . $get_post_id ?>" />
+        <meta name="og:image" content="<?php echo the_field('recetas_imagen',$get_post_id) ?>">
+    <?php else: ?>
+        <meta name="og:type" content="website" />
+        <meta name="og:title" content="<?php bloginfo('name'); ?>" />
+        <meta name="og:description" content="<?php bloginfo( 'description'); ?>" />
+        <meta name="og:url" content="<?php bloginfo('url'); ?>" />
+    <?php endif;?>
+
     <meta name="og:region" content="Buenos Aires" />
     <meta name="og:country-name" content="Argentina" />
 
@@ -39,6 +51,7 @@
     <link href="<?php echo get_template_directory_uri(); ?>/css/normalize.css" rel="stylesheet" type="text/css">
     <link href="<?php echo get_template_directory_uri(); ?>/css/hover-min.css" rel="stylesheet" type="text/css">
     <link href="<?php echo get_template_directory_uri(); ?>/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" />
     <link href="<?php echo get_template_directory_uri(); ?>/css/mediaqueries.css" rel="stylesheet" type="text/css">
     <title><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?> </title>
     <?php wp_head(); ?>

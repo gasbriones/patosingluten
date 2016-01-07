@@ -928,6 +928,7 @@ body {
   aside {
     float: left;
     margin: (70rem/16) 0 0 0;
+    width: 26%;
 
     .recipes-list {
       font-family: 'TwentySingles';
@@ -1024,7 +1025,6 @@ body {
 
     .recipe-img {
       width: (280rem/16);
-      height: (195rem/16);
       box-shadow: 5px 3px 40px #333;
       background: #FFFFFF;
       position: absolute;
@@ -1033,9 +1033,23 @@ body {
       transform: rotate(-5deg);
       -webkit-transform: rotate(-5deg); /* Safari */
       padding: (10rem/16);
-      img {
+
+
+      figure{
         width: 100%;
+        padding-bottom: 70.25%; /* 16:9 */
+        position: relative;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0; bottom: 0; left: 0; right: 0;
+        }
       }
+
+
+
     }
 
     .title {
