@@ -3,8 +3,12 @@
 Template Name: novedades
 */
 
+$years = array(
+  '2015','2016','2017','2018','2019','2020'
+);
 
-$year = date("Y");
+$current_year = date("Y");
+$year = $_GET["anio"] != '' ? $_GET["anio"]:  date("Y");
 $month = $_GET["mes"] != '' ? $_GET["mes"] : spanish_months(date("F"));
 $tag_l = $month . '+' . $year;
 
@@ -26,7 +30,14 @@ $query = new WP_Query($args);
             <h4 class="page-title wow bounceInDown">Novedades</h4>
             <aside>
                 <ul class="years">
-                    <li class="title"><?php echo $year ?></li>
+                    <li class="title">
+                        <?php
+                            foreach($years as $key => $value):
+                                if($value <= $current_year): ?>
+                                    <a class="<?php echo $value == $year ? 'active' : '' ?>" href="<?php echo post_permalink($post_id) . '?mes=' . $month.'&anio='.$value ?>"><?php echo $value; ?></a>
+                                <?php endif; endforeach; ?>
+
+                    </li>
                     <?php
                     $arrayMonths = months();
 
@@ -34,7 +45,7 @@ $query = new WP_Query($args);
                         ?>
                         <li>
                             <a class="<?php echo $row == $month ? 'active' : '' ?>"
-                               href="<?php echo post_permalink($post_id) . '?mes=' . $row; ?>"><?php echo $row; ?></a>
+                               href="<?php echo post_permalink($post_id) . '?mes=' . $row.'&anio='.$year ?>"><?php echo $row; ?></a>
                         </li>
                     <?php endforeach; ?>
                 </ul>
