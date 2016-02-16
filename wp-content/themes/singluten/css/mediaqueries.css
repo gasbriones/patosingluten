@@ -121,11 +121,11 @@
     display: none; }
 
   .category-nav li {
-    height: 145px; }
+    height: 145px !important; }
     .category-nav li a {
-      font-size: 40px;
-      line-height: 20px;
-      padding-top: 12px;
+      font-size: 40px !important;
+      line-height: 20px !important;
+      padding-top: 12px !important;
       background-size: 100% 75% !important;
       background-repeat: no-repeat !important; }
 
@@ -157,6 +157,18 @@
     width: auto; }
 
   #header .search input[type="text"] {
-    width: 40px; } }
+    width: 40px; }
+
+  #recetas {
+    margin-top: 30px; }
+    #recetas .decoration-pic-8 {
+      display: none; }
+
+  .plinth-wrapper .plinth {
+    height: auto;
+    line-height: 25px;
+    padding: 10px 0; }
+    .plinth-wrapper .plinth .slogan:before {
+      display: none; } }
 
 /*# sourceMappingURL=mediaqueries.css.map */
