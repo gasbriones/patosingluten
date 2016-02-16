@@ -209,4 +209,75 @@
 
 }
 
+@media screen and (max-width: 360px) {
+  .menu-header-container{
+    display: none;
+  }
+
+  .logo-wrapper{
+    &:before{
+      display: none;
+    }
+  }
+
+  .category-nav{
+    li{
+      height: 145px;
+      a{
+        font-size: 40px;
+        line-height: 20px;
+        padding-top: 12px;
+        background-size:100% 75% !important;
+        background-repeat:no-repeat !important;
+      }
+    }
+  }
+
+  .about-pato{
+    .white-board{
+      width: 100%;
+      height: auto;
+      padding: 40px;
+      .decoration-pic-2{
+        display: none;
+      }
+
+      &:before{
+        background-size: contain;
+        width: 80%;
+      }
+
+      .decoration-pic-1{
+        display: none;
+      }
+    }
+    .social{
+      display: none;
+    }
+  }
+
+  .desire{
+    padding: 15px !important;
+    article{
+      line-height:35px !important;
+
+    }
+    .decoration-pic-7,.decoration-pic-6,.decoration-pic-5,.decoration-pic-4{
+      display: none;
+    }
+  }
+
+  #sobre-pato{
+    margin-top: 15px !important;
+  }
+
+  #header .social{
+    width: auto;
+  }
+
+  #header .search input[type="text"]{
+    width: 40px;
+  }
+}
+
 

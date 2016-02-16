@@ -113,5 +113,50 @@
   .contact .decoration-1 {
     width: 26.42857rem;
     height: 25rem; } }
+@media screen and (max-width: 360px) {
+  .menu-header-container {
+    display: none; }
+
+  .logo-wrapper:before {
+    display: none; }
+
+  .category-nav li {
+    height: 145px; }
+    .category-nav li a {
+      font-size: 40px;
+      line-height: 20px;
+      padding-top: 12px;
+      background-size: 100% 75% !important;
+      background-repeat: no-repeat !important; }
+
+  .about-pato .white-board {
+    width: 100%;
+    height: auto;
+    padding: 40px; }
+    .about-pato .white-board .decoration-pic-2 {
+      display: none; }
+    .about-pato .white-board:before {
+      background-size: contain;
+      width: 80%; }
+    .about-pato .white-board .decoration-pic-1 {
+      display: none; }
+  .about-pato .social {
+    display: none; }
+
+  .desire {
+    padding: 15px !important; }
+    .desire article {
+      line-height: 35px !important; }
+    .desire .decoration-pic-7, .desire .decoration-pic-6, .desire .decoration-pic-5, .desire .decoration-pic-4 {
+      display: none; }
+
+  #sobre-pato {
+    margin-top: 15px !important; }
+
+  #header .social {
+    width: auto; }
+
+  #header .search input[type="text"] {
+    width: 40px; } }
 
 /*# sourceMappingURL=mediaqueries.css.map */
