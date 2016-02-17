@@ -186,6 +186,49 @@
   #contacto .plinth-wrapper {
     display: none; }
   #contacto .msj {
-    line-height: 25px; } }
+    line-height: 25px; }
+
+  .page-template-recetas-tpl .sticky {
+    display: none; }
+  .page-template-recetas-tpl .recipes-view {
+    margin-top: 30px;
+    width: 100% !important; }
+    .page-template-recetas-tpl .recipes-view .page-title {
+      line-height: 50px;
+      background-size: 100% 100% !important;
+      padding: 10px 0; }
+    .page-template-recetas-tpl .recipes-view .category-nav li {
+      height: 70px !important;
+      width: 33%; }
+    .page-template-recetas-tpl .recipes-view aside {
+      width: 100%;
+      margin: 0; }
+      .page-template-recetas-tpl .recipes-view aside .recipes-list a:before {
+        display: none; }
+    .page-template-recetas-tpl .recipes-view .white-board {
+      margin-top: 40px;
+      padding: 60px 36px; }
+  .page-template-recetas-tpl .recipe-img {
+    position: relative !important;
+    top: inherit !important;
+    right: inherit !important;
+    width: 100% !important;
+    margin-bottom: 20px !important; }
+
+  .page-template-novedades .sticky {
+    display: none; }
+  .page-template-novedades .news {
+    margin-top: 30px; }
+    .page-template-novedades .news aside {
+      float: none;
+      width: 100%;
+      margin-top: 30px; }
+    .page-template-novedades .news .white-board {
+      float: none;
+      width: 100%;
+      height: inherit;
+      padding: 55px 35px; }
+    .page-template-novedades .news .decoration-pic-1 {
+      display: none; } }
 
 /*# sourceMappingURL=mediaqueries.css.map */
