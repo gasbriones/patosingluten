@@ -1143,6 +1143,14 @@ body {
 .current-menu-item {
   display: none;
   visibility: hidden;
+  &.no-hide{
+    display: block;
+    visibility: visible;
+    a{
+      background: none !important;
+      border-top-color: #292929 !important;
+    }
+  }
 }
 
 #contacto {

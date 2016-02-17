@@ -843,6 +843,12 @@ body {
 .current-menu-item {
   display: none;
   visibility: hidden; }
+  .current-menu-item.no-hide {
+    display: block;
+    visibility: visible; }
+    .current-menu-item.no-hide a {
+      background: none !important;
+      border-top-color: #292929 !important; }
 
 #contacto {
   margin-top: 3.125rem;

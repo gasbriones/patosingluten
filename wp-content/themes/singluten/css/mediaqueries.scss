@@ -297,8 +297,30 @@
     }
   }
 
-  #menu-category-1{
-    
+  #recetas{
+    display: none;
+  }
+
+  #contacto{
+    .contact-board{
+      height: inherit;
+      width: 100%;
+      margin: 0;
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+
+    .decoration-2{
+      width: 80px;
+      height: 80px;
+    }
+
+    .plinth-wrapper{
+      display: none;
+    }
+    .msj{
+      line-height:25px;
+    }
   }
 }
 

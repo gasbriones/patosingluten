@@ -169,6 +169,23 @@
     line-height: 25px;
     padding: 10px 0; }
     .plinth-wrapper .plinth .slogan:before {
-      display: none; } }
+      display: none; }
+
+  #recetas {
+    display: none; }
+
+  #contacto .contact-board {
+    height: inherit;
+    width: 100%;
+    margin: 0;
+    margin-top: 30px;
+    margin-bottom: 60px; }
+  #contacto .decoration-2 {
+    width: 80px;
+    height: 80px; }
+  #contacto .plinth-wrapper {
+    display: none; }
+  #contacto .msj {
+    line-height: 25px; } }
 
 /*# sourceMappingURL=mediaqueries.css.map */
