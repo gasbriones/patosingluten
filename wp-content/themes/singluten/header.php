@@ -22,16 +22,19 @@ $post_url = explode("?",$current_url);
     <!-- Facebook -->
 
     <?php if (is_single() || is_page()): ?>
-        <meta name="og:type" content="article" />
-        <meta name="og:title" content="<?php echo get_the_title( $get_post_id); ?>" />
-        <meta name="og:description" content="<?php echo custom_excerpt($get_post_id);?>"/>
-        <meta name="og:url" content="<?php echo get_site_url(). $post_url[0] . "?receta=" . $get_post_id ?>" />
-        <meta name="og:image" content="<?php echo the_field('recetas_imagen',$get_post_id) ?>">
+
+        <meta property="og:type" content="article" />
+        <meta property="og:title" content="<?php echo get_the_title( $get_post_id); ?>"/>
+        <meta property="og:image" content="<?php echo the_field('recetas_imagen',$get_post_id,'thumbnail') ?>"/>
+        <meta property="og:url" content="<?php echo get_site_url(). $post_url[0] . "?receta=" . $get_post_id ?>" />
+        <meta property="og:site_name" content="<?php bloginfo('name'); ?>"/>
+        <meta property="og:description" content="<?php echo custom_excerpt($get_post_id);?>"/>
+
     <?php else: ?>
-        <meta name="og:type" content="website" />
-        <meta name="og:title" content="<?php bloginfo('name'); ?>" />
-        <meta name="og:description" content="<?php bloginfo( 'description'); ?>" />
-        <meta name="og:url" content="<?php bloginfo('url'); ?>" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="<?php bloginfo('name'); ?>" />
+        <meta property="og:description" content="<?php bloginfo( 'description'); ?>" />
+        <meta property="og:url" content="<?php bloginfo('url'); ?>" />
     <?php endif;?>
 
     <meta name="og:region" content="Buenos Aires" />

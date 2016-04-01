@@ -1,5 +1,6 @@
 new WOW().init();
 
+
 (function ($) {
 
 
@@ -33,6 +34,6 @@ new WOW().init();
 
     $('.nav-vert-top img').click(function(){
         $.scrollify.previous();
-    })
+    });
 
 })(jQuery);

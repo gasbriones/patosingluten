@@ -761,6 +761,7 @@ body {
     float: right;
     width: 70%;
     padding: 3.75rem;
+    padding-right: 6.25rem;
     background-size: 100% 100%;
     box-sizing: border-box;
     margin: 4.375rem 0 0 0; }
@@ -824,21 +825,39 @@ body {
 
 .page-id-42 .page-title {
   background: url("../images/title-decorator.png"), url("../images/dulces_te.png"); }
+.page-id-42 .options-items {
+  background: url("../images/dulces_te.png");
+  background-size: 100% 100%; }
 
 .page-id-44 .page-title {
   background: url("../images/title-decorator.png"), url("../images/panes_snacks.png"); }
+.page-id-44 .options-items {
+  background: url("../images/panes_snacks.png");
+  background-size: 100% 100%; }
 
 .page-id-46 .page-title {
   background: url("../images/title-decorator.png"), url("../images/platos_principales.png"); }
+.page-id-46 .options-items {
+  background: url("../images/platos_principales.png");
+  background-size: 100% 100%; }
 
 .page-id-48 .page-title {
   background: url("../images/title-decorator.png"), url("../images/postres.png"); }
+.page-id-48 .options-items {
+  background: url("../images/postres.png");
+  background-size: 100% 100%; }
 
 .page-id-50 .page-title {
   background: url("../images/title-decorator.png"), url("../images/para_festejar.png"); }
+.page-id-50 .options-items {
+  background: url("../images/para_festejar.png");
+  background-size: 100% 100%; }
 
 .page-id-52 .page-title {
   background: url("../images/title-decorator.png"), url("../images/tortas.png"); }
+.page-id-52 .options-items {
+  background: url("../images/tortas.png");
+  background-size: 100% 100%; }
 
 .current-menu-item {
   display: none;
@@ -1089,5 +1108,17 @@ body {
 .page-template-recetas-tpl #menu-item-219 {
   display: none;
   visibility: hidden; }
+
+.options-items {
+  position: absolute;
+  right: -5%;
+  bottom: 10%;
+  padding: 15px 25px 15px 40px; }
+  .options-items a {
+    font-family: TwentySingles;
+    color: #ffffff;
+    font-size: 2.8125em;
+    line-height: 0.375em;
+    letter-spacing: 0.0625rem; }
 
 /*# sourceMappingURL=style.css.map */

@@ -1025,6 +1025,7 @@ body {
     float: right;
     width: 70%;
     padding: (60rem/16);
+    padding-right: (100rem/16);
     background-size: 100% 100%;
     box-sizing: border-box;
     margin: (70rem/16) 0 0 0;
@@ -1105,8 +1106,13 @@ body {
 }
 
 .page-id-42 {
-  .page-title {
+  .page-title{
     background: url("../images/title-decorator.png"), url("../images/dulces_te.png");
+  }
+
+  .options-items{
+    background: url("../images/dulces_te.png");
+    background-size: 100% 100%;
   }
 }
 
@@ -1114,11 +1120,19 @@ body {
   .page-title {
     background: url("../images/title-decorator.png"), url("../images/panes_snacks.png");
   }
+  .options-items{
+    background: url("../images/panes_snacks.png");
+    background-size: 100% 100%;
+  }
 }
 
 .page-id-46 {
   .page-title {
     background: url("../images/title-decorator.png"), url("../images/platos_principales.png");
+  }
+  .options-items{
+    background: url("../images/platos_principales.png");
+    background-size: 100% 100%;
   }
 }
 
@@ -1126,17 +1140,29 @@ body {
   .page-title {
     background: url("../images/title-decorator.png"), url("../images/postres.png");
   }
+  .options-items{
+    background: url("../images/postres.png");
+    background-size: 100% 100%;
+  }
 }
 
 .page-id-50 {
   .page-title {
     background: url("../images/title-decorator.png"), url("../images/para_festejar.png");
   }
+  .options-items{
+    background: url("../images/para_festejar.png");
+    background-size: 100% 100%;
+  }
 }
 
 .page-id-52 {
   .page-title {
     background: url("../images/title-decorator.png"), url("../images/tortas.png");
+  }
+  .options-items{
+    background: url("../images/tortas.png");
+    background-size: 100% 100%;
   }
 }
 
@@ -1461,5 +1487,20 @@ body {
   #menu-item-219{
     display: none;
     visibility: hidden;
+  }
+}
+
+.options-items{
+  position: absolute;
+  right: -5%;
+  bottom: 10%;
+
+  padding: 15px 25px 15px 40px ;
+  a{
+    font-family: TwentySingles;
+    color: #ffffff;
+    font-size: (45em/16);
+    line-height: (6em/16);
+    letter-spacing: (1rem/16);
   }
 }
