@@ -6,6 +6,7 @@ Template Name: recetas
 
 $post_id = get_the_ID();
 $get_post_id = $_GET['receta'];
+$next_prev  = array();
 
 switch ($post_id) {
     case 42:
@@ -79,7 +80,17 @@ $post_url = explode("?",$current_url);
                                         <a class="<?php echo $post->ID == $get_post_id || ($get_post_id == '' && $i == 0) ? 'active' : ''; ?>"
                                            href="<?php echo $post_url[0] . "?receta=" . $post->ID ?>"><?php the_title(); ?></a>
                                     </li>
-                                    <?php $i++; endwhile;
+                                    <?php $i++; array_push($next_prev,$post->ID); endwhile;
+
+                                $e=0;
+                                $currentRecipe = $get_post_id != '' ? $get_post_id : $next_prev[0];
+                                foreach ($next_prev as $page){
+                                    if ($currentRecipe == $page){
+                                        $next = $next_prev[$e+1];
+                                        $prev = $next_prev[$e-1];
+                                    }
+                                    $e++;
+                                }
                             endif;
                             ?>
                         </ul>
@@ -91,13 +102,21 @@ $post_url = explode("?",$current_url);
                                 'base' => str_replace($big, '%#%', esc_url(get_pagenum_link($big))),
                                 'format' => '?paged=%#%',
                                 'current' => max(1, get_query_var('paged')),
-                                'total' => $menu_query->max_num_pages,
-                                'prev_next' => false,
+                                'total' => $menu_query->max_num_pages
                             ));
                             ?>
                         </div>
+
                     </aside>
                     <div class="white-board">
+                        <?php if($prev): ?>
+                        <a class="arrow-recipe prev" href="<?php echo $post_url[0] . "?receta=" . $prev ?>" title="Ir a receta anterior"></a>
+                        <?php endif; ?>
+
+                        <?php if($next): ?>
+                        <a class="arrow-recipe next" href="<?php echo $post_url[0] . "?receta=" . $next ?>" title="Ir a receta próxima"></a>
+                        <?php endif; ?>
+
                         <?php
                         if ($get_post_id != '') {
                             $query = new WP_Query(array('p' => $get_post_id));

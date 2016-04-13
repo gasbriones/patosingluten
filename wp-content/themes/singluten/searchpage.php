@@ -106,13 +106,38 @@ $menu_query = new WP_Query($args_menu);
                             endif;
                             ?>
                         </article>
+                        <div class="options">
+                            <ul class="options-items social">
+                                <li class="shared"><a target="_blank" href="http://www.facebook.com/sharer/sharer.php?u=<?php echo get_site_url().$post_url[0] . "?receta=" . $post->ID ?>">Compartir</a></li>
+                                <li class="print"><a href="#">Imprimir</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
     </div>
 </div>
+<script>
+    (function ($) {
 
+        function printTextArea() {
+            var prtContent = $('.white-board');
+            var WinPrint = window.open('', '', 'left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0');
+            WinPrint.document.write(prtContent.html());
+            WinPrint.document.close();
+            WinPrint.focus();
+            WinPrint.print();
+            WinPrint.close();
+        }
+
+        $('.print a').click(function(){
+            printTextArea();
+            return false;
+        });
+
+    })(jQuery);
+</script>
 <?php wp_footer(); ?>
 </body>
 </html>

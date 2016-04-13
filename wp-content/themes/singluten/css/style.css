@@ -1114,11 +1114,38 @@ body {
   right: -5%;
   bottom: 10%;
   padding: 15px 25px 15px 40px; }
+  .options-items li {
+    position: relative; }
+    .options-items li:before {
+      position: absolute;
+      content: "";
+      top: 0rem;
+      background: url("../images/iconos_recetas.png");
+      width: 1.375rem;
+      height: 1.375rem;
+      left: -1.6875rem; }
+    .options-items li.print:before {
+      background-position: -2px 20px !important; }
   .options-items a {
     font-family: TwentySingles;
     color: #ffffff;
     font-size: 2.8125em;
     line-height: 0.375em;
     letter-spacing: 0.0625rem; }
+
+.arrow-recipe {
+  color: #FFFFFF;
+  font-family: "TwentySingles";
+  font-size: 4.375em;
+  width: 34px;
+  height: 66px;
+  position: absolute;
+  bottom: 50%; }
+  .arrow-recipe.prev {
+    background: url("../images/arrow-prev.png");
+    left: -3%; }
+  .arrow-recipe.next {
+    background: url("../images/arrow-next.png");
+    right: -5%; }
 
 /*# sourceMappingURL=style.css.map */
